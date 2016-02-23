@@ -13,6 +13,7 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     var newQuoto: NewQuoto!
     
     // MARK: IBOutlets
+    @IBOutlet weak var imageSubView: UIView!
     @IBOutlet weak var chosenImageView: UIImageView!
     @IBOutlet weak var chosenQuoteLabel: UILabel!
     @IBOutlet weak var chosenAuthorLabel: UILabel!
@@ -69,8 +70,12 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
             return
         }
         self.chosenImageView.image = image
-        newQuoto = NewQuoto(quotoImage: image, quotoQuote: "", quotoAuthor: "")
-        print(newQuoto.quotoImage)
+        self.view.sendSubviewToBack(imageSubView)
+        if self.newQuoto == nil {
+            newQuoto = NewQuoto(quotoImage: image, quotoQuote: "", quotoAuthor: "")
+        } else {
+            self.newQuoto.quotoImage = image
+        }
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
@@ -81,6 +86,9 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     // MARK: navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let controller = segue.destinationViewController as! QuoteViewController
+        if self.newQuoto == nil {
+            self.newQuoto = NewQuoto(quotoImage: self.chosenImageView.image!, quotoQuote: "", quotoAuthor: "")
+        }
         controller.newQuoto = self.newQuoto
     }
     
@@ -97,7 +105,10 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     }
     
     @IBAction func restartQuoto(sender: UIBarButtonItem) {
-        self.chosenImageView.image = nil
+        self.chosenImageView.image = UIImage(named: "Cat_Placeholder.jpg")
+        self.chosenQuoteLabel.text = ""
+        self.chosenAuthorLabel.text = ""
+        self.newQuoto = nil
     }
     
     @IBAction func pickImageFromCamera(sender: UIBarButtonItem) {
