@@ -31,12 +31,16 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
         let gestureQuote = UIPanGestureRecognizer(target: self, action: Selector("dragQuoteLabel:"))
         let gestureAuthor = UIPanGestureRecognizer(target: self, action: Selector("dragAuthorLabel:"))
         chosenQuoteLabel.addGestureRecognizer(gestureQuote)
         chosenQuoteLabel.userInteractionEnabled = true
         chosenAuthorLabel.addGestureRecognizer(gestureAuthor)
         chosenAuthorLabel.userInteractionEnabled = true
+        
+        let pinchGesture = UIPinchGestureRecognizer(target: self, action: Selector("resizeText:"))
+        self.view.addGestureRecognizer(pinchGesture)
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -116,6 +120,7 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         return quoto
     }
     
+    // MARK: gesture recognizer functions
     func dragQuoteLabel(gesture: UIPanGestureRecognizer) {
         let translation = gesture.translationInView(self.view)
         let label = chosenQuoteLabel
@@ -126,6 +131,11 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         let translation = gesture.translationInView(self.view)
         let label = chosenAuthorLabel
         label.center = CGPoint(x: 350 + translation.x, y: 300 + translation.y)
+    }
+    
+    func resizeText(pinchGesture: UIPinchGestureRecognizer) {
+        let scale = pinchGesture.scale
+        chosenQuoteLabel.font = chosenQuoteLabel.font.fontWithSize(17 * scale)
     }
     
     // MARK: IBActions
