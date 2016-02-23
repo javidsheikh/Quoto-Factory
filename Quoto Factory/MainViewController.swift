@@ -31,6 +31,12 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let gestureQuote = UIPanGestureRecognizer(target: self, action: Selector("dragQuoteLabel:"))
+        let gestureAuthor = UIPanGestureRecognizer(target: self, action: Selector("dragAuthorLabel:"))
+        chosenQuoteLabel.addGestureRecognizer(gestureQuote)
+        chosenQuoteLabel.userInteractionEnabled = true
+        chosenAuthorLabel.addGestureRecognizer(gestureAuthor)
+        chosenAuthorLabel.userInteractionEnabled = true
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -108,6 +114,18 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         self.toolbar.hidden = false
         
         return quoto
+    }
+    
+    func dragQuoteLabel(gesture: UIPanGestureRecognizer) {
+        let translation = gesture.translationInView(self.view)
+        let label = chosenQuoteLabel
+        label.center = CGPoint(x: self.view.bounds.width / 2 + translation.x, y: 150 + translation.y)
+    }
+    
+    func dragAuthorLabel(gesture: UIPanGestureRecognizer) {
+        let translation = gesture.translationInView(self.view)
+        let label = chosenAuthorLabel
+        label.center = CGPoint(x: 350 + translation.x, y: 300 + translation.y)
     }
     
     // MARK: IBActions
