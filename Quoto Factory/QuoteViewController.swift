@@ -10,6 +10,8 @@ import UIKit
 
 class QuoteViewController: UIViewController {
     
+    var newQuoto: NewQuoto!
+    
     var activityIndicator = UIActivityIndicatorView()
 
     @IBOutlet weak var quoteLabel: UILabel!
@@ -19,6 +21,7 @@ class QuoteViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
         getQuote("", isQOD: true)
     }
 
@@ -121,6 +124,11 @@ class QuoteViewController: UIViewController {
         task.resume()
     }
 
+    @IBAction func selectQuote(sender: UIButton) {
+        self.newQuoto.quotoQuote = self.quoteLabel.text!
+        self.newQuoto.quotoAuthor = self.authorLabel.text!
+        self.performSegueWithIdentifier("segueToMainVC", sender: self)
+    }
     
     @IBAction func getQOD(sender: UIButton) {
         getQuote("", isQOD: true)
@@ -154,14 +162,11 @@ class QuoteViewController: UIViewController {
         getQuote("management", isQOD: false)
     }
 
-    /*
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        let controller = segue.destinationViewController as! MainViewController
+        controller.newQuoto = self.newQuoto
     }
-    */
 
 }

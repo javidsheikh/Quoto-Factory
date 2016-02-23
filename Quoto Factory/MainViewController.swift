@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainViewController.swift
 //  Quoto Factory
 //
 //  Created by Javid Sheikh on 23/02/2016.
@@ -8,10 +8,14 @@
 
 import UIKit
 
-class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class MainViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    var newQuoto: NewQuoto!
     
     // MARK: IBOutlets
     @IBOutlet weak var chosenImageView: UIImageView!
+    @IBOutlet weak var chosenQuoteLabel: UILabel!
+    @IBOutlet weak var chosenAuthorLabel: UILabel!
     
     @IBOutlet weak var actionButton: UIBarButtonItem!
     @IBOutlet weak var cancelButton: UIBarButtonItem!
@@ -26,6 +30,20 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
     
     override func viewWillAppear(animated: Bool) {
+
+        if self.newQuoto == nil {
+            self.chosenQuoteLabel.hidden = true
+            self.chosenAuthorLabel.hidden = true
+        } else {
+            self.chosenImageView.image = self.newQuoto.quotoImage
+            
+            self.chosenQuoteLabel.hidden = false
+            self.chosenQuoteLabel.text = self.newQuoto.quotoQuote
+            
+            self.chosenAuthorLabel.hidden = false
+            self.chosenAuthorLabel.text = self.newQuoto.quotoAuthor
+        }
+        
         // Disable camera button if camera not available
         self.cameraButton.enabled = UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera)
         
@@ -51,11 +69,19 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             return
         }
         self.chosenImageView.image = image
+        newQuoto = NewQuoto(quotoImage: image, quotoQuote: "", quotoAuthor: "")
+        print(newQuoto.quotoImage)
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
     func imagePickerControllerDidCancel(picker: UIImagePickerController) {
         self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    // MARK: navigation
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let controller = segue.destinationViewController as! QuoteViewController
+        controller.newQuoto = self.newQuoto
     }
     
     // MARK: IBActions

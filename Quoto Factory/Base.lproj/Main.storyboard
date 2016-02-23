@@ -6,10 +6,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Quoto_Factory" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="Quoto_Factory" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -75,6 +75,22 @@
                                     <action selector="chooseQuote:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xnl-pv-b8e"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ca-bN-p9T">
+                                <rect key="frame" x="20" y="134" width="335" height="221"/>
+                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2go-dg-nzJ">
+                                <rect key="frame" x="101" y="363" width="240" height="36"/>
+                                <fontDescription key="fontDescription" name="GillSans-BoldItalic" family="Gill Sans" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -99,7 +115,9 @@
                         <outlet property="cameraButton" destination="xmg-5J-cNZ" id="eho-ch-QzU"/>
                         <outlet property="cancelButton" destination="C4w-Ze-R3Z" id="9dD-Th-I7E"/>
                         <outlet property="chooseQuoteButton" destination="2KS-jP-eeY" id="ZM5-t5-yPE"/>
+                        <outlet property="chosenAuthorLabel" destination="2go-dg-nzJ" id="0xj-uL-GMA"/>
                         <outlet property="chosenImageView" destination="Qto-Q3-pLs" id="YNR-FM-Thu"/>
+                        <outlet property="chosenQuoteLabel" destination="2Ca-bN-p9T" id="UgA-Uc-Rf1"/>
                         <segue destination="diu-E6-Dbc" kind="show" identifier="segueToQuoteVC" id="nyj-sJ-7ej"/>
                     </connections>
                 </viewController>
@@ -186,6 +204,13 @@
                                     <action selector="getManagementQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="WaF-50-1Zg"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gPr-L0-znj">
+                                <rect key="frame" x="122" y="369" width="130" height="30"/>
+                                <state key="normal" title="Select This Quote?"/>
+                                <connections>
+                                    <action selector="selectQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="Cb0-kb-Aj8"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TlP-EL-Qzp">
                                 <rect key="frame" x="241" y="533" width="33" height="30"/>
                                 <state key="normal" title="Love"/>
@@ -208,6 +233,7 @@
                     <connections>
                         <outlet property="authorLabel" destination="eLC-EU-Fkp" id="oby-3V-5Uz"/>
                         <outlet property="quoteLabel" destination="bE9-YW-gF7" id="HKy-kQ-sy7"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="segueToMainVC" id="38Z-UM-jSX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="og1-rf-od4" userLabel="First Responder" sceneMemberID="firstResponder"/>
