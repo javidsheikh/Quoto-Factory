@@ -19,7 +19,6 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     @IBOutlet weak var imageSubView: UIView!
     @IBOutlet weak var chosenImageView: UIImageView!
     @IBOutlet weak var chosenQuoteLabel: UILabel!
-    @IBOutlet weak var chosenAuthorLabel: UILabel!
     
     @IBOutlet weak var actionButton: UIBarButtonItem!
     @IBOutlet weak var cancelButton: UIBarButtonItem!
@@ -33,11 +32,8 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         // Do any additional setup after loading the view, typically from a nib.
         
         let gestureQuote = UIPanGestureRecognizer(target: self, action: Selector("dragQuoteLabel:"))
-        let gestureAuthor = UIPanGestureRecognizer(target: self, action: Selector("dragAuthorLabel:"))
         chosenQuoteLabel.addGestureRecognizer(gestureQuote)
         chosenQuoteLabel.userInteractionEnabled = true
-        chosenAuthorLabel.addGestureRecognizer(gestureAuthor)
-        chosenAuthorLabel.userInteractionEnabled = true
         
         let pinchGesture = UIPinchGestureRecognizer(target: self, action: Selector("resizeText:"))
         self.view.addGestureRecognizer(pinchGesture)
@@ -47,15 +43,11 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
 
         if self.newQuoto == nil {
             self.chosenQuoteLabel.hidden = true
-            self.chosenAuthorLabel.hidden = true
         } else {
             self.chosenImageView.image = self.newQuoto.quotoImage
             
             self.chosenQuoteLabel.hidden = false
-            self.chosenQuoteLabel.text = self.newQuoto.quotoQuote
-            
-            self.chosenAuthorLabel.hidden = false
-            self.chosenAuthorLabel.text = self.newQuoto.quotoAuthor
+            self.chosenQuoteLabel.text = "\(self.newQuoto.quotoQuote) - \(self.newQuoto.quotoAuthor)"
         }
         
         // Disable camera button if camera not available
@@ -124,13 +116,7 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     func dragQuoteLabel(gesture: UIPanGestureRecognizer) {
         let translation = gesture.translationInView(self.view)
         let label = chosenQuoteLabel
-        label.center = CGPoint(x: self.view.bounds.width / 2 + translation.x, y: 150 + translation.y)
-    }
-    
-    func dragAuthorLabel(gesture: UIPanGestureRecognizer) {
-        let translation = gesture.translationInView(self.view)
-        let label = chosenAuthorLabel
-        label.center = CGPoint(x: 350 + translation.x, y: 300 + translation.y)
+        label.center = CGPoint(x: self.view.bounds.width / 2 + translation.x, y: self.view.bounds.height / 2 + translation.y)
     }
     
     func resizeText(pinchGesture: UIPinchGestureRecognizer) {
@@ -153,7 +139,6 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     @IBAction func restartQuoto(sender: UIBarButtonItem) {
         self.chosenImageView.image = UIImage(named: "Cat_Placeholder.jpg")
         self.chosenQuoteLabel.text = ""
-        self.chosenAuthorLabel.text = ""
         self.newQuoto = nil
     }
     

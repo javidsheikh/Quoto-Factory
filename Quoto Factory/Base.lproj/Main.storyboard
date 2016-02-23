@@ -27,20 +27,12 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G0u-Oh-KuA" userLabel="Label Subview">
-                                <rect key="frame" x="0.0" y="114" width="375" height="305"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G0u-Oh-KuA" userLabel="Label Subview">
+                                <rect key="frame" x="-4" y="60" width="383" height="563"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ca-bN-p9T">
-                                        <rect key="frame" x="20" y="20" width="335" height="221"/>
+                                        <rect key="frame" x="24" y="8" width="334" height="547"/>
                                         <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="26"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                        <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                        <size key="shadowOffset" width="1" height="1"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2go-dg-nzJ">
-                                        <rect key="frame" x="101" y="249" width="240" height="36"/>
-                                        <fontDescription key="fontDescription" name="GillSans-BoldItalic" family="Gill Sans" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                         <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -102,10 +94,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="WFv-h2-J0g" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="HIh-9e-ktb"/>
+                            <constraint firstItem="bCo-cS-Ljr" firstAttribute="top" secondItem="G0u-Oh-KuA" secondAttribute="bottom" id="KKf-5J-Q2N"/>
+                            <constraint firstItem="G0u-Oh-KuA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="KZa-Pz-Nar"/>
                             <constraint firstAttribute="trailingMargin" secondItem="bCo-cS-Ljr" secondAttribute="trailing" constant="-20" id="OsS-AK-9NS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="G0u-Oh-KuA" secondAttribute="trailing" constant="-20" id="dQf-wJ-rj2"/>
                             <constraint firstItem="WFv-h2-J0g" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="f86-Lu-A33"/>
                             <constraint firstItem="bCo-cS-Ljr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="fHU-Ed-7Kw"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bCo-cS-Ljr" secondAttribute="bottom" id="lJ5-av-7WR"/>
+                            <constraint firstItem="G0u-Oh-KuA" firstAttribute="top" secondItem="WFv-h2-J0g" secondAttribute="bottom" id="yd0-Pr-Ibt"/>
                             <constraint firstAttribute="trailingMargin" secondItem="WFv-h2-J0g" secondAttribute="trailing" constant="-20" id="zHt-7N-2H3"/>
                         </constraints>
                     </view>
@@ -116,7 +112,6 @@
                         <outlet property="cameraButton" destination="xmg-5J-cNZ" id="eho-ch-QzU"/>
                         <outlet property="cancelButton" destination="C4w-Ze-R3Z" id="9dD-Th-I7E"/>
                         <outlet property="chooseQuoteButton" destination="XcF-kI-9hU" id="6dZ-fn-F9C"/>
-                        <outlet property="chosenAuthorLabel" destination="2go-dg-nzJ" id="0xj-uL-GMA"/>
                         <outlet property="chosenImageView" destination="Qto-Q3-pLs" id="YNR-FM-Thu"/>
                         <outlet property="chosenQuoteLabel" destination="2Ca-bN-p9T" id="UgA-Uc-Rf1"/>
                         <outlet property="imageSubView" destination="xMh-LJ-Jfu" id="iTG-1l-9oM"/>
