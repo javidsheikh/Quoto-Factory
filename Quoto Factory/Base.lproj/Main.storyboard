@@ -120,6 +120,8 @@
                         <outlet property="chosenImageView" destination="Qto-Q3-pLs" id="YNR-FM-Thu"/>
                         <outlet property="chosenQuoteLabel" destination="2Ca-bN-p9T" id="UgA-Uc-Rf1"/>
                         <outlet property="imageSubView" destination="xMh-LJ-Jfu" id="iTG-1l-9oM"/>
+                        <outlet property="navigationBar" destination="WFv-h2-J0g" id="bU7-PN-NLm"/>
+                        <outlet property="toolbar" destination="bCo-cS-Ljr" id="rHO-QV-gi0"/>
                         <segue destination="diu-E6-Dbc" kind="show" identifier="segueToQuoteVC" id="nyj-sJ-7ej"/>
                     </connections>
                 </viewController>

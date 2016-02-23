@@ -13,6 +13,9 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     var newQuoto: NewQuoto!
     
     // MARK: IBOutlets
+    @IBOutlet weak var navigationBar: UINavigationBar!
+    @IBOutlet weak var toolbar: UIToolbar!
+    
     @IBOutlet weak var imageSubView: UIView!
     @IBOutlet weak var chosenImageView: UIImageView!
     @IBOutlet weak var chosenQuoteLabel: UILabel!
@@ -92,15 +95,30 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         controller.newQuoto = self.newQuoto
     }
     
+    // MARK: generate quoto function
+    func generateQuoto() -> UIImage {
+        self.navigationBar.hidden = true
+        self.toolbar.hidden = true
+        
+        UIGraphicsBeginImageContext(self.view.frame.size)
+        self.view.drawViewHierarchyInRect(self.view.frame, afterScreenUpdates: true)
+        let quoto: UIImage = UIGraphicsGetImageFromCurrentImageContext()
+        
+        self.navigationBar.hidden = false
+        self.toolbar.hidden = false
+        
+        return quoto
+    }
+    
     // MARK: IBActions
     @IBAction func actionQuoto(sender: UIBarButtonItem) {
-        let image = self.chosenImageView.image!
+        let image = self.generateQuoto()
         let controller = UIActivityViewController(activityItems: [image], applicationActivities: nil)
-        controller.completionWithItemsHandler = { activity, completed, items, error -> Void in
-            if completed {
-                self.dismissViewControllerAnimated(true, completion: nil)
-            }
-        }
+//        controller.completionWithItemsHandler = { activity, completed, items, error -> Void in
+//            if completed {
+//                self.dismissViewControllerAnimated(true, completion: nil)
+//            }
+//        }
         self.presentViewController(controller, animated: true, completion: nil)
     }
     
