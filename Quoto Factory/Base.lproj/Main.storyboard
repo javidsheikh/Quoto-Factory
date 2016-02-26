@@ -178,6 +178,13 @@
                                     <action selector="getSportsQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="8JV-Es-frq"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uMI-lH-Dm7">
+                                <rect key="frame" x="209" y="555" width="90" height="30"/>
+                                <state key="normal" title="Management"/>
+                                <connections>
+                                    <action selector="getManagementQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="WaF-50-1Zg"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TlP-EL-Qzp">
                                 <rect key="frame" x="241" y="502" width="33" height="30"/>
                                 <state key="normal" title="Love"/>
@@ -186,8 +193,12 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dGp-WH-Q4a">
-                                <rect key="frame" x="89" y="103" width="33" height="30"/>
-                                <state key="normal" title="Luck"/>
+                                <rect key="frame" x="29" y="101" width="157" height="34"/>
+                                <color key="backgroundColor" red="0.91452323717948714" green="0.57453248183314665" blue="0.33089454894881065" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="Luck">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="getLuckyQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="QOF-YW-YpJ"/>
                                 </connections>
@@ -228,8 +239,12 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LQB-TJ-pNo">
-                                <rect key="frame" x="228" y="103" width="58" height="30"/>
-                                <state key="normal" title="Success"/>
+                                <rect key="frame" x="194" y="101" width="161" height="34"/>
+                                <color key="backgroundColor" red="0.1566788459" green="0.26117318049999999" blue="0.68784054490000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="Success">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="getSuccessQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="WAL-Vh-d89"/>
                                 </connections>
@@ -283,25 +298,25 @@
                                     <action selector="getStrengthQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="nLn-1M-XH7"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RDc-9X-8GA">
-                                <rect key="frame" x="71" y="52" width="69" height="30"/>
-                                <state key="normal" title="Challenge"/>
-                                <connections>
-                                    <action selector="getChallengeQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="2md-Lg-XoM"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ESF-we-kAr">
-                                <rect key="frame" x="226" y="52" width="60" height="30"/>
-                                <state key="normal" title="Patience"/>
+                                <rect key="frame" x="147" y="40" width="208" height="53"/>
+                                <color key="backgroundColor" red="1" green="0.061297976740000003" blue="0.09092549942" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="Patience">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="getPatienceQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="ta9-1o-uG8"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uMI-lH-Dm7">
-                                <rect key="frame" x="209" y="555" width="90" height="30"/>
-                                <state key="normal" title="Management"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RDc-9X-8GA">
+                                <rect key="frame" x="29" y="40" width="110" height="53"/>
+                                <color key="backgroundColor" red="0.23428056550000001" green="0.62427884619999996" blue="0.38189505070000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Challenge">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
-                                    <action selector="getManagementQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="WaF-50-1Zg"/>
+                                    <action selector="getChallengeQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="2md-Lg-XoM"/>
                                 </connections>
                             </button>
                         </subviews>
