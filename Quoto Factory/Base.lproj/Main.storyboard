@@ -283,6 +283,20 @@
                                     <action selector="getStrengthQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="nLn-1M-XH7"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RDc-9X-8GA">
+                                <rect key="frame" x="71" y="52" width="69" height="30"/>
+                                <state key="normal" title="Challenge"/>
+                                <connections>
+                                    <action selector="getChallengeQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="2md-Lg-XoM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ESF-we-kAr">
+                                <rect key="frame" x="226" y="52" width="60" height="30"/>
+                                <state key="normal" title="Patience"/>
+                                <connections>
+                                    <action selector="getPatienceQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="ta9-1o-uG8"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uMI-lH-Dm7">
                                 <rect key="frame" x="209" y="555" width="90" height="30"/>
                                 <state key="normal" title="Management"/>
@@ -316,7 +330,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V1B-LG-Ngk">
-                                <rect key="frame" x="20" y="81" width="335" height="214"/>
+                                <rect key="frame" x="20" y="113" width="335" height="182"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -348,12 +362,19 @@
                                     <action selector="backToCategories:" destination="sDC-Lz-L92" eventType="touchUpInside" id="FIx-zj-uRD"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QyO-j9-dbg">
+                                <rect key="frame" x="20" y="38" width="335" height="45"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="authorLabel" destination="0hJ-SV-M0N" id="fOq-SV-2sW"/>
+                        <outlet property="categoryLabel" destination="QyO-j9-dbg" id="e4l-3o-4GN"/>
                         <outlet property="quoteLabel" destination="V1B-LG-Ngk" id="klB-lw-TO5"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="segueToMainVC" id="tsc-uo-9Us"/>
                         <segue destination="diu-E6-Dbc" kind="show" identifier="segueBackToQuoteVC" id="og7-3h-HUm"/>

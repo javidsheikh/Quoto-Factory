@@ -14,6 +14,7 @@ class QuoteDetailViewController: UIViewController {
     
     var activityIndicator = UIActivityIndicatorView()
 
+    @IBOutlet weak var categoryLabel: UILabel!
     @IBOutlet weak var quoteLabel: UILabel!
     @IBOutlet weak var authorLabel: UILabel!
     
@@ -21,7 +22,7 @@ class QuoteDetailViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        self.title = self.newQuoto.quotoCategory.capitalizedString
+        self.categoryLabel.text = self.newQuoto.quotoCategory.capitalizedString
         print(self.newQuoto.quotoCategory)
         getQuote(self.newQuoto.quotoCategory)
     }

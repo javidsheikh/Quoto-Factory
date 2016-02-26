@@ -23,6 +23,17 @@ class QuoteViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func getChallengeQuote(sender: UIButton) {
+        self.newQuoto.quotoCategory = "challenge"
+        self.performSegueWithIdentifier("segueToQuoteDetailVC", sender: self)
+    }
+    
+    @IBAction func getPatienceQuote(sender: UIButton) {
+        self.newQuoto.quotoCategory = "patience"
+        self.performSegueWithIdentifier("segueToQuoteDetailVC", sender: self)
+    }
+    
+    
     @IBAction func getLuckyQuote(sender: UIButton) {
         self.newQuoto.quotoCategory = "lucky"
         self.performSegueWithIdentifier("segueToQuoteDetailVC", sender: self)
