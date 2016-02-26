@@ -97,28 +97,43 @@ class QuoteViewController: UIViewController {
     
     @IBAction func getFunnyQuote(sender: UIButton) {
         self.newQuoto.quotoCategory = "funny"
-        self.performSegueWithIdentifier("segueToQuoteDetailVC", sender: self)    }
+        self.performSegueWithIdentifier("segueToQuoteDetailVC", sender: self)
+    }
     
     @IBAction func getInspirationalQuote(sender: UIButton) {
         self.newQuoto.quotoCategory = "inspirational"
-        self.performSegueWithIdentifier("segueToQuoteDetailVC", sender: self)    }
+        self.performSegueWithIdentifier("segueToQuoteDetailVC", sender: self)
+    }
     
     @IBAction func getLifeQuote(sender: UIButton) {
         self.newQuoto.quotoCategory = "life"
-        self.performSegueWithIdentifier("segueToQuoteDetailVC", sender: self)    }
+        self.performSegueWithIdentifier("segueToQuoteDetailVC", sender: self)
+    }
     
     @IBAction func getLoveQuote(sender: UIButton) {
         self.newQuoto.quotoCategory = "love"
-        self.performSegueWithIdentifier("segueToQuoteDetailVC", sender: self)    }
+        self.performSegueWithIdentifier("segueToQuoteDetailVC", sender: self)
+    }
     
     @IBAction func getSportsQuote(sender: UIButton) {
         self.newQuoto.quotoCategory = "sports"
-        self.performSegueWithIdentifier("segueToQuoteDetailVC", sender: self)    }
+        self.performSegueWithIdentifier("segueToQuoteDetailVC", sender: self)
+    }
     
     @IBAction func getManagementQuote(sender: UIButton) {
         self.newQuoto.quotoCategory = "management"
-        self.performSegueWithIdentifier("segueToQuoteDetailVC", sender: self)    }
+        self.performSegueWithIdentifier("segueToQuoteDetailVC", sender: self)
+    }
 
+    @IBAction func getAngerQuote(sender: UIButton) {
+        self.newQuoto.quotoCategory = "anger"
+        self.performSegueWithIdentifier("segueToQuoteDetailVC", sender: self)
+    }
+    
+    @IBAction func getStrengthQuote(sender: UIButton) {
+        self.newQuoto.quotoCategory = "strength"
+        self.performSegueWithIdentifier("segueToQuoteDetailVC", sender: self)
+    }
     // MARK: - Navigation
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
