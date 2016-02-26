@@ -77,7 +77,7 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         self.chosenImageView.image = image
         self.view.sendSubviewToBack(imageSubView)
         if self.newQuoto == nil {
-            newQuoto = NewQuoto(quotoImage: image, quotoQuote: "", quotoAuthor: "")
+            newQuoto = NewQuoto(quotoImage: image, quotoQuote: "", quotoAuthor: "", quotoCategory: "")
         } else {
             self.newQuoto.quotoImage = image
         }
@@ -92,7 +92,7 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let controller = segue.destinationViewController as! QuoteViewController
         if self.newQuoto == nil {
-            self.newQuoto = NewQuoto(quotoImage: self.chosenImageView.image!, quotoQuote: "", quotoAuthor: "")
+            self.newQuoto = NewQuoto(quotoImage: self.chosenImageView.image!, quotoQuote: "", quotoAuthor: "", quotoCategory: "")
         }
         controller.newQuoto = self.newQuoto
     }

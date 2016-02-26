@@ -249,6 +249,7 @@
                     <connections>
                         <outlet property="authorLabel" destination="0hJ-SV-M0N" id="fOq-SV-2sW"/>
                         <outlet property="quoteLabel" destination="V1B-LG-Ngk" id="klB-lw-TO5"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="segueToMainVC" id="tsc-uo-9Us"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gVH-lL-af6" userLabel="First Responder" sceneMemberID="firstResponder"/>
