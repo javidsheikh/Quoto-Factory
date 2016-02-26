@@ -16,7 +16,8 @@ class QuoteViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-
+        let navController = navigationController as! NavigationController
+        self.newQuoto = navController.newQuoto
     }
 
     override func didReceiveMemoryWarning() {

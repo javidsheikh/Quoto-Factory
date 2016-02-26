@@ -117,12 +117,12 @@
                         <outlet property="imageSubView" destination="xMh-LJ-Jfu" id="iTG-1l-9oM"/>
                         <outlet property="navigationBar" destination="WFv-h2-J0g" id="bU7-PN-NLm"/>
                         <outlet property="toolbar" destination="bCo-cS-Ljr" id="rHO-QV-gi0"/>
-                        <segue destination="diu-E6-Dbc" kind="show" identifier="segueToQuoteVC" id="nyj-sJ-7ej"/>
+                        <segue destination="TIA-8v-ubB" kind="show" identifier="segueToQuoteVC" id="M0N-wu-N8U"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="829.5" y="456.5"/>
+            <point key="canvasLocation" x="1381.5" y="456.5"/>
         </scene>
         <!--Quote View Controller-->
         <scene sceneID="thq-0v-9Y5">
@@ -195,6 +195,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="y5R-AI-B6z"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <segue destination="sDC-Lz-L92" kind="show" identifier="segueToQuoteDetailVC" id="ppW-YX-Wxj"/>
@@ -202,7 +203,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="og1-rf-od4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1404.5" y="456.5"/>
+            <point key="canvasLocation" x="2466.5" y="456.5"/>
         </scene>
         <!--Quote Detail View Controller-->
         <scene sceneID="c9L-bf-CKG">
@@ -254,7 +255,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gVH-lL-af6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1931.5" y="456.5"/>
+            <point key="canvasLocation" x="2946.5" y="456.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="EGe-KH-Yvr">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TIA-8v-ubB" customClass="NavigationController" customModule="Quoto_Factory" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="T0n-Dl-ngz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="diu-E6-Dbc" kind="relationship" relationship="rootViewController" id="CLH-Jv-kX5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yes-UU-zMt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1925.5" y="456.5"/>
         </scene>
     </scenes>
     <resources>

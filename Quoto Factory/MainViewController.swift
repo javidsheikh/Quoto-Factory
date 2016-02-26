@@ -90,7 +90,7 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     
     // MARK: navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let controller = segue.destinationViewController as! QuoteViewController
+        let controller = segue.destinationViewController as! NavigationController
         if self.newQuoto == nil {
             self.newQuoto = NewQuoto(quotoImage: self.chosenImageView.image!, quotoQuote: "", quotoAuthor: "", quotoCategory: "")
         }

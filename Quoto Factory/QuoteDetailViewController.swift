@@ -21,6 +21,7 @@ class QuoteDetailViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.title = self.newQuoto.quotoCategory.capitalizedString
         print(self.newQuoto.quotoCategory)
         getQuote(self.newQuoto.quotoCategory)
     }
