@@ -158,10 +158,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eUT-eU-cGS">
-                                <rect key="frame" x="234" y="471" width="46" height="30"/>
-                                <state key="normal" title="Inspire"/>
+                                <rect key="frame" x="215" y="471" width="84" height="30"/>
+                                <state key="normal" title="Inspirational"/>
                                 <connections>
-                                    <action selector="getInspireQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="3oB-Hf-c2C"/>
+                                    <action selector="getInspirationalQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="qrT-k3-n74"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OS4-QT-L7Q">
@@ -190,6 +190,90 @@
                                 <state key="normal" title="Love"/>
                                 <connections>
                                     <action selector="getLoveQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="AVg-DQ-L9U"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dGp-WH-Q4a">
+                                <rect key="frame" x="89" y="103" width="33" height="30"/>
+                                <state key="normal" title="Luck"/>
+                                <connections>
+                                    <action selector="getLuckyQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="QOF-YW-YpJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z2z-z5-wOu">
+                                <rect key="frame" x="83" y="150" width="44" height="30"/>
+                                <state key="normal" title="Family"/>
+                                <connections>
+                                    <action selector="getFamilyQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="dyh-Z4-HHQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zex-Q0-IDr">
+                                <rect key="frame" x="75" y="193" width="61" height="30"/>
+                                <state key="normal" title="Ambition"/>
+                                <connections>
+                                    <action selector="getAmbitionQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="vNh-Gm-xP2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WJK-EK-FiI">
+                                <rect key="frame" x="72" y="243" width="67" height="30"/>
+                                <state key="normal" title="Literature"/>
+                                <connections>
+                                    <action selector="getLiteratureQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="l5s-qC-qlL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EGj-6S-EP7">
+                                <rect key="frame" x="63" y="293" width="84" height="30"/>
+                                <state key="normal" title="Motivational"/>
+                                <connections>
+                                    <action selector="getMotivationalQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="jZM-nO-Nww"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sxl-Nb-e99">
+                                <rect key="frame" x="80" y="352" width="56" height="30"/>
+                                <state key="normal" title="Wisdom"/>
+                                <connections>
+                                    <action selector="getWisdomQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="5Q6-y9-mwS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MSR-Lh-m0n">
+                                <rect key="frame" x="231" y="150" width="51" height="30"/>
+                                <state key="normal" title="Friends"/>
+                                <connections>
+                                    <action selector="getFriendsQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="403-EH-OEB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wRk-gv-7wZ">
+                                <rect key="frame" x="233" y="193" width="46" height="30"/>
+                                <state key="normal" title="Career"/>
+                                <connections>
+                                    <action selector="getCareerQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="LBP-6G-B2h"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7FI-ba-zUv">
+                                <rect key="frame" x="218" y="243" width="76" height="30"/>
+                                <state key="normal" title="Philosophy"/>
+                                <connections>
+                                    <action selector="getPhilosophyQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="KES-fZ-Q4c"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="56x-Jd-QAW">
+                                <rect key="frame" x="224" y="293" width="64" height="30"/>
+                                <state key="normal" title="Adversity"/>
+                                <connections>
+                                    <action selector="getAdversityQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="G9u-Av-1m1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6oT-wJ-KJx">
+                                <rect key="frame" x="224" y="352" width="68" height="30"/>
+                                <state key="normal" title="Memories"/>
+                                <connections>
+                                    <action selector="getMemoriesQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="tC1-cc-WlZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LQB-TJ-pNo">
+                                <rect key="frame" x="228" y="103" width="58" height="30"/>
+                                <state key="normal" title="Success"/>
+                                <connections>
+                                    <action selector="getSuccessQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="WAL-Vh-d89"/>
                                 </connections>
                             </button>
                         </subviews>
