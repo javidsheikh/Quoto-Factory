@@ -143,12 +143,21 @@ class QuoteDetailViewController: UIViewController {
         getQuote(self.newQuoto.quotoCategory)
     }
     
+    @IBAction func backToCategories(sender: UIButton) {
+        self.performSegueWithIdentifier("segueBackToQuoteVC", sender: self)
+    }
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let controller = segue.destinationViewController as! MainViewController
-        controller.newQuoto = self.newQuoto
+        if segue.identifier == "segueToMainVC" {
+            let controller = segue.destinationViewController as! MainViewController
+            controller.newQuoto = self.newQuoto
+        }
+        if segue.identifier == "segueBackToQuoteVC" {
+            let controller = segue.destinationViewController as! QuoteViewController
+            controller.newQuoto = self.newQuoto
+        }
     }
 
 
