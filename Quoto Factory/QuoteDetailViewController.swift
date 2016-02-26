@@ -112,8 +112,14 @@ class QuoteDetailViewController: UIViewController {
                 return
             }
         
-            guard let quote = contentsDictionary["quote"] as? String, author = contentsDictionary["author"] as? String else {
-                displayError("Unable to find keys 'quote' and 'author' in quotesObject")
+            guard let quote = contentsDictionary["quote"] as? String else {
+                displayError("Unable to find key 'quote' in contentsDictionary")
+                return
+            }
+            
+            guard let author = contentsDictionary["author"] as? String else {
+                displayError("Unable to find key 'author' in contentsDictionary")
+                self.authorLabel.text = "Anon"
                 return
             }
                     
