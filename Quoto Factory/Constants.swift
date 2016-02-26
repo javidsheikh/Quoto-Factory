@@ -9,9 +9,10 @@
 struct Constants {
     
     struct TheySaidSo {
-        static let APIBaseURL = "http://quotes.rest/qod"
-        static let QODExtension = ".json"
-        static let CategoryExtension = ".json?category="
+        static let APIBaseURL = "http://quotes.rest/quote"
+        static let RandomExtension = ".json"
+        static let CategoryExtension = ".json?maxlength=250&category="
+        static let APIKey = "api_key=2zU2p77WwotHEbrDYncCfQeF"
     }
     
 }

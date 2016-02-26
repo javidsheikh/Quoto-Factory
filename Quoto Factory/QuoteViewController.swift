@@ -13,16 +13,12 @@ class QuoteViewController: UIViewController {
     var newQuoto: NewQuoto!
     
     var activityIndicator = UIActivityIndicatorView()
-
-    @IBOutlet weak var quoteLabel: UILabel!
-    @IBOutlet weak var authorLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
-        getQuote("", isQOD: true)
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -47,16 +43,16 @@ class QuoteViewController: UIViewController {
         }
     }
     
-    private func getQuote(category: String, isQOD: Bool) {
+    private func getQuote(category: String, isRandom: Bool) {
         
         self.enableUI(false)
         
         var urlString: String
         
-        if isQOD {
-            urlString = Constants.TheySaidSo.APIBaseURL + Constants.TheySaidSo.QODExtension
+        if isRandom {
+            urlString = Constants.TheySaidSo.APIBaseURL + Constants.TheySaidSo.RandomExtension + "?" + Constants.TheySaidSo.APIKey
         } else {
-            urlString = Constants.TheySaidSo.APIBaseURL + Constants.TheySaidSo.CategoryExtension + category
+            urlString = Constants.TheySaidSo.APIBaseURL + Constants.TheySaidSo.CategoryExtension + category + "&" + Constants.TheySaidSo.APIKey
         }
         
         let session = NSURLSession.sharedSession()
@@ -101,71 +97,70 @@ class QuoteViewController: UIViewController {
             }
             
             /* GUARD: Are the "photos" and "photo" keys in our result? */
-            guard let contentsDictionary = parsedResult["contents"] as? [String:AnyObject], quotesArray = contentsDictionary["quotes"] as? [[String:AnyObject]] else {
+            guard let contentsDictionary = parsedResult["contents"] as? [String:AnyObject] else {
                 displayError("Cannot find keys 'contents' and 'quotes' in \(parsedResult)")
                 return
             }
             
-            let quoteObject = quotesArray[0]
-            
-            guard let quote = quoteObject["quote"] as? String, author = quoteObject["author"] as? String else {
+            guard let quote = contentsDictionary["quote"] as? String, author = contentsDictionary["author"] as? String else {
                 displayError("Unable to find keys 'quote' and 'author' in quotesObject")
                 return
             }
             
+            print(quote)
+            print(author)
+            self.newQuoto.quotoQuote = quote
+            self.newQuoto.quotoAuthor = author
+            
             dispatch_async(dispatch_get_main_queue(), { () -> Void in
                 
                 self.enableUI(true)
-                self.quoteLabel.text = quote
-                self.authorLabel.text = author
+
             })
             
         }
         task.resume()
+
     }
 
-    @IBAction func selectQuote(sender: UIButton) {
-        self.newQuoto.quotoQuote = self.quoteLabel.text!
-        self.newQuoto.quotoAuthor = self.authorLabel.text!
-        self.performSegueWithIdentifier("segueToMainVC", sender: self)
-    }
     
-    @IBAction func getQOD(sender: UIButton) {
-        getQuote("", isQOD: true)
+    @IBAction func getRandom(sender: UIButton) {
+        getQuote("", isRandom: true)
+        self.performSegueWithIdentifier("segueToQuoteDetailVC", sender: self)
     }
     
     @IBAction func getArtQuote(sender: UIButton) {
-        getQuote("art", isQOD: false)
+        getQuote("art", isRandom: false)
     }
     
     @IBAction func getFunnyQuote(sender: UIButton) {
-        getQuote("funny", isQOD: false)
+        getQuote("funny", isRandom: false)
     }
     
     @IBAction func getInspireQuote(sender: UIButton) {
-        getQuote("inspire", isQOD: false)
+        getQuote("inspire", isRandom: false)
     }
     
     @IBAction func getLifeQuote(sender: UIButton) {
-        getQuote("life", isQOD: false)
+        getQuote("life", isRandom: false)
     }
     
     @IBAction func getLoveQuote(sender: UIButton) {
-        getQuote("love", isQOD: false)
+        getQuote("love", isRandom: false)
     }
     
     @IBAction func getSportsQuote(sender: UIButton) {
-        getQuote("sports", isQOD: false)
+        getQuote("sports", isRandom: false)
     }
     
     @IBAction func getManagementQuote(sender: UIButton) {
-        getQuote("management", isQOD: false)
+        getQuote("management", isRandom: false)
     }
 
     // MARK: - Navigation
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let controller = segue.destinationViewController as! MainViewController
+        let controller = segue.destinationViewController as! QuoteDetailViewController
         controller.newQuoto = self.newQuoto
     }
 

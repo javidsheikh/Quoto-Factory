@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F99D0A331C80A7D90070E613 /* QuoteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99D0A321C80A7D90070E613 /* QuoteDetailViewController.swift */; };
 		F9AC1A8B1C7C76290098A476 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AC1A8A1C7C76290098A476 /* AppDelegate.swift */; };
 		F9AC1A8D1C7C76290098A476 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AC1A8C1C7C76290098A476 /* MainViewController.swift */; };
 		F9AC1A901C7C76290098A476 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9AC1A8E1C7C76290098A476 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F99D0A321C80A7D90070E613 /* QuoteDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoteDetailViewController.swift; sourceTree = "<group>"; };
 		F9AC1A871C7C76290098A476 /* Quoto Factory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quoto Factory.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9AC1A8A1C7C76290098A476 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9AC1A8C1C7C76290098A476 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 				F9AC1A8A1C7C76290098A476 /* AppDelegate.swift */,
 				F9AC1A8C1C7C76290098A476 /* MainViewController.swift */,
 				F9AC1A9C1C7C824D0098A476 /* QuoteViewController.swift */,
+				F99D0A321C80A7D90070E613 /* QuoteDetailViewController.swift */,
 				F9AC1A9E1C7C847E0098A476 /* Constants.swift */,
 				F9AC1AA01C7CA4310098A476 /* NewQuoto.swift */,
 				F9AC1A8E1C7C76290098A476 /* Main.storyboard */,
@@ -148,6 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F99D0A331C80A7D90070E613 /* QuoteDetailViewController.swift in Sources */,
 				F9AC1A9D1C7C824D0098A476 /* QuoteViewController.swift in Sources */,
 				F9AC1A8D1C7C76290098A476 /* MainViewController.swift in Sources */,
 				F9AC1A8B1C7C76290098A476 /* AppDelegate.swift in Sources */,
@@ -300,6 +304,7 @@
 				F9AC1A9B1C7C76290098A476 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
