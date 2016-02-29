@@ -138,8 +138,8 @@
                         <subviews>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yXq-dQ-TZA">
                                 <rect key="frame" x="20" y="402" width="193" height="38"/>
-                                <color key="backgroundColor" red="0.65098039220000004" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <color key="backgroundColor" red="1" green="0.48145839499999998" blue="0.015686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
                                 <state key="normal" title="Random">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -149,10 +149,10 @@
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z0Q-04-6ng">
                                 <rect key="frame" x="20" y="448" width="148" height="46"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <color key="backgroundColor" red="0.7843137255" green="0.18039215689999999" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
                                 <state key="normal" title="Funny">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="getQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="WTr-Ph-0bK"/>
@@ -160,8 +160,8 @@
                             </button>
                             <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tky-f8-6yI">
                                 <rect key="frame" x="20" y="502" width="166" height="45"/>
-                                <color key="backgroundColor" red="0.24313725489999999" green="0.38431372549999998" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <color key="backgroundColor" red="0.145088992" green="0.85098039219999999" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
                                 <state key="normal" title="Life">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -171,8 +171,8 @@
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eUT-eU-cGS">
                                 <rect key="frame" x="176" y="448" width="179" height="46"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <color key="backgroundColor" red="0.18823529410000001" green="0.63137254899999995" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
                                 <state key="normal" title="Inspirational">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -182,8 +182,8 @@
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OS4-QT-L7Q">
                                 <rect key="frame" x="221" y="402" width="134" height="38"/>
-                                <color key="backgroundColor" red="0.074509803920000006" green="0.1019607843" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.18039215689999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
                                 <state key="normal" title="Art">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -193,8 +193,8 @@
                             </button>
                             <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oEb-Aj-A6S">
                                 <rect key="frame" x="20" y="555" width="159" height="49"/>
-                                <color key="backgroundColor" red="0.074509803920000006" green="0.1019607843" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.18039215689999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
                                 <state key="normal" title="Sports">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -204,10 +204,10 @@
                             </button>
                             <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uMI-lH-Dm7">
                                 <rect key="frame" x="187" y="555" width="168" height="49"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <color key="backgroundColor" red="0.7843137255" green="0.18039215689999999" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
                                 <state key="normal" title="Management">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="getQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="vOj-ZR-gRm"/>
@@ -215,8 +215,8 @@
                             </button>
                             <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TlP-EL-Qzp">
                                 <rect key="frame" x="194" y="502" width="161" height="45"/>
-                                <color key="backgroundColor" red="0.65098039220000004" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <color key="backgroundColor" red="1" green="0.48145839499999998" blue="0.015686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
                                 <state key="normal" title="Love">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -226,8 +226,8 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dGp-WH-Q4a">
                                 <rect key="frame" x="20" y="101" width="166" height="34"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <color key="backgroundColor" red="0.18823529411764706" green="0.63137254901960782" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
                                 <state key="normal" title="Luck">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -237,8 +237,8 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z2z-z5-wOu">
                                 <rect key="frame" x="20" y="143" width="166" height="42"/>
-                                <color key="backgroundColor" red="0.65098039215686276" green="0.10980392156862745" blue="0.10980392156862745" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <color key="backgroundColor" red="1" green="0.4823529411764706" blue="0.015686274509803921" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
                                 <state key="normal" title="Family">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -248,11 +248,11 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zex-Q0-IDr">
                                 <rect key="frame" x="20" y="193" width="193" height="42"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <color key="backgroundColor" red="0.7843137255" green="0.18039215689999999" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
                                 <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
                                 <state key="normal" title="Ambition">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="getQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="qgW-4C-ieJ"/>
@@ -260,8 +260,8 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WJK-EK-FiI">
                                 <rect key="frame" x="20" y="243" width="148" height="42"/>
-                                <color key="backgroundColor" red="0.24313725489999999" green="0.38431372549999998" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <color key="backgroundColor" red="0.145088992" green="0.85098039219999999" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
                                 <state key="normal" title="Literature">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -271,8 +271,8 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EGj-6S-EP7">
                                 <rect key="frame" x="20" y="293" width="166" height="51"/>
-                                <color key="backgroundColor" red="0.074509803920000006" green="0.1019607843" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.18039215689999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
                                 <state key="normal" title="Motivational">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -282,8 +282,8 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sxl-Nb-e99">
                                 <rect key="frame" x="20" y="352" width="166" height="42"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <color key="backgroundColor" red="0.18823529410000001" green="0.63137254899999995" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
                                 <state key="normal" title="Wisdom">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -293,8 +293,8 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LQB-TJ-pNo">
                                 <rect key="frame" x="194" y="101" width="161" height="34"/>
-                                <color key="backgroundColor" red="0.24313725490196078" green="0.38431372549019605" blue="0.35686274509803922" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <color key="backgroundColor" red="0.14509803921568626" green="0.85098039215686272" blue="0.23921568627450979" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
                                 <state key="normal" title="Success">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -302,10 +302,21 @@
                                     <action selector="getQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="Kwh-Ci-6X0"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MSR-Lh-m0n">
+                                <rect key="frame" x="194" y="143" width="161" height="42"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.18039215689999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
+                                <state key="normal" title="Friends">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="getQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="3Mn-c2-Mfr"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wRk-gv-7wZ">
                                 <rect key="frame" x="221" y="193" width="134" height="42"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <color key="backgroundColor" red="0.18823529410000001" green="0.63137254899999995" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
                                 <state key="normal" title="Career">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -315,8 +326,8 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7FI-ba-zUv">
                                 <rect key="frame" x="176" y="243" width="179" height="42"/>
-                                <color key="backgroundColor" red="0.65098039220000004" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <color key="backgroundColor" red="1" green="0.48145839499999998" blue="0.015686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
                                 <state key="normal" title="Philosophy">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -324,21 +335,10 @@
                                     <action selector="getQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="3OC-LV-8eX"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="56x-Jd-QAW">
-                                <rect key="frame" x="194" y="293" width="161" height="50"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
-                                <state key="normal" title="Adversity">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="getQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="tnu-YJ-bq5"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6oT-wJ-KJx">
                                 <rect key="frame" x="194" y="352" width="161" height="42"/>
-                                <color key="backgroundColor" red="0.24313725489999999" green="0.38431372549999998" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <color key="backgroundColor" red="0.145088992" green="0.85098039219999999" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
                                 <state key="normal" title="Memories">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -348,8 +348,8 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y7R-bp-Ahs">
                                 <rect key="frame" x="20" y="612" width="199" height="35"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <color key="backgroundColor" red="0.18823529410000001" green="0.63137254899999995" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
                                 <state key="normal" title="Anger">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -359,8 +359,8 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ey-Ga-8sl">
                                 <rect key="frame" x="227" y="612" width="128" height="35"/>
-                                <color key="backgroundColor" red="0.24313725489999999" green="0.38431372549999998" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <color key="backgroundColor" red="0.43137254899999999" green="0.85098039219999999" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
                                 <state key="normal" title="Strength">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -370,10 +370,10 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ESF-we-kAr">
                                 <rect key="frame" x="147" y="40" width="208" height="53"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <color key="backgroundColor" red="0.78431372549019607" green="0.1803921568627451" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
                                 <state key="normal" title="Patience">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="getQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="cHN-Wd-twz"/>
@@ -381,8 +381,8 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RDc-9X-8GA">
                                 <rect key="frame" x="20" y="40" width="119" height="53"/>
-                                <color key="backgroundColor" red="0.074509803921568626" green="0.10196078431372549" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <color key="backgroundColor" red="0.94901960784313721" green="0.1803921568627451" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
                                 <state key="normal" title="Challenge">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -390,19 +390,18 @@
                                     <action selector="getQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="Huj-Ru-MBV"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MSR-Lh-m0n">
-                                <rect key="frame" x="194" y="143" width="161" height="42"/>
-                                <color key="backgroundColor" red="0.074509803920000006" green="0.1019607843" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
-                                <state key="normal" title="Friends">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="56x-Jd-QAW">
+                                <rect key="frame" x="194" y="293" width="161" height="50"/>
+                                <color key="backgroundColor" red="0.7843137255" green="0.18039215689999999" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
+                                <state key="normal" title="Adversity">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="getQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="3Mn-c2-Mfr"/>
+                                    <action selector="getQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="tnu-YJ-bq5"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.89779647439999999" green="0.89779647439999999" blue="0.89779647439999999" alpha="0.65016163790000003" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="y5R-AI-B6z"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -431,6 +430,30 @@
                         <outlet property="strengthButton" destination="5Ey-Ga-8sl" id="Iai-rJ-wyy"/>
                         <outlet property="successButton" destination="LQB-TJ-pNo" id="fNI-bw-dRF"/>
                         <outlet property="wisdomButton" destination="Sxl-Nb-e99" id="DuM-Kr-zTI"/>
+                        <outletCollection property="genericButton" destination="LQB-TJ-pNo" collectionClass="NSMutableArray" id="rrd-VS-098"/>
+                        <outletCollection property="genericButton" destination="ESF-we-kAr" collectionClass="NSMutableArray" id="cBx-V7-2nB"/>
+                        <outletCollection property="genericButton" destination="RDc-9X-8GA" collectionClass="NSMutableArray" id="vUM-1J-zmb"/>
+                        <outletCollection property="genericButton" destination="dGp-WH-Q4a" collectionClass="NSMutableArray" id="eRj-WZ-kvI"/>
+                        <outletCollection property="genericButton" destination="z2z-z5-wOu" collectionClass="NSMutableArray" id="5bf-U8-ksh"/>
+                        <outletCollection property="genericButton" destination="MSR-Lh-m0n" collectionClass="NSMutableArray" id="4qy-v7-2cJ"/>
+                        <outletCollection property="genericButton" destination="Zex-Q0-IDr" collectionClass="NSMutableArray" id="ktd-5d-S3Y"/>
+                        <outletCollection property="genericButton" destination="wRk-gv-7wZ" collectionClass="NSMutableArray" id="Rti-88-qjH"/>
+                        <outletCollection property="genericButton" destination="7FI-ba-zUv" collectionClass="NSMutableArray" id="ctg-e5-GiH"/>
+                        <outletCollection property="genericButton" destination="WJK-EK-FiI" collectionClass="NSMutableArray" id="Qu7-jb-ZBl"/>
+                        <outletCollection property="genericButton" destination="EGj-6S-EP7" collectionClass="NSMutableArray" id="O6o-PD-J4y"/>
+                        <outletCollection property="genericButton" destination="56x-Jd-QAW" collectionClass="NSMutableArray" id="svZ-4s-ZuC"/>
+                        <outletCollection property="genericButton" destination="Sxl-Nb-e99" collectionClass="NSMutableArray" id="DLR-gZ-i0u"/>
+                        <outletCollection property="genericButton" destination="6oT-wJ-KJx" collectionClass="NSMutableArray" id="nis-O8-8Nx"/>
+                        <outletCollection property="genericButton" destination="yXq-dQ-TZA" collectionClass="NSMutableArray" id="RmL-ra-zRf"/>
+                        <outletCollection property="genericButton" destination="OS4-QT-L7Q" collectionClass="NSMutableArray" id="xTh-Os-d9I"/>
+                        <outletCollection property="genericButton" destination="z0Q-04-6ng" collectionClass="NSMutableArray" id="NVQ-bP-MWk"/>
+                        <outletCollection property="genericButton" destination="eUT-eU-cGS" collectionClass="NSMutableArray" id="Nep-yB-9RA"/>
+                        <outletCollection property="genericButton" destination="tky-f8-6yI" collectionClass="NSMutableArray" id="Slb-1U-Zu6"/>
+                        <outletCollection property="genericButton" destination="TlP-EL-Qzp" collectionClass="NSMutableArray" id="XCU-Sl-BYN"/>
+                        <outletCollection property="genericButton" destination="oEb-Aj-A6S" collectionClass="NSMutableArray" id="Hq6-Qn-gnJ"/>
+                        <outletCollection property="genericButton" destination="uMI-lH-Dm7" collectionClass="NSMutableArray" id="rQJ-0f-2jv"/>
+                        <outletCollection property="genericButton" destination="Y7R-bp-Ahs" collectionClass="NSMutableArray" id="jFz-7N-CVh"/>
+                        <outletCollection property="genericButton" destination="5Ey-Ga-8sl" collectionClass="NSMutableArray" id="Eds-Q3-POd"/>
                         <segue destination="sDC-Lz-L92" kind="show" identifier="segueToQuoteDetailVC" id="ppW-YX-Wxj"/>
                     </connections>
                 </viewController>
@@ -450,53 +473,74 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V1B-LG-Ngk">
-                                <rect key="frame" x="20" y="113" width="335" height="182"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hJ-SV-M0N">
-                                <rect key="frame" x="20" y="323" width="335" height="41"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s02-Tl-mOz">
-                                <rect key="frame" x="122" y="408" width="130" height="30"/>
-                                <state key="normal" title="Select This Quote?"/>
-                                <connections>
-                                    <action selector="selectQuote:" destination="sDC-Lz-L92" eventType="touchUpInside" id="o3n-nU-Gqn"/>
-                                </connections>
-                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WMM-OH-n1c">
+                                <rect key="frame" x="0.0" y="40" width="375" height="344"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hJ-SV-M0N">
+                                        <rect key="frame" x="38" y="283" width="299" height="41"/>
+                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QyO-j9-dbg">
+                                        <rect key="frame" x="20" y="20" width="335" height="45"/>
+                                        <fontDescription key="fontDescription" name="Futura-CondensedExtraBold" family="Futura" pointSize="26"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V1B-LG-Ngk">
+                                        <rect key="frame" x="38" y="73" width="299" height="182"/>
+                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PVJ-Fp-hIv">
-                                <rect key="frame" x="119" y="472" width="137" height="30"/>
-                                <state key="normal" title="Get Another Quote?"/>
+                                <rect key="frame" x="40" y="513" width="296" height="40"/>
+                                <color key="backgroundColor" red="0.18823529410000001" green="0.63137254899999995" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                                <state key="normal" title="Get Another Quote From This Category">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="getAnotherQuote:" destination="sDC-Lz-L92" eventType="touchUpInside" id="8Ye-9t-xZc"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJ5-FS-nP6">
-                                <rect key="frame" x="120" y="543" width="134" height="30"/>
-                                <state key="normal" title="Back To Categories"/>
+                                <rect key="frame" x="108" y="584" width="160" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.4823529412" blue="0.015686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                                <state key="normal" title="Back To Categories">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="backToCategories:" destination="sDC-Lz-L92" eventType="touchUpInside" id="FIx-zj-uRD"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QyO-j9-dbg">
-                                <rect key="frame" x="20" y="60" width="335" height="45"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s02-Tl-mOz">
+                                <rect key="frame" x="114" y="439" width="148" height="40"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.18039215689999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                                <state key="normal" title="Use This Quote">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectQuote:" destination="sDC-Lz-L92" eventType="touchUpInside" id="o3n-nU-Gqn"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="authorLabel" destination="0hJ-SV-M0N" id="fOq-SV-2sW"/>
                         <outlet property="categoryLabel" destination="QyO-j9-dbg" id="e4l-3o-4GN"/>
                         <outlet property="quoteLabel" destination="V1B-LG-Ngk" id="klB-lw-TO5"/>
+                        <outletCollection property="genericButton" destination="s02-Tl-mOz" collectionClass="NSMutableArray" id="QOh-gG-fe9"/>
+                        <outletCollection property="genericButton" destination="PVJ-Fp-hIv" collectionClass="NSMutableArray" id="Ake-EA-VUk"/>
+                        <outletCollection property="genericButton" destination="fJ5-FS-nP6" collectionClass="NSMutableArray" id="4V7-Dp-ybh"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="segueToMainVC" id="tsc-uo-9Us"/>
                         <segue destination="diu-E6-Dbc" kind="show" identifier="segueBackToQuoteVC" id="og7-3h-HUm"/>
                     </connections>

@@ -37,12 +37,15 @@ class QuoteViewController: UIViewController {
     @IBOutlet weak var angerButton: UIButton!
     @IBOutlet weak var strengthButton: UIButton!
     
-    
+    @IBOutlet var genericButton: [UIButton]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        for button in self.genericButton {
+            button.layer.cornerRadius = 15
+        }
         
         self.challengeButton.center = CGPointMake(self.challengeButton.center.x - 500, self.challengeButton.center.y)
         self.patienceButton.center = CGPointMake(self.patienceButton.center.x + 500, self.patienceButton.center.y)
