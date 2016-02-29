@@ -19,6 +19,10 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     @IBOutlet weak var navigationBar: UINavigationBar!
     @IBOutlet weak var toolbar: UIToolbar!
     
+    @IBOutlet weak var instructionLabelTop: UILabel!
+    @IBOutlet weak var instructionLabelMiddle: UILabel!
+    @IBOutlet weak var instructionLabelBottom: UILabel!
+    
     @IBOutlet weak var imageSubView: UIView!
     @IBOutlet weak var chosenImageView: UIImageView!
     @IBOutlet weak var chosenQuoteLabel: UILabel!
@@ -50,11 +54,15 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
 
         if self.newQuoto == nil {
             self.chosenQuoteLabel.hidden = true
+            self.instructionLabelTop.hidden = true
+            self.instructionLabelMiddle.hidden = true
         } else {
             self.chosenImageView.image = self.newQuoto.quotoImage
             
             self.chosenQuoteLabel.hidden = false
             self.chosenQuoteLabel.text = "\(self.newQuoto.quotoQuote) - \(self.newQuoto.quotoAuthor)"
+            
+            self.instructionLabelBottom.hidden = true
         }
         
         // Disable camera button if camera not available
@@ -68,6 +76,13 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
             self.actionButton.enabled = true
             self.cancelButton.enabled = true
         }
+        
+        // Hide instruction labels
+        UIView.animateWithDuration(2, delay: 10, options: .CurveLinear, animations: { () -> Void in
+            self.instructionLabelTop.alpha = 0
+            self.instructionLabelMiddle.alpha = 0
+            self.instructionLabelBottom.alpha = 0
+            }, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {
@@ -99,7 +114,7 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let controller = segue.destinationViewController as! QuoteViewController
         if self.newQuoto == nil {
-            self.newQuoto = NewQuoto(quotoImage: self.chosenImageView.image!, quotoQuote: "", quotoAuthor: "", quotoCategory: "")
+            self.newQuoto = NewQuoto(quotoImage: UIImage(named: "Cat_Placeholder.jpg")!, quotoQuote: "", quotoAuthor: "", quotoCategory: "")
         }
         controller.newQuoto = self.newQuoto
     }
@@ -154,7 +169,7 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     }
     
     @IBAction func restartQuoto(sender: UIBarButtonItem) {
-        self.chosenImageView.image = UIImage(named: "Cat_Placeholder.jpg")
+        self.chosenImageView.image = nil
         self.chosenQuoteLabel.text = ""
         self.newQuoto = nil
     }

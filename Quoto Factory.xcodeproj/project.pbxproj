@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F96525391C84BC9A001D1BE8 /* Placeholder.svg in Resources */ = {isa = PBXBuildFile; fileRef = F96525381C84BC99001D1BE8 /* Placeholder.svg */; };
 		F99D0A331C80A7D90070E613 /* QuoteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99D0A321C80A7D90070E613 /* QuoteDetailViewController.swift */; };
 		F9AC1A8B1C7C76290098A476 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AC1A8A1C7C76290098A476 /* AppDelegate.swift */; };
 		F9AC1A8D1C7C76290098A476 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AC1A8C1C7C76290098A476 /* MainViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F96525381C84BC99001D1BE8 /* Placeholder.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Placeholder.svg; sourceTree = "<group>"; };
 		F99D0A321C80A7D90070E613 /* QuoteDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoteDetailViewController.swift; sourceTree = "<group>"; };
 		F9AC1A871C7C76290098A476 /* Quoto Factory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quoto Factory.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9AC1A8A1C7C76290098A476 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				F9AC1AA01C7CA4310098A476 /* NewQuoto.swift */,
 				F9AC1A8E1C7C76290098A476 /* Main.storyboard */,
 				F9AC1A911C7C76290098A476 /* Assets.xcassets */,
+				F96525381C84BC99001D1BE8 /* Placeholder.svg */,
 				F9AC1AA21C7CB27F0098A476 /* Cat_Placeholder.jpg */,
 				F9AC1A931C7C76290098A476 /* LaunchScreen.storyboard */,
 				F9AC1A961C7C76290098A476 /* Info.plist */,
@@ -139,6 +142,7 @@
 			files = (
 				F9AC1AA31C7CB27F0098A476 /* Cat_Placeholder.jpg in Resources */,
 				F9AC1A951C7C76290098A476 /* LaunchScreen.storyboard in Resources */,
+				F96525391C84BC9A001D1BE8 /* Placeholder.svg in Resources */,
 				F9AC1A921C7C76290098A476 /* Assets.xcassets in Resources */,
 				F9AC1A901C7C76290098A476 /* Main.storyboard in Resources */,
 			);

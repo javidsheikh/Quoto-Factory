@@ -133,12 +133,20 @@ class QuoteViewController: UIViewController {
         self.newQuoto.quotoCategory = sender.titleLabel!.text!
         self.performSegueWithIdentifier("segueToQuoteDetailVC", sender: self)
     }
+    @IBAction func backToMainVC(sender: UIBarButtonItem) {
+        self.performSegueWithIdentifier("segueFromQuoteToMainVC", sender: self)
+    }
 
     // MARK: - Navigation
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "segueToQuoteDetailVC" {
         let controller = segue.destinationViewController as! QuoteDetailViewController
-        controller.newQuoto = self.newQuoto 
+            controller.newQuoto = self.newQuoto
+        } else if segue.identifier == "segueFromQuoteToMainVC" {
+            let controller = segue.destinationViewController as! MainViewController
+            controller.newQuoto = self.newQuoto
+        }
     }
 
 }
