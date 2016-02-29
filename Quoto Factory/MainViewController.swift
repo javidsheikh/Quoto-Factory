@@ -12,6 +12,9 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     
     var newQuoto: NewQuoto!
     
+    var quoteLabelPosition: CGPoint!
+    var quoteLabelFontSize: CGFloat!
+    
     // MARK: IBOutlets
     @IBOutlet weak var navigationBar: UINavigationBar!
     @IBOutlet weak var toolbar: UIToolbar!
@@ -35,8 +38,12 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         chosenQuoteLabel.addGestureRecognizer(gestureQuote)
         chosenQuoteLabel.userInteractionEnabled = true
         
+        quoteLabelPosition = CGPointMake(self.view.bounds.width, self.view.bounds.height)
+        
         let pinchGesture = UIPinchGestureRecognizer(target: self, action: Selector("resizeText:"))
         self.view.addGestureRecognizer(pinchGesture)
+        
+        quoteLabelFontSize = 17
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -116,12 +123,22 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     func dragQuoteLabel(gesture: UIPanGestureRecognizer) {
         let translation = gesture.translationInView(self.view)
         let label = chosenQuoteLabel
-        label.center = CGPoint(x: self.view.bounds.width / 2 + translation.x, y: self.view.bounds.height / 2 + translation.y)
+        label.center = CGPointMake(self.quoteLabelPosition.x + translation.x, self.quoteLabelPosition.y + translation.y)
+        
+        if gesture.state == .Ended {
+            quoteLabelPosition = CGPointMake(self.quoteLabelPosition.x + translation.x, self.quoteLabelPosition.y + translation.y)
+            print(quoteLabelPosition)
+        }
     }
     
     func resizeText(pinchGesture: UIPinchGestureRecognizer) {
         let scale = pinchGesture.scale
-        chosenQuoteLabel.font = chosenQuoteLabel.font.fontWithSize(17 * scale)
+        chosenQuoteLabel.font = chosenQuoteLabel.font.fontWithSize(quoteLabelFontSize * scale)
+        
+        if pinchGesture.state == .Ended {
+            quoteLabelFontSize = quoteLabelFontSize * scale
+            print(quoteLabelFontSize)
+        }
     }
     
     // MARK: IBActions
