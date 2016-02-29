@@ -75,8 +75,10 @@ class QuoteDetailViewController: UIViewController {
         let session = NSURLSession.sharedSession()
     
         let url = NSURL(string: urlString)!
-    
-        let request = NSURLRequest(URL: url)
+        
+        // ************* CHECK **************
+        let request = NSMutableURLRequest(URL: url, cachePolicy: NSURLRequestCachePolicy.ReloadRevalidatingCacheData, timeoutInterval: 5)
+        // **********************************
         
         let task = session.dataTaskWithRequest(request) { (data, response, error) -> Void in
         
@@ -126,10 +128,15 @@ class QuoteDetailViewController: UIViewController {
             
             guard let author = contentsDictionary["author"] as? String else {
                 displayError("Unable to find key 'author' in contentsDictionary")
-                self.authorLabel.text = "Anon"
+                dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                    print(quote)
+                    self.enableUI(true)
+                    self.quoteLabel.text = quote
+                    self.authorLabel.text = ""
+                })
                 return
             }
-                    
+            
             print(quote)
             print(author)
                     
@@ -138,7 +145,6 @@ class QuoteDetailViewController: UIViewController {
                 self.enableUI(true)
                 self.quoteLabel.text = quote
                 self.authorLabel.text = author
-        
             })
                 
         }
