@@ -137,64 +137,96 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yXq-dQ-TZA">
-                                <rect key="frame" x="77" y="397" width="57" height="30"/>
-                                <state key="normal" title="Random"/>
+                                <rect key="frame" x="20" y="402" width="193" height="38"/>
+                                <color key="backgroundColor" red="0.65098039220000004" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="Random">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="getRandom:" destination="diu-E6-Dbc" eventType="touchUpInside" id="hO9-Lh-wmE"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z0Q-04-6ng">
-                                <rect key="frame" x="84" y="448" width="42" height="30"/>
-                                <state key="normal" title="Funny"/>
+                                <rect key="frame" x="20" y="448" width="148" height="46"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="Funny">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
                                 <connections>
                                     <action selector="getFunnyQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="G8D-JW-zud"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tky-f8-6yI">
-                                <rect key="frame" x="89" y="502" width="30" height="30"/>
-                                <state key="normal" title="Life"/>
+                                <rect key="frame" x="20" y="502" width="166" height="45"/>
+                                <color key="backgroundColor" red="0.24313725489999999" green="0.38431372549999998" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="Life">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="getLifeQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="s6L-gM-trb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eUT-eU-cGS">
-                                <rect key="frame" x="215" y="448" width="84" height="30"/>
-                                <state key="normal" title="Inspirational"/>
+                                <rect key="frame" x="176" y="448" width="179" height="46"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="Inspirational">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="getInspirationalQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="qrT-k3-n74"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OS4-QT-L7Q">
-                                <rect key="frame" x="241" y="397" width="30" height="30"/>
-                                <state key="normal" title="Art"/>
+                                <rect key="frame" x="221" y="402" width="134" height="38"/>
+                                <color key="backgroundColor" red="0.074509803920000006" green="0.1019607843" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="Art">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="getArtQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="8Zr-WJ-Lxz"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oEb-Aj-A6S">
-                                <rect key="frame" x="82" y="555" width="46" height="30"/>
-                                <state key="normal" title="Sports"/>
+                                <rect key="frame" x="20" y="555" width="159" height="49"/>
+                                <color key="backgroundColor" red="0.074509803920000006" green="0.1019607843" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="Sports">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="getSportsQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="8JV-Es-frq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uMI-lH-Dm7">
-                                <rect key="frame" x="209" y="555" width="90" height="30"/>
-                                <state key="normal" title="Management"/>
+                                <rect key="frame" x="187" y="555" width="168" height="49"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="Management">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
                                 <connections>
                                     <action selector="getManagementQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="WaF-50-1Zg"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TlP-EL-Qzp">
-                                <rect key="frame" x="241" y="502" width="33" height="30"/>
-                                <state key="normal" title="Love"/>
+                                <rect key="frame" x="194" y="502" width="161" height="45"/>
+                                <color key="backgroundColor" red="0.65098039220000004" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="Love">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="getLoveQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="AVg-DQ-L9U"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dGp-WH-Q4a">
-                                <rect key="frame" x="29" y="101" width="157" height="34"/>
-                                <color key="backgroundColor" red="0.91452323717948714" green="0.57453248183314665" blue="0.33089454894881065" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="20" y="101" width="166" height="34"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                 <state key="normal" title="Luck">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -204,43 +236,64 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z2z-z5-wOu">
-                                <rect key="frame" x="83" y="150" width="44" height="30"/>
-                                <state key="normal" title="Family"/>
+                                <rect key="frame" x="20" y="143" width="166" height="42"/>
+                                <color key="backgroundColor" red="0.65098039215686276" green="0.10980392156862745" blue="0.10980392156862745" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="Family">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="getFamilyQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="dyh-Z4-HHQ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zex-Q0-IDr">
-                                <rect key="frame" x="75" y="193" width="61" height="30"/>
-                                <state key="normal" title="Ambition"/>
+                                <rect key="frame" x="20" y="193" width="193" height="42"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
+                                <state key="normal" title="Ambition">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
                                 <connections>
                                     <action selector="getAmbitionQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="vNh-Gm-xP2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WJK-EK-FiI">
-                                <rect key="frame" x="72" y="243" width="67" height="30"/>
-                                <state key="normal" title="Literature"/>
+                                <rect key="frame" x="20" y="243" width="148" height="42"/>
+                                <color key="backgroundColor" red="0.24313725489999999" green="0.38431372549999998" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="Literature">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="getLiteratureQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="l5s-qC-qlL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EGj-6S-EP7">
-                                <rect key="frame" x="63" y="293" width="84" height="30"/>
-                                <state key="normal" title="Motivational"/>
+                                <rect key="frame" x="20" y="293" width="166" height="51"/>
+                                <color key="backgroundColor" red="0.074509803920000006" green="0.1019607843" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="Motivational">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="getMotivationalQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="jZM-nO-Nww"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sxl-Nb-e99">
-                                <rect key="frame" x="80" y="352" width="56" height="30"/>
-                                <state key="normal" title="Wisdom"/>
+                                <rect key="frame" x="20" y="352" width="166" height="42"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="Wisdom">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="getWisdomQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="5Q6-y9-mwS"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LQB-TJ-pNo">
                                 <rect key="frame" x="194" y="101" width="161" height="34"/>
-                                <color key="backgroundColor" red="0.1566788459" green="0.26117318049999999" blue="0.68784054490000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.24313725490196078" green="0.38431372549019605" blue="0.35686274509803922" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                 <state key="normal" title="Success">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -249,69 +302,87 @@
                                     <action selector="getSuccessQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="WAL-Vh-d89"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MSR-Lh-m0n">
-                                <rect key="frame" x="231" y="150" width="51" height="30"/>
-                                <state key="normal" title="Friends"/>
-                                <connections>
-                                    <action selector="getFriendsQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="403-EH-OEB"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wRk-gv-7wZ">
-                                <rect key="frame" x="233" y="193" width="46" height="30"/>
-                                <state key="normal" title="Career"/>
+                                <rect key="frame" x="221" y="193" width="134" height="42"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="Career">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="getCareerQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="LBP-6G-B2h"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7FI-ba-zUv">
-                                <rect key="frame" x="218" y="243" width="76" height="30"/>
-                                <state key="normal" title="Philosophy"/>
+                                <rect key="frame" x="176" y="243" width="179" height="42"/>
+                                <color key="backgroundColor" red="0.65098039220000004" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="Philosophy">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="getPhilosophyQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="KES-fZ-Q4c"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="56x-Jd-QAW">
-                                <rect key="frame" x="224" y="293" width="64" height="30"/>
-                                <state key="normal" title="Adversity"/>
+                                <rect key="frame" x="194" y="293" width="161" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="Adversity">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
                                 <connections>
                                     <action selector="getAdversityQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="G9u-Av-1m1"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6oT-wJ-KJx">
-                                <rect key="frame" x="224" y="352" width="68" height="30"/>
-                                <state key="normal" title="Memories"/>
+                                <rect key="frame" x="194" y="352" width="161" height="42"/>
+                                <color key="backgroundColor" red="0.24313725489999999" green="0.38431372549999998" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="Memories">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="getMemoriesQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="tC1-cc-WlZ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y7R-bp-Ahs">
-                                <rect key="frame" x="83" y="612" width="42" height="30"/>
-                                <state key="normal" title="Anger"/>
+                                <rect key="frame" x="20" y="612" width="199" height="35"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="Anger">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="getAngerQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="yVo-P6-Gp3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ey-Ga-8sl">
-                                <rect key="frame" x="227" y="612" width="60" height="30"/>
-                                <state key="normal" title="Strength"/>
+                                <rect key="frame" x="227" y="612" width="128" height="35"/>
+                                <color key="backgroundColor" red="0.24313725489999999" green="0.38431372549999998" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="Strength">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="getStrengthQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="nLn-1M-XH7"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ESF-we-kAr">
                                 <rect key="frame" x="147" y="40" width="208" height="53"/>
-                                <color key="backgroundColor" red="1" green="0.061297976740000003" blue="0.09092549942" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                 <state key="normal" title="Patience">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
                                     <action selector="getPatienceQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="ta9-1o-uG8"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RDc-9X-8GA">
-                                <rect key="frame" x="29" y="40" width="110" height="53"/>
-                                <color key="backgroundColor" red="0.23428056550000001" green="0.62427884619999996" blue="0.38189505070000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="20" y="40" width="119" height="53"/>
+                                <color key="backgroundColor" red="0.074509803921568626" green="0.10196078431372549" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                 <state key="normal" title="Challenge">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -319,12 +390,47 @@
                                     <action selector="getChallengeQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="2md-Lg-XoM"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MSR-Lh-m0n">
+                                <rect key="frame" x="194" y="143" width="161" height="42"/>
+                                <color key="backgroundColor" red="0.074509803920000006" green="0.1019607843" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="Friends">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="getFriendsQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="403-EH-OEB"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.89779647439999999" green="0.89779647439999999" blue="0.89779647439999999" alpha="0.65016163790000003" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="y5R-AI-B6z"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="adversityButton" destination="56x-Jd-QAW" id="nHW-mG-RjX"/>
+                        <outlet property="ambitionButton" destination="Zex-Q0-IDr" id="q3c-On-LQi"/>
+                        <outlet property="angerButton" destination="Y7R-bp-Ahs" id="HiM-bi-ZaZ"/>
+                        <outlet property="artButton" destination="OS4-QT-L7Q" id="Tsh-uq-JCV"/>
+                        <outlet property="careerButton" destination="wRk-gv-7wZ" id="r8N-vZ-M13"/>
+                        <outlet property="challengeButton" destination="RDc-9X-8GA" id="EBI-JB-moN"/>
+                        <outlet property="familyButton" destination="z2z-z5-wOu" id="99n-Pn-cNK"/>
+                        <outlet property="friendsButton" destination="MSR-Lh-m0n" id="HjD-Tm-eQt"/>
+                        <outlet property="funnyButton" destination="z0Q-04-6ng" id="3G3-M7-5W5"/>
+                        <outlet property="inspirationalButton" destination="eUT-eU-cGS" id="Hhs-2X-gi3"/>
+                        <outlet property="lifeButton" destination="tky-f8-6yI" id="Ry1-58-ND5"/>
+                        <outlet property="literatureButton" destination="WJK-EK-FiI" id="8So-NO-GEy"/>
+                        <outlet property="loveButton" destination="TlP-EL-Qzp" id="v3y-15-Beb"/>
+                        <outlet property="luckButton" destination="dGp-WH-Q4a" id="Rz5-vT-KoC"/>
+                        <outlet property="managementButton" destination="uMI-lH-Dm7" id="0yS-xQ-QpP"/>
+                        <outlet property="memoriesButton" destination="6oT-wJ-KJx" id="Wmr-83-nNQ"/>
+                        <outlet property="motivationalButton" destination="EGj-6S-EP7" id="jtQ-iv-uo4"/>
+                        <outlet property="patienceButton" destination="ESF-we-kAr" id="eSe-hA-aGL"/>
+                        <outlet property="philosophyButton" destination="7FI-ba-zUv" id="YV1-Kw-7Fl"/>
+                        <outlet property="randomButton" destination="yXq-dQ-TZA" id="e3Z-NK-fGH"/>
+                        <outlet property="sportsButton" destination="oEb-Aj-A6S" id="dIr-sb-guA"/>
+                        <outlet property="strengthButton" destination="5Ey-Ga-8sl" id="Iai-rJ-wyy"/>
+                        <outlet property="successButton" destination="LQB-TJ-pNo" id="fNI-bw-dRF"/>
+                        <outlet property="wisdomButton" destination="Sxl-Nb-e99" id="DuM-Kr-zTI"/>
                         <segue destination="sDC-Lz-L92" kind="show" identifier="segueToQuoteDetailVC" id="ppW-YX-Wxj"/>
                     </connections>
                 </viewController>
@@ -347,13 +453,13 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V1B-LG-Ngk">
                                 <rect key="frame" x="20" y="113" width="335" height="182"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hJ-SV-M0N">
                                 <rect key="frame" x="20" y="323" width="335" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s02-Tl-mOz">
@@ -380,7 +486,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QyO-j9-dbg">
                                 <rect key="frame" x="20" y="60" width="335" height="45"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>

@@ -12,10 +12,113 @@ class QuoteViewController: UIViewController {
     
     var newQuoto: NewQuoto!
         
+    @IBOutlet weak var challengeButton: UIButton!
+    @IBOutlet weak var patienceButton: UIButton!
+    @IBOutlet weak var luckButton: UIButton!
+    @IBOutlet weak var successButton: UIButton!
+    @IBOutlet weak var familyButton: UIButton!
+    @IBOutlet weak var friendsButton: UIButton!
+    @IBOutlet weak var ambitionButton: UIButton!
+    @IBOutlet weak var careerButton: UIButton!
+    @IBOutlet weak var literatureButton: UIButton!
+    @IBOutlet weak var philosophyButton: UIButton!
+    @IBOutlet weak var motivationalButton: UIButton!
+    @IBOutlet weak var adversityButton: UIButton!
+    @IBOutlet weak var wisdomButton: UIButton!
+    @IBOutlet weak var memoriesButton: UIButton!
+    @IBOutlet weak var randomButton: UIButton!
+    @IBOutlet weak var artButton: UIButton!
+    @IBOutlet weak var funnyButton: UIButton!
+    @IBOutlet weak var inspirationalButton: UIButton!
+    @IBOutlet weak var lifeButton: UIButton!
+    @IBOutlet weak var loveButton: UIButton!
+    @IBOutlet weak var sportsButton: UIButton!
+    @IBOutlet weak var managementButton: UIButton!
+    @IBOutlet weak var angerButton: UIButton!
+    @IBOutlet weak var strengthButton: UIButton!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        self.challengeButton.center = CGPointMake(self.challengeButton.center.x - 500, self.challengeButton.center.y)
+        self.patienceButton.center = CGPointMake(self.patienceButton.center.x + 500, self.patienceButton.center.y)
+        self.luckButton.center = CGPointMake(self.luckButton.center.x - 500, self.luckButton.center.y)
+        self.successButton.center = CGPointMake(self.successButton.center.x + 500, self.successButton.center.y)
+        self.familyButton.center = CGPointMake(self.familyButton.center.x - 500, self.familyButton.center.y)
+        self.friendsButton.center = CGPointMake(self.friendsButton.center.x + 500, self.friendsButton.center.y)
+        self.ambitionButton.center = CGPointMake(self.ambitionButton.center.x - 500, self.ambitionButton.center.y)
+        self.careerButton.center = CGPointMake(self.careerButton.center.x + 500, self.careerButton.center.y)
+        self.literatureButton.center = CGPointMake(self.literatureButton.center.x - 500, self.literatureButton.center.y)
+        self.philosophyButton.center = CGPointMake(self.philosophyButton.center.x + 500, self.philosophyButton.center.y)
+        self.motivationalButton.center = CGPointMake(self.motivationalButton.center.x - 500, self.motivationalButton.center.y)
+        self.adversityButton.center = CGPointMake(self.adversityButton.center.x + 500, self.adversityButton.center.y)
+        self.wisdomButton.center = CGPointMake(self.wisdomButton.center.x - 500, self.wisdomButton.center.y)
+        self.memoriesButton.center = CGPointMake(self.memoriesButton.center.x + 500, self.memoriesButton.center.y)
+        self.randomButton.center = CGPointMake(self.randomButton.center.x - 500, self.randomButton.center.y)
+        self.artButton.center = CGPointMake(self.artButton.center.x + 500, self.artButton.center.y)
+        self.funnyButton.center = CGPointMake(self.funnyButton.center.x - 500, self.funnyButton.center.y)
+        self.inspirationalButton.center = CGPointMake(self.inspirationalButton.center.x + 500, self.inspirationalButton.center.y)
+        self.lifeButton.center = CGPointMake(self.lifeButton.center.x - 500, self.lifeButton.center.y)
+        self.loveButton.center = CGPointMake(self.loveButton.center.x + 500, self.loveButton.center.y)
+        self.sportsButton.center = CGPointMake(self.sportsButton.center.x - 500, self.sportsButton.center.y)
+        self.managementButton.center = CGPointMake(self.managementButton.center.x + 500, self.successButton.center.y)
+        self.angerButton.center = CGPointMake(self.angerButton.center.x - 500, self.angerButton.center.y)
+        self.strengthButton.center = CGPointMake(self.strengthButton.center.x + 500, self.strengthButton.center.y)
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        UIView.animateWithDuration(0.2, animations: { () -> Void in
+            self.angerButton.center = CGPointMake(self.angerButton.center.x + 500, self.angerButton.center.y)
+            self.strengthButton.center = CGPointMake(self.strengthButton.center.x - 500, self.strengthButton.center.y)
+            })
+        UIView.animateWithDuration(0.4, animations: { () -> Void in
+            self.sportsButton.center = CGPointMake(self.sportsButton.center.x + 500, self.sportsButton.center.y)
+            self.managementButton.center = CGPointMake(self.managementButton.center.x - 500, self.managementButton.center.y)
+        })
+        UIView.animateWithDuration(0.6, animations: { () -> Void in
+            self.lifeButton.center = CGPointMake(self.lifeButton.center.x + 500, self.lifeButton.center.y)
+            self.loveButton.center = CGPointMake(self.loveButton.center.x - 500, self.loveButton.center.y)
+        })
+        UIView.animateWithDuration(0.8, animations: { () -> Void in
+            self.funnyButton.center = CGPointMake(self.funnyButton.center.x + 500, self.angerButton.center.y)
+            self.inspirationalButton.center = CGPointMake(self.inspirationalButton.center.x - 500, self.strengthButton.center.y)
+        })
+        UIView.animateWithDuration(1, animations: { () -> Void in
+            self.randomButton.center = CGPointMake(self.randomButton.center.x + 500, self.randomButton.center.y)
+            self.artButton.center = CGPointMake(self.artButton.center.x - 500, self.artButton.center.y)
+        })
+        UIView.animateWithDuration(1.2, animations: { () -> Void in
+            self.wisdomButton.center = CGPointMake(self.wisdomButton.center.x + 500, self.wisdomButton.center.y)
+            self.memoriesButton.center = CGPointMake(self.memoriesButton.center.x - 500, self.memoriesButton.center.y)
+        })
+        UIView.animateWithDuration(1.4, animations: { () -> Void in
+            self.motivationalButton.center = CGPointMake(self.motivationalButton.center.x + 500, self.motivationalButton.center.y)
+            self.adversityButton.center = CGPointMake(self.adversityButton.center.x - 500, self.adversityButton.center.y)
+        })
+        UIView.animateWithDuration(1.6, animations: { () -> Void in
+            self.literatureButton.center = CGPointMake(self.literatureButton.center.x + 500, self.literatureButton.center.y)
+            self.philosophyButton.center = CGPointMake(self.philosophyButton.center.x - 500, self.philosophyButton.center.y)
+        })
+        UIView.animateWithDuration(1.8, animations: { () -> Void in
+            self.ambitionButton.center = CGPointMake(self.ambitionButton.center.x + 500, self.ambitionButton.center.y)
+            self.careerButton.center = CGPointMake(self.careerButton.center.x - 500, self.careerButton.center.y)
+        })
+        UIView.animateWithDuration(2, animations: { () -> Void in
+            self.familyButton.center = CGPointMake(self.familyButton.center.x + 500, self.familyButton.center.y)
+            self.friendsButton.center = CGPointMake(self.friendsButton.center.x - 500, self.friendsButton.center.y)
+        })
+        UIView.animateWithDuration(2.2, animations: { () -> Void in
+            self.luckButton.center = CGPointMake(self.luckButton.center.x + 500, self.luckButton.center.y)
+            self.successButton.center = CGPointMake(self.successButton.center.x - 500, self.successButton.center.y)
+        })
+        UIView.animateWithDuration(2.4, animations: { () -> Void in
+            self.challengeButton.center = CGPointMake(self.challengeButton.center.x + 500, self.challengeButton.center.y)
+            self.patienceButton.center = CGPointMake(self.patienceButton.center.x - 500, self.patienceButton.center.y)
+        })
     }
 
     override func didReceiveMemoryWarning() {
