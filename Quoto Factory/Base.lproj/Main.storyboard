@@ -144,7 +144,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="getRandom:" destination="diu-E6-Dbc" eventType="touchUpInside" id="hO9-Lh-wmE"/>
+                                    <action selector="getQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="sAP-PO-Kzp"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z0Q-04-6ng">
@@ -155,7 +155,7 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="getFunnyQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="G8D-JW-zud"/>
+                                    <action selector="getQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="WTr-Ph-0bK"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tky-f8-6yI">
@@ -166,7 +166,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="getLifeQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="s6L-gM-trb"/>
+                                    <action selector="getQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="7yK-QU-SQP"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eUT-eU-cGS">
@@ -177,7 +177,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="getInspirationalQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="qrT-k3-n74"/>
+                                    <action selector="getQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="3ia-TQ-CbD"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OS4-QT-L7Q">
@@ -188,7 +188,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="getArtQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="8Zr-WJ-Lxz"/>
+                                    <action selector="getQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="toP-Ys-roV"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oEb-Aj-A6S">
@@ -199,7 +199,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="getSportsQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="8JV-Es-frq"/>
+                                    <action selector="getQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="Az4-p0-NSj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uMI-lH-Dm7">
@@ -210,7 +210,7 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="getManagementQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="WaF-50-1Zg"/>
+                                    <action selector="getQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="vOj-ZR-gRm"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TlP-EL-Qzp">
@@ -221,7 +221,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="getLoveQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="AVg-DQ-L9U"/>
+                                    <action selector="getQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="nYg-B2-k4c"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dGp-WH-Q4a">
@@ -232,7 +232,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="getLuckyQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="QOF-YW-YpJ"/>
+                                    <action selector="getQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="fGA-nP-uw5"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z2z-z5-wOu">
@@ -243,7 +243,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="getFamilyQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="dyh-Z4-HHQ"/>
+                                    <action selector="getQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="P8l-hQ-4bx"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zex-Q0-IDr">
@@ -255,7 +255,7 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="getAmbitionQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="vNh-Gm-xP2"/>
+                                    <action selector="getQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="qgW-4C-ieJ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WJK-EK-FiI">
@@ -266,7 +266,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="getLiteratureQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="l5s-qC-qlL"/>
+                                    <action selector="getQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="ny3-6v-8Np"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EGj-6S-EP7">
@@ -277,7 +277,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="getMotivationalQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="jZM-nO-Nww"/>
+                                    <action selector="getQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="dCW-eg-DYM"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sxl-Nb-e99">
@@ -288,7 +288,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="getWisdomQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="5Q6-y9-mwS"/>
+                                    <action selector="getQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="abH-u5-sID"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LQB-TJ-pNo">
@@ -299,7 +299,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="getSuccessQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="WAL-Vh-d89"/>
+                                    <action selector="getQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="Kwh-Ci-6X0"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wRk-gv-7wZ">
@@ -310,7 +310,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="getCareerQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="LBP-6G-B2h"/>
+                                    <action selector="getQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="3Jh-1E-Dlk"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7FI-ba-zUv">
@@ -321,7 +321,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="getPhilosophyQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="KES-fZ-Q4c"/>
+                                    <action selector="getQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="3OC-LV-8eX"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="56x-Jd-QAW">
@@ -332,7 +332,7 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="getAdversityQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="G9u-Av-1m1"/>
+                                    <action selector="getQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="tnu-YJ-bq5"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6oT-wJ-KJx">
@@ -343,7 +343,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="getMemoriesQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="tC1-cc-WlZ"/>
+                                    <action selector="getQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="xzT-bi-YsX"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y7R-bp-Ahs">
@@ -354,7 +354,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="getAngerQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="yVo-P6-Gp3"/>
+                                    <action selector="getQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="dLo-yT-dAI"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ey-Ga-8sl">
@@ -365,7 +365,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="getStrengthQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="nLn-1M-XH7"/>
+                                    <action selector="getQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="9Oa-md-vbK"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ESF-we-kAr">
@@ -376,7 +376,7 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="getPatienceQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="ta9-1o-uG8"/>
+                                    <action selector="getQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="cHN-Wd-twz"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RDc-9X-8GA">
@@ -387,7 +387,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="getChallengeQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="2md-Lg-XoM"/>
+                                    <action selector="getQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="Huj-Ru-MBV"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MSR-Lh-m0n">
@@ -398,7 +398,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="getFriendsQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="403-EH-OEB"/>
+                                    <action selector="getQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="3Mn-c2-Mfr"/>
                                 </connections>
                             </button>
                         </subviews>
