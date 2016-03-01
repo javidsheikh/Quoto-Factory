@@ -49,7 +49,7 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         chosenQuoteLabel.addGestureRecognizer(gestureQuote)
         chosenQuoteLabel.userInteractionEnabled = true
         
-        quoteLabelPosition = CGPointMake(self.view.bounds.width, self.view.bounds.height)
+        quoteLabelPosition = CGPointMake(self.view.bounds.width / 2, self.view.bounds.height / 2)
         
         let pinchGesture = UIPinchGestureRecognizer(target: self, action: Selector("resizeText:"))
         self.view.addGestureRecognizer(pinchGesture)
