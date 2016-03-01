@@ -23,6 +23,8 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     @IBOutlet weak var instructionLabelMiddle: UILabel!
     @IBOutlet weak var instructionLabelBottom: UILabel!
     
+    @IBOutlet var instructionLabels: [UILabel]!
+    
     @IBOutlet weak var imageSubView: UIView!
     @IBOutlet weak var chosenImageView: UIImageView!
     @IBOutlet weak var chosenQuoteLabel: UILabel!
@@ -37,6 +39,11 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        for label in self.instructionLabels {
+            label.layer.masksToBounds = true
+            label.layer.cornerRadius = 12
+        }
         
         let gestureQuote = UIPanGestureRecognizer(target: self, action: Selector("dragQuoteLabel:"))
         chosenQuoteLabel.addGestureRecognizer(gestureQuote)
@@ -78,7 +85,7 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         }
         
         // Hide instruction labels
-        UIView.animateWithDuration(2, delay: 10, options: .CurveLinear, animations: { () -> Void in
+        UIView.animateWithDuration(2, delay: 6, options: .CurveLinear, animations: { () -> Void in
             self.instructionLabelTop.alpha = 0
             self.instructionLabelMiddle.alpha = 0
             self.instructionLabelBottom.alpha = 0

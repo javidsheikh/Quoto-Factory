@@ -41,21 +41,21 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Use the buttons below to select a photo and find a quote" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nce-Sh-eCg">
                                         <rect key="frame" x="20" y="475" width="349" height="62"/>
                                         <color key="backgroundColor" red="0.7843137255" green="0.18039215689999999" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Drag the quote to position it, pinch to resize" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdu-Ks-G4s">
                                         <rect key="frame" x="20" y="419" width="349" height="63"/>
                                         <color key="backgroundColor" red="0.7843137255" green="0.18039215689999999" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Use the buttons above to share your quoto when it's finished or cancel to start again" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CEt-fL-8lK">
                                         <rect key="frame" x="20" y="17" width="349" height="63"/>
                                         <color key="backgroundColor" red="0.7843137255" green="0.18039215689999999" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -141,6 +141,9 @@
                         <outlet property="instructionLabelTop" destination="CEt-fL-8lK" id="xu8-v0-ySI"/>
                         <outlet property="navigationBar" destination="WFv-h2-J0g" id="bU7-PN-NLm"/>
                         <outlet property="toolbar" destination="bCo-cS-Ljr" id="rHO-QV-gi0"/>
+                        <outletCollection property="instructionLabels" destination="CEt-fL-8lK" id="KG7-te-5UZ"/>
+                        <outletCollection property="instructionLabels" destination="pdu-Ks-G4s" id="j5u-s4-1Dp"/>
+                        <outletCollection property="instructionLabels" destination="Nce-Sh-eCg" id="auK-6P-PpM"/>
                         <segue destination="diu-E6-Dbc" kind="show" identifier="segueToQuoteVC" id="BmZ-NB-KKA"/>
                     </connections>
                 </viewController>
@@ -597,7 +600,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="og7-3h-HUm"/>
+        <segue reference="BmZ-NB-KKA"/>
         <segue reference="ZhF-we-6So"/>
     </inferredMetricsTieBreakers>
 </document>
