@@ -121,7 +121,7 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let controller = segue.destinationViewController as! QuoteViewController
         if self.newQuoto == nil {
-            self.newQuoto = NewQuoto(quotoImage: UIImage(named: "Plain-Black-Wallpaper.png")!, quotoQuote: "", quotoAuthor: "", quotoCategory: "")
+            self.newQuoto = NewQuoto(quotoImage: UIImage(named: "1874522.png")!, quotoQuote: "", quotoAuthor: "", quotoCategory: "")
         }
         controller.newQuoto = self.newQuoto
     }
@@ -149,7 +149,6 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         
         if gesture.state == .Ended {
             quoteLabelPosition = CGPointMake(self.quoteLabelPosition.x + translation.x, self.quoteLabelPosition.y + translation.y)
-            print(quoteLabelPosition)
         }
     }
     
@@ -159,7 +158,6 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         
         if pinchGesture.state == .Ended {
             quoteLabelFontSize = quoteLabelFontSize * scale
-            print(quoteLabelFontSize)
         }
     }
     
@@ -171,7 +169,7 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     }
     
     @IBAction func restartQuoto(sender: UIBarButtonItem) {
-        self.chosenImageView.image = UIImage(named: "Plain-Black-Wallpaper.png")
+        self.chosenImageView.image = UIImage(named: "1874522.png")
         self.chosenQuoteLabel.text = ""
         self.newQuoto = nil
     }
