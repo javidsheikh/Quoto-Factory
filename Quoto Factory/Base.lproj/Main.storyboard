@@ -21,7 +21,7 @@
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xMh-LJ-Jfu" userLabel="Image Subview">
                                 <rect key="frame" x="-24" y="-20" width="423" height="707"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qto-Q3-pLs">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1874522.png" translatesAutoresizingMaskIntoConstraints="NO" id="Qto-Q3-pLs">
                                         <rect key="frame" x="20" y="20" width="383" height="667"/>
                                     </imageView>
                                 </subviews>
@@ -45,15 +45,15 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Drag the quote to position it, pinch to resize" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdu-Ks-G4s">
-                                        <rect key="frame" x="20" y="419" width="349" height="63"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Use the buttons above to share your quoto when it's finished or cancel to start again" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CEt-fL-8lK">
+                                        <rect key="frame" x="20" y="17" width="349" height="63"/>
                                         <color key="backgroundColor" red="0.7843137255" green="0.18039215689999999" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Use the buttons above to share your quoto when it's finished or cancel to start again" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CEt-fL-8lK">
-                                        <rect key="frame" x="20" y="17" width="349" height="63"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Drag the quote to position it, pinch to resize" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdu-Ks-G4s">
+                                        <rect key="frame" x="20" y="404" width="349" height="63"/>
                                         <color key="backgroundColor" red="0.7843137255" green="0.18039215689999999" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -141,9 +141,9 @@
                         <outlet property="instructionLabelTop" destination="CEt-fL-8lK" id="xu8-v0-ySI"/>
                         <outlet property="navigationBar" destination="WFv-h2-J0g" id="bU7-PN-NLm"/>
                         <outlet property="toolbar" destination="bCo-cS-Ljr" id="rHO-QV-gi0"/>
-                        <outletCollection property="instructionLabels" destination="CEt-fL-8lK" id="KG7-te-5UZ"/>
-                        <outletCollection property="instructionLabels" destination="pdu-Ks-G4s" id="j5u-s4-1Dp"/>
-                        <outletCollection property="instructionLabels" destination="Nce-Sh-eCg" id="auK-6P-PpM"/>
+                        <outletCollection property="instructionLabels" destination="CEt-fL-8lK" collectionClass="NSMutableArray" id="KG7-te-5UZ"/>
+                        <outletCollection property="instructionLabels" destination="pdu-Ks-G4s" collectionClass="NSMutableArray" id="j5u-s4-1Dp"/>
+                        <outletCollection property="instructionLabels" destination="Nce-Sh-eCg" collectionClass="NSMutableArray" id="auK-6P-PpM"/>
                         <segue destination="diu-E6-Dbc" kind="show" identifier="segueToQuoteVC" id="BmZ-NB-KKA"/>
                     </connections>
                 </viewController>
@@ -444,7 +444,7 @@
                                 </items>
                             </navigationBar>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.94954599289999997" green="0.84993708050000005" blue="0.17150067029999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="1as-tJ-yy2" secondAttribute="trailing" constant="-20" id="QdF-Fs-AyL"/>
                             <constraint firstItem="1as-tJ-yy2" firstAttribute="leading" secondItem="Yjn-Kh-tBX" secondAttribute="leadingMargin" constant="-20" id="osu-u5-TYW"/>
@@ -502,6 +502,30 @@
                         <outletCollection property="genericButton" destination="uMI-lH-Dm7" collectionClass="NSMutableArray" id="rQJ-0f-2jv"/>
                         <outletCollection property="genericButton" destination="Y7R-bp-Ahs" collectionClass="NSMutableArray" id="jFz-7N-CVh"/>
                         <outletCollection property="genericButton" destination="5Ey-Ga-8sl" collectionClass="NSMutableArray" id="Eds-Q3-POd"/>
+                        <outletCollection property="buttonLeft" destination="RDc-9X-8GA" collectionClass="NSMutableArray" id="CO0-qm-4N4"/>
+                        <outletCollection property="buttonLeft" destination="dGp-WH-Q4a" collectionClass="NSMutableArray" id="hHb-yE-aIf"/>
+                        <outletCollection property="buttonLeft" destination="z2z-z5-wOu" collectionClass="NSMutableArray" id="q5w-Ey-KRA"/>
+                        <outletCollection property="buttonLeft" destination="Zex-Q0-IDr" collectionClass="NSMutableArray" id="aTX-av-jKF"/>
+                        <outletCollection property="buttonLeft" destination="WJK-EK-FiI" collectionClass="NSMutableArray" id="Y1V-J1-75B"/>
+                        <outletCollection property="buttonLeft" destination="EGj-6S-EP7" collectionClass="NSMutableArray" id="ki0-Tx-qlp"/>
+                        <outletCollection property="buttonLeft" destination="Sxl-Nb-e99" collectionClass="NSMutableArray" id="qgw-av-G1m"/>
+                        <outletCollection property="buttonLeft" destination="yXq-dQ-TZA" collectionClass="NSMutableArray" id="F7R-DN-Mqb"/>
+                        <outletCollection property="buttonLeft" destination="z0Q-04-6ng" collectionClass="NSMutableArray" id="nal-XQ-Fsd"/>
+                        <outletCollection property="buttonLeft" destination="tky-f8-6yI" collectionClass="NSMutableArray" id="fYF-2T-9bX"/>
+                        <outletCollection property="buttonLeft" destination="oEb-Aj-A6S" collectionClass="NSMutableArray" id="SVs-n4-BBE"/>
+                        <outletCollection property="buttonLeft" destination="Y7R-bp-Ahs" collectionClass="NSMutableArray" id="v0o-6x-I2Z"/>
+                        <outletCollection property="buttonRight" destination="ESF-we-kAr" collectionClass="NSMutableArray" id="Jbo-Ok-4yH"/>
+                        <outletCollection property="buttonRight" destination="LQB-TJ-pNo" collectionClass="NSMutableArray" id="vJc-r4-Odi"/>
+                        <outletCollection property="buttonRight" destination="MSR-Lh-m0n" collectionClass="NSMutableArray" id="Z0e-3A-JTx"/>
+                        <outletCollection property="buttonRight" destination="wRk-gv-7wZ" collectionClass="NSMutableArray" id="KIj-Nw-r0I"/>
+                        <outletCollection property="buttonRight" destination="7FI-ba-zUv" collectionClass="NSMutableArray" id="KqE-z0-HSL"/>
+                        <outletCollection property="buttonRight" destination="56x-Jd-QAW" collectionClass="NSMutableArray" id="MFK-8J-acT"/>
+                        <outletCollection property="buttonRight" destination="6oT-wJ-KJx" collectionClass="NSMutableArray" id="Mjy-kq-MwN"/>
+                        <outletCollection property="buttonRight" destination="OS4-QT-L7Q" collectionClass="NSMutableArray" id="iek-yS-jdd"/>
+                        <outletCollection property="buttonRight" destination="eUT-eU-cGS" collectionClass="NSMutableArray" id="1md-tA-Jfr"/>
+                        <outletCollection property="buttonRight" destination="TlP-EL-Qzp" collectionClass="NSMutableArray" id="ggk-6O-n2f"/>
+                        <outletCollection property="buttonRight" destination="uMI-lH-Dm7" collectionClass="NSMutableArray" id="F3i-Ph-jnt"/>
+                        <outletCollection property="buttonRight" destination="5Ey-Ga-8sl" collectionClass="NSMutableArray" id="YlZ-HJ-hT7"/>
                         <segue destination="sDC-Lz-L92" kind="show" identifier="segueToQuoteDetailVC" id="ppW-YX-Wxj"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="segueFromQuoteToMainVC" id="ZhF-we-6So"/>
                     </connections>
@@ -580,7 +604,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.94954599288791941" green="0.84993708053691275" blue="0.17150067028120805" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
@@ -599,8 +623,11 @@
             <point key="canvasLocation" x="2946.5" y="456.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="1874522.png" width="1920" height="1080"/>
+    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="BmZ-NB-KKA"/>
-        <segue reference="ZhF-we-6So"/>
+        <segue reference="tsc-uo-9Us"/>
+        <segue reference="og7-3h-HUm"/>
     </inferredMetricsTieBreakers>
 </document>

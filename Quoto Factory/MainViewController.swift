@@ -67,7 +67,7 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
             self.chosenImageView.image = self.newQuoto.quotoImage
             
             self.chosenQuoteLabel.hidden = false
-            self.chosenQuoteLabel.text = "\(self.newQuoto.quotoQuote) - \(self.newQuoto.quotoAuthor)"
+            self.chosenQuoteLabel.text = self.newQuoto.quotoQuote + self.newQuoto.quotoAuthor
             
             self.instructionLabelBottom.hidden = true
         }
@@ -121,7 +121,7 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let controller = segue.destinationViewController as! QuoteViewController
         if self.newQuoto == nil {
-            self.newQuoto = NewQuoto(quotoImage: UIImage(named: "Cat_Placeholder.jpg")!, quotoQuote: "", quotoAuthor: "", quotoCategory: "")
+            self.newQuoto = NewQuoto(quotoImage: UIImage(named: "Plain-Black-Wallpaper.png")!, quotoQuote: "", quotoAuthor: "", quotoCategory: "")
         }
         controller.newQuoto = self.newQuoto
     }
@@ -167,16 +167,11 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     @IBAction func actionQuoto(sender: UIBarButtonItem) {
         let image = self.generateQuoto()
         let controller = UIActivityViewController(activityItems: [image], applicationActivities: nil)
-//        controller.completionWithItemsHandler = { activity, completed, items, error -> Void in
-//            if completed {
-//                self.dismissViewControllerAnimated(true, completion: nil)
-//            }
-//        }
         self.presentViewController(controller, animated: true, completion: nil)
     }
     
     @IBAction func restartQuoto(sender: UIBarButtonItem) {
-        self.chosenImageView.image = nil
+        self.chosenImageView.image = UIImage(named: "Plain-Black-Wallpaper.png")
         self.chosenQuoteLabel.text = ""
         self.newQuoto = nil
     }
