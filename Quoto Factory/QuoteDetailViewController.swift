@@ -87,8 +87,8 @@ class QuoteDetailViewController: UIViewController {
                 print(error)
                 print("URL at time of error: \(url)")
                 dispatch_async(dispatch_get_main_queue(), { () -> Void in
-                    self.categoryLabel.text = ""
                     self.quoteLabel.text = "There was an error. Please check your network connection and try again."
+                    self.authorLabel.text = ""
                     self.enableUI(true)
                 })
             }
