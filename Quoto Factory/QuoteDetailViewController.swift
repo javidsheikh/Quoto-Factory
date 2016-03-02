@@ -66,11 +66,23 @@ class QuoteDetailViewController: UIViewController {
         
         var urlString: String
         
-        if category == "random" {
-            urlString = Constants.TheySaidSo.APIBaseURL + Constants.TheySaidSo.RandomExtension + "?" + Constants.TheySaidSo.APIKey
+        let randomParameters = [
+            Constants.TheySaidSoParameterKeys.APIKey: Constants.TheySaidSoParameterValues.APIKey
+        ]
+        
+        let categoryParameters = [
+            Constants.TheySaidSoParameterKeys.Length: Constants.TheySaidSoParameterValues.Length,
+            Constants.TheySaidSoParameterKeys.Category: category,
+            Constants.TheySaidSoParameterKeys.APIKey: Constants.TheySaidSoParameterValues.APIKey
+        ]
+        
+        if category == "Random" {
+            urlString = Constants.TheySaidSo.APIBaseURL + self.escapedParameters(randomParameters)
         } else {
-            urlString = Constants.TheySaidSo.APIBaseURL + Constants.TheySaidSo.CategoryExtension + category + "&" + Constants.TheySaidSo.APIKey
+            urlString = Constants.TheySaidSo.APIBaseURL + self.escapedParameters(categoryParameters)
         }
+        
+        print(urlString)
         
         let session = NSURLSession.sharedSession()
     
@@ -121,18 +133,18 @@ class QuoteDetailViewController: UIViewController {
             }
         
             /* GUARD: Are the "photos" and "photo" keys in our result? */
-            guard let contentsDictionary = parsedResult["contents"] as? [String:AnyObject] else {
-                displayError("Cannot find keys 'contents' and 'quotes' in  (parsedResult)")
+            guard let contentsDictionary = parsedResult[Constants.TheySaidSoResponseKeys.Contents] as? [String:AnyObject] else {
+                displayError("Cannot find key \(Constants.TheySaidSoResponseKeys.Contents) in \(parsedResult)")
                 return
             }
         
-            guard let quote = contentsDictionary["quote"] as? String else {
-                displayError("Unable to find key 'quote' in contentsDictionary")
+            guard let quote = contentsDictionary[Constants.TheySaidSoResponseKeys.Quote] as? String else {
+                displayError("Unable to find key \(Constants.TheySaidSoResponseKeys.Quote) in contentsDictionary")
                 return
             }
             
-            guard let author = contentsDictionary["author"] as? String else {
-                displayError("Unable to find key 'author' in contentsDictionary")
+            guard let author = contentsDictionary[Constants.TheySaidSoResponseKeys.Author] as? String else {
+                displayError("Unable to find key \(Constants.TheySaidSoResponseKeys.Author) in contentsDictionary")
                 dispatch_async(dispatch_get_main_queue(), { () -> Void in
                     print(quote)
                     self.enableUI(true)
@@ -182,7 +194,29 @@ class QuoteDetailViewController: UIViewController {
 //            controller.newQuoto = self.newQuoto
 //        }
 //    }
-
+    private func escapedParameters(parameters: [String:AnyObject]) -> String {
+        
+        if parameters.isEmpty {
+            return ""
+        } else {
+            var keyValuePairs = [String]()
+            
+            for (key, value) in parameters {
+                
+                // make sure that it is a string value
+                let stringValue = "\(value)"
+                
+                // escape it
+                let escapedValue = stringValue.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet())
+                
+                // append it
+                keyValuePairs.append(key + "=" + "\(escapedValue!)")
+                
+            }
+            
+            return "?\(keyValuePairs.joinWithSeparator("&"))"
+        }
+    }
 
 }
 

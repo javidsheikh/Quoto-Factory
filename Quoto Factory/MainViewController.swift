@@ -126,7 +126,7 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     }
     
     // MARK: generate quoto function
-    func generateQuoto() -> UIImage {
+    private func generateQuoto() -> UIImage {
         self.navigationController?.navigationBarHidden = true
         self.toolbar.hidden = true
         
@@ -141,7 +141,7 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     }
     
     // MARK: gesture recognizer functions
-    func dragQuoteLabel(gesture: UIPanGestureRecognizer) {
+    private func dragQuoteLabel(gesture: UIPanGestureRecognizer) {
         let translation = gesture.translationInView(self.view)
         let label = chosenQuoteLabel
         label.center = CGPointMake(self.quoteLabelPosition.x + translation.x, self.quoteLabelPosition.y + translation.y)
@@ -151,7 +151,7 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         }
     }
     
-    func resizeText(pinchGesture: UIPinchGestureRecognizer) {
+     private func resizeText(pinchGesture: UIPinchGestureRecognizer) {
         let scale = pinchGesture.scale
         chosenQuoteLabel.font = chosenQuoteLabel.font.fontWithSize(quoteLabelFontSize * scale)
         

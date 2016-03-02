@@ -91,7 +91,7 @@ class QuoteViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func animateButton(duration: Double, button: UIButton, direction: CGFloat) {
+    private func animateButton(duration: Double, button: UIButton, direction: CGFloat) {
         UIView.animateWithDuration(duration, animations: { () -> Void in
             button.center = CGPointMake(button.center.x + direction, button.center.y)
             
