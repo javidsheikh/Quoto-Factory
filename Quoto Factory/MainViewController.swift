@@ -16,7 +16,6 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     var quoteLabelFontSize: CGFloat!
     
     // MARK: IBOutlets
-    @IBOutlet weak var navigationBar: UINavigationBar!
     @IBOutlet weak var toolbar: UIToolbar!
     
     @IBOutlet weak var instructionLabelTop: UILabel!
@@ -128,14 +127,14 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     
     // MARK: generate quoto function
     func generateQuoto() -> UIImage {
-        self.navigationBar.hidden = true
+        self.navigationController?.navigationBarHidden = true
         self.toolbar.hidden = true
         
         UIGraphicsBeginImageContext(self.view.frame.size)
         self.view.drawViewHierarchyInRect(self.view.frame, afterScreenUpdates: true)
         let quoto: UIImage = UIGraphicsGetImageFromCurrentImageContext()
         
-        self.navigationBar.hidden = false
+        self.navigationController?.navigationBarHidden = false
         self.toolbar.hidden = false
         
         return quoto

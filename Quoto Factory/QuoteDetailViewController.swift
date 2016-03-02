@@ -161,7 +161,8 @@ class QuoteDetailViewController: UIViewController {
     @IBAction func selectQuote(sender: UIButton) {
         self.newQuoto.quotoQuote = self.quoteLabel.text!
         self.newQuoto.quotoAuthor = " - \(self.authorLabel.text!)"
-        self.performSegueWithIdentifier("segueToMainVC", sender: self)
+        self.navigationController?.popToRootViewControllerAnimated(true)
+//        self.performSegueWithIdentifier("segueToMainVC", sender: self)
     }
 
     @IBAction func getAnotherQuote(sender: UIButton) {
@@ -174,16 +175,16 @@ class QuoteDetailViewController: UIViewController {
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "segueToMainVC" {
-            let controller = segue.destinationViewController as! MainViewController
-            controller.newQuoto = self.newQuoto
-        }
-        if segue.identifier == "segueBackToQuoteVC" {
-            let controller = segue.destinationViewController as! QuoteViewController
-            controller.newQuoto = self.newQuoto
-        }
-    }
+//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//        if segue.identifier == "segueToMainVC" {
+//            let controller = segue.destinationViewController as! MainViewController
+//            controller.newQuoto = self.newQuoto
+//        }
+//        if segue.identifier == "segueBackToQuoteVC" {
+//            let controller = segue.destinationViewController as! QuoteViewController
+//            controller.newQuoto = self.newQuoto
+//        }
+//    }
 
 
 }
