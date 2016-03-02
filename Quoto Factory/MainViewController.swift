@@ -148,7 +148,7 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     }
     
     // MARK: gesture recognizer functions
-    private func dragQuoteLabel(gesture: UIPanGestureRecognizer) {
+    func dragQuoteLabel(gesture: UIPanGestureRecognizer) {
         let translation = gesture.translationInView(self.view)
         let label = chosenQuoteLabel
         label.center = CGPointMake(self.quoteLabelPosition.x + translation.x, self.quoteLabelPosition.y + translation.y)
@@ -158,7 +158,7 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         }
     }
     
-     private func resizeText(pinchGesture: UIPinchGestureRecognizer) {
+    func resizeText(pinchGesture: UIPinchGestureRecognizer) {
         let scale = pinchGesture.scale
         chosenQuoteLabel.font = chosenQuoteLabel.font.fontWithSize(quoteLabelFontSize * scale)
         
