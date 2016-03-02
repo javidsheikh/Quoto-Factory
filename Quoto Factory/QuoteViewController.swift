@@ -44,8 +44,14 @@ class QuoteViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
+        self.navigationController?.navigationBar.barTintColor = UIColor(red: 242/255, green: 46/255, blue: 70/255, alpha: 1.0)
+        self.navigationController?.navigationBar.tintColor = UIColor.whiteColor()
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor(), NSFontAttributeName: UIFont(name: "Futura-CondensedExtraBold", size: 24)!]
+        
+        self.configureBackground()
+
         for button in self.genericButton {
             button.layer.cornerRadius = 15
         }
@@ -111,5 +117,16 @@ class QuoteViewController: UIViewController {
             controller.newQuoto = self.newQuoto
         }
     }
+    
+    private func configureBackground() {
+        let backgroundGradient = CAGradientLayer()
+        let colorTop = UIColor(red: 242/255, green: 217/255, blue: 44/255, alpha: 1.0).CGColor
+        let colorBottom = UIColor(red: 242/255, green: 100/255, blue: 48/255, alpha: 1.0).CGColor
+        backgroundGradient.colors = [colorTop, colorBottom]
+        backgroundGradient.locations = [0.0, 1.0]
+        backgroundGradient.frame = view.frame
+        view.layer.insertSublayer(backgroundGradient, atIndex: 0)
+    }
+
 
 }
