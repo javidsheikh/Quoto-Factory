@@ -23,7 +23,7 @@ class QuoteDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // Do any additional setup after loading the view.        
         self.categoryLabel.text = self.newQuoto.quotoCategory.capitalizedString
         print(self.newQuoto.quotoCategory)
         getQuote(self.newQuoto.quotoCategory)
@@ -169,9 +169,6 @@ class QuoteDetailViewController: UIViewController {
         getQuote(self.newQuoto.quotoCategory)
     }
     
-    @IBAction func backToCategories(sender: UIButton) {
-        self.performSegueWithIdentifier("segueBackToQuoteVC", sender: self)
-    }
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
