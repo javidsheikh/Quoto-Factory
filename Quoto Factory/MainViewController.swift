@@ -15,6 +15,9 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     var quoteLabelPosition: CGPoint!
     var quoteLabelFontSize: CGFloat!
     
+    var iMinSessions = 5
+    var iTryAgainSessions = 3
+    
     // MARK: IBOutlets
     @IBOutlet weak var toolbar: UIToolbar!
     
@@ -166,11 +169,47 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
             quoteLabelFontSize = quoteLabelFontSize * scale
         }
     }
+
+    // MARK: rate app functions
+    func rateMe() {
+        let neverRate = NSUserDefaults.standardUserDefaults().boolForKey("neverRate")
+        var numLaunches = NSUserDefaults.standardUserDefaults().integerForKey("numLaunches") + 1
+        if (!neverRate && (numLaunches == iMinSessions || numLaunches >= (iMinSessions + iTryAgainSessions + 1))) {
+            showRateMe()
+            numLaunches = iMinSessions + 1
+        }
+        NSUserDefaults.standardUserDefaults().setInteger(numLaunches, forKey: "numLaunches")
+    }
+    
+    func showRateMe() {
+        let alert = UIAlertController(title: "Rate Us", message: "Thanks for using Quoto Factory", preferredStyle: UIAlertControllerStyle.Alert)
+        alert.addAction(UIAlertAction(title: "Rate Quoto Factory", style: UIAlertActionStyle.Default, handler: { alertAction in
+//            UIApplication.sharedApplication().openURL(NSURL(string : "itms-apps://ax.itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=<iTUNES CONNECT APP ID>")!)
+            NSUserDefaults.standardUserDefaults().setBool(true, forKey: "neverRate")
+            // TODO: Amend URL
+            UIApplication.sharedApplication().openURL(NSURL(string: "https://theysaidso.com/")!)
+            alert.dismissViewControllerAnimated(true, completion: nil)
+        }))
+        alert.addAction(UIAlertAction(title: "No Thanks", style: UIAlertActionStyle.Default, handler: { alertAction in
+            NSUserDefaults.standardUserDefaults().setBool(true, forKey: "neverRate")
+            alert.dismissViewControllerAnimated(true, completion: nil)
+        }))
+        alert.addAction(UIAlertAction(title: "Maybe Later", style: UIAlertActionStyle.Default, handler: { alertAction in
+            alert.dismissViewControllerAnimated(true, completion: nil)
+        }))
+        self.presentViewController(alert, animated: true, completion: nil)
+    }
     
     // MARK: IBActions
     @IBAction func actionQuoto(sender: UIBarButtonItem) {
         let image = self.generateQuoto()
         let controller = UIActivityViewController(activityItems: [image], applicationActivities: nil)
+        controller.completionWithItemsHandler = { activity, completed, items, error -> Void in
+            if completed {
+                self.rateMe()
+            }
+            
+        }
         self.presentViewController(controller, animated: true, completion: nil)
     }
     
