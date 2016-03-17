@@ -15,61 +15,69 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xMh-LJ-Jfu" userLabel="Image Subview">
-                                <rect key="frame" x="-24" y="-20" width="423" height="707"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1874522.png" translatesAutoresizingMaskIntoConstraints="NO" id="Qto-Q3-pLs">
-                                        <rect key="frame" x="20" y="20" width="383" height="667"/>
-                                    </imageView>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1874522.png" translatesAutoresizingMaskIntoConstraints="NO" id="Qto-Q3-pLs">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G0u-Oh-KuA" userLabel="Label Subview">
-                                <rect key="frame" x="-8" y="60" width="391" height="563"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="492"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ca-bN-p9T">
-                                        <rect key="frame" x="22" y="8" width="347" height="547"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use the buttons below to select a photo and find a quote" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nce-Sh-eCg">
+                                        <rect key="frame" x="8" y="424" width="584" height="60"/>
+                                        <color key="backgroundColor" red="0.7843137255" green="0.18039215689999999" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="Nua-xk-9Bi"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use the buttons above to share your quoto when it's finished or cancel to start again" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CEt-fL-8lK">
+                                        <rect key="frame" x="8" y="8" width="584" height="60"/>
+                                        <color key="backgroundColor" red="0.7843137255" green="0.18039215689999999" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="cJJ-oG-iFy"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drag the quote to position it, pinch to resize" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdu-Ks-G4s">
+                                        <rect key="frame" x="8" y="354" width="584" height="60"/>
+                                        <color key="backgroundColor" red="0.7843137255" green="0.18039215689999999" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="38i-2E-GOP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ca-bN-p9T">
+                                        <rect key="frame" x="88" y="22" width="0.0" height="0.0"/>
                                         <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="26"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                         <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         <size key="shadowOffset" width="1" height="1"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Use the buttons below to select a photo and find a quote" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nce-Sh-eCg">
-                                        <rect key="frame" x="20" y="475" width="349" height="62"/>
-                                        <color key="backgroundColor" red="0.7843137255" green="0.18039215689999999" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Use the buttons above to share your quoto when it's finished or cancel to start again" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CEt-fL-8lK">
-                                        <rect key="frame" x="20" y="17" width="349" height="63"/>
-                                        <color key="backgroundColor" red="0.7843137255" green="0.18039215689999999" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Drag the quote to position it, pinch to resize" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdu-Ks-G4s">
-                                        <rect key="frame" x="20" y="404" width="349" height="63"/>
-                                        <color key="backgroundColor" red="0.7843137255" green="0.18039215689999999" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="2Ca-bN-p9T" secondAttribute="trailing" constant="22" id="4LY-aJ-lHs"/>
-                                    <constraint firstItem="2Ca-bN-p9T" firstAttribute="top" secondItem="G0u-Oh-KuA" secondAttribute="top" constant="8" id="G6C-S2-zh5"/>
-                                    <constraint firstAttribute="bottom" secondItem="2Ca-bN-p9T" secondAttribute="bottom" constant="8" id="UjO-39-0Ht"/>
-                                    <constraint firstItem="2Ca-bN-p9T" firstAttribute="leading" secondItem="G0u-Oh-KuA" secondAttribute="leading" constant="22" id="hEy-u0-1Qw"/>
+                                    <constraint firstAttribute="trailing" secondItem="CEt-fL-8lK" secondAttribute="trailing" constant="8" id="1B9-dD-dIx"/>
+                                    <constraint firstItem="Nce-Sh-eCg" firstAttribute="top" secondItem="pdu-Ks-G4s" secondAttribute="bottom" constant="10" id="3fY-fH-Wea"/>
+                                    <constraint firstItem="Nce-Sh-eCg" firstAttribute="leading" secondItem="G0u-Oh-KuA" secondAttribute="leading" constant="8" id="5hT-1q-VFz"/>
+                                    <constraint firstAttribute="trailing" secondItem="pdu-Ks-G4s" secondAttribute="trailing" constant="8" id="954-S0-e2N"/>
+                                    <constraint firstAttribute="bottom" secondItem="Nce-Sh-eCg" secondAttribute="bottom" constant="8" id="BHZ-wQ-GGU"/>
+                                    <constraint firstAttribute="trailing" secondItem="Nce-Sh-eCg" secondAttribute="trailing" constant="8" id="o7i-Zb-sSe"/>
+                                    <constraint firstItem="pdu-Ks-G4s" firstAttribute="leading" secondItem="G0u-Oh-KuA" secondAttribute="leading" constant="8" id="rJg-rD-usk"/>
+                                    <constraint firstItem="CEt-fL-8lK" firstAttribute="top" secondItem="G0u-Oh-KuA" secondAttribute="top" constant="8" id="rky-Vk-XPC"/>
+                                    <constraint firstItem="CEt-fL-8lK" firstAttribute="leading" secondItem="G0u-Oh-KuA" secondAttribute="leading" constant="8" id="sOv-o8-Lpu"/>
                                 </constraints>
                             </view>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bCo-cS-Ljr">
-                                <rect key="frame" x="-4" y="623" width="383" height="44"/>
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="F8F-WF-FCF"/>
                                 </constraints>
@@ -87,7 +95,7 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="nil-M7-8cO"/>
                                     <barButtonItem style="plain" id="MQW-Ry-g0W">
                                         <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="XcF-kI-9hU">
-                                            <rect key="frame" x="293" y="7" width="74" height="30"/>
+                                            <rect key="frame" x="506" y="7" width="74" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <state key="normal" title="Add Quote"/>
                                             <connections>
@@ -100,13 +108,17 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="bCo-cS-Ljr" secondAttribute="trailing" constant="-20" id="OsS-AK-9NS"/>
-                            <constraint firstItem="bCo-cS-Ljr" firstAttribute="top" secondItem="G0u-Oh-KuA" secondAttribute="bottom" id="PbH-Rk-CAm"/>
-                            <constraint firstItem="G0u-Oh-KuA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-24" id="XjS-V6-scu"/>
-                            <constraint firstItem="G0u-Oh-KuA" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="60" id="eOJ-lY-cIV"/>
-                            <constraint firstItem="bCo-cS-Ljr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="fHU-Ed-7Kw"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bCo-cS-Ljr" secondAttribute="bottom" id="lJ5-av-7WR"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="G0u-Oh-KuA" secondAttribute="trailing" constant="-24" id="lQE-af-u8n"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bCo-cS-Ljr" secondAttribute="bottom" id="4dG-23-b7U"/>
+                            <constraint firstItem="bCo-cS-Ljr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="Bph-fm-fa0"/>
+                            <constraint firstItem="G0u-Oh-KuA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="It9-Cd-F4S"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Qto-Q3-pLs" secondAttribute="trailing" constant="-20" id="ItR-Nq-PFq"/>
+                            <constraint firstItem="G0u-Oh-KuA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="JJS-iV-Qm0"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Qto-Q3-pLs" secondAttribute="bottom" id="LW0-GB-DQI"/>
+                            <constraint firstItem="Qto-Q3-pLs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="XCh-TP-h5b"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="G0u-Oh-KuA" secondAttribute="trailing" constant="-20" id="ejl-IS-pEl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bCo-cS-Ljr" secondAttribute="trailing" constant="-20" id="mIL-Tm-w5j"/>
+                            <constraint firstItem="bCo-cS-Ljr" firstAttribute="top" secondItem="G0u-Oh-KuA" secondAttribute="bottom" id="o3L-zD-2vX"/>
+                            <constraint firstItem="Qto-Q3-pLs" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="pYt-v8-Bnu"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Quoto Factory" id="MBI-H1-Bvd">
@@ -121,7 +133,6 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="actionButton" destination="nWE-9z-bx4" id="Bbw-F7-GV2"/>
                         <outlet property="albumButton" destination="bCo-cS-Ljr" id="SR0-4K-N1J"/>
@@ -130,7 +141,6 @@
                         <outlet property="chooseQuoteButton" destination="XcF-kI-9hU" id="6dZ-fn-F9C"/>
                         <outlet property="chosenImageView" destination="Qto-Q3-pLs" id="YNR-FM-Thu"/>
                         <outlet property="chosenQuoteLabel" destination="2Ca-bN-p9T" id="UgA-Uc-Rf1"/>
-                        <outlet property="imageSubView" destination="xMh-LJ-Jfu" id="iTG-1l-9oM"/>
                         <outlet property="instructionLabelBottom" destination="Nce-Sh-eCg" id="W8T-6D-Is7"/>
                         <outlet property="instructionLabelMiddle" destination="pdu-Ks-G4s" id="CNw-yD-sAb"/>
                         <outlet property="instructionLabelTop" destination="CEt-fL-8lK" id="xu8-v0-ySI"/>
@@ -143,7 +153,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2553.5" y="456.5"/>
+            <point key="canvasLocation" x="2373" y="456"/>
         </scene>
         <!--Categories-->
         <scene sceneID="thq-0v-9Y5">
@@ -154,7 +164,7 @@
                         <viewControllerLayoutGuide type="bottom" id="dyv-uc-1Fq"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Yjn-Kh-tBX">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yXq-dQ-TZA">
@@ -426,7 +436,6 @@
                         <color key="backgroundColor" red="0.94954599289999997" green="0.84993708050000005" blue="0.17150067029999999" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Categories" id="y5R-AI-B6z"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="adversityButton" destination="56x-Jd-QAW" id="nHW-mG-RjX"/>
                         <outlet property="ambitionButton" destination="Zex-Q0-IDr" id="q3c-On-LQi"/>
@@ -505,7 +514,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="og1-rf-od4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3053.5" y="456.5"/>
+            <point key="canvasLocation" x="3086" y="456"/>
         </scene>
         <!--Quote Detail View Controller-->
         <scene sceneID="c9L-bf-CKG">
@@ -516,7 +525,7 @@
                         <viewControllerLayoutGuide type="bottom" id="tad-gi-kiI"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="SVY-QX-UBH">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WMM-OH-n1c">
@@ -568,7 +577,6 @@
                         </subviews>
                         <color key="backgroundColor" red="0.94954599288791941" green="0.84993708053691275" blue="0.17150067028120805" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="authorLabel" destination="0hJ-SV-M0N" id="fOq-SV-2sW"/>
                         <outlet property="categoryLabel" destination="QyO-j9-dbg" id="e4l-3o-4GN"/>
@@ -579,14 +587,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gVH-lL-af6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3533.5" y="456.5"/>
+            <point key="canvasLocation" x="3801" y="456"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="n7R-Ce-dYo">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ulb-GE-fxg" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="YnY-34-dRS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -598,7 +605,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rmc-tw-btZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1966.5" y="456.5"/>
+            <point key="canvasLocation" x="1601" y="456"/>
         </scene>
     </scenes>
     <resources>
