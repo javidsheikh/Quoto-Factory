@@ -169,7 +169,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="aQJ-gW-v55" userLabel="StackView1">
-                                <rect key="frame" x="20" y="64" width="270" height="270"/>
+                                <rect key="frame" x="20" y="68" width="270" height="270"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RDc-9X-8GA">
                                         <rect key="frame" x="0.0" y="0.0" width="270" height="42"/>
@@ -244,7 +244,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="seO-5P-x0b" userLabel="StackView2">
-                                <rect key="frame" x="310" y="64" width="270" height="270"/>
+                                <rect key="frame" x="310" y="68" width="270" height="270"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ESF-we-kAr">
                                         <rect key="frame" x="0.0" y="0.0" width="270" height="42"/>
@@ -314,85 +314,8 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="dXb-D9-kkf" userLabel="StackView3">
-                                <rect key="frame" x="20" y="330" width="270" height="270"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sxl-Nb-e99">
-                                        <rect key="frame" x="0.0" y="0.0" width="270" height="42"/>
-                                        <color key="backgroundColor" red="0.18823529410000001" green="0.63137254899999995" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
-                                        <state key="normal" title="Wisdom">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="getQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="abH-u5-sID"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yXq-dQ-TZA">
-                                        <rect key="frame" x="0.0" y="46" width="270" height="41"/>
-                                        <color key="backgroundColor" red="1" green="0.48145839499999998" blue="0.015686274510000001" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
-                                        <state key="normal" title="Random">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="getQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="sAP-PO-Kzp"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z0Q-04-6ng">
-                                        <rect key="frame" x="0.0" y="91" width="270" height="42"/>
-                                        <color key="backgroundColor" red="0.7843137255" green="0.18039215689999999" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
-                                        <state key="normal" title="Funny">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="getQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="WTr-Ph-0bK"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EGj-6S-EP7">
-                                        <rect key="frame" x="0.0" y="137" width="270" height="42"/>
-                                        <color key="backgroundColor" red="0.94901960780000005" green="0.18039215689999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
-                                        <state key="normal" title="Motivational">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="getQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="dCW-eg-DYM"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tky-f8-6yI">
-                                        <rect key="frame" x="0.0" y="183" width="270" height="41"/>
-                                        <color key="backgroundColor" red="0.145088992" green="0.85098039219999999" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
-                                        <state key="normal" title="Life">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                            <rect key="frame" x="20" y="502" width="166" height="32"/>
-                                        </variation>
-                                        <connections>
-                                            <action selector="getQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="7yK-QU-SQP"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y7R-bp-Ahs">
-                                        <rect key="frame" x="0.0" y="228" width="270" height="42"/>
-                                        <color key="backgroundColor" red="0.18823529410000001" green="0.63137254899999995" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
-                                        <state key="normal" title="Anger">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                            <rect key="frame" x="20" y="582" width="199" height="35"/>
-                                        </variation>
-                                        <connections>
-                                            <action selector="getQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="dLo-yT-dAI"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="tiJ-wM-iEj" userLabel="StackView4">
-                                <rect key="frame" x="310" y="330" width="270" height="270"/>
+                                <rect key="frame" x="310" y="326" width="270" height="270"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6oT-wJ-KJx">
                                         <rect key="frame" x="0.0" y="0.0" width="270" height="42"/>
@@ -471,48 +394,145 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="dXb-D9-kkf" userLabel="StackView3">
+                                <rect key="frame" x="20" y="326" width="270" height="270"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sxl-Nb-e99">
+                                        <rect key="frame" x="0.0" y="0.0" width="270" height="42"/>
+                                        <color key="backgroundColor" red="0.18823529410000001" green="0.63137254899999995" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
+                                        <state key="normal" title="Wisdom">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="getQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="abH-u5-sID"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yXq-dQ-TZA">
+                                        <rect key="frame" x="0.0" y="46" width="270" height="41"/>
+                                        <color key="backgroundColor" red="1" green="0.48145839499999998" blue="0.015686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
+                                        <state key="normal" title="Random">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="getQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="sAP-PO-Kzp"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z0Q-04-6ng">
+                                        <rect key="frame" x="0.0" y="91" width="270" height="42"/>
+                                        <color key="backgroundColor" red="0.7843137255" green="0.18039215689999999" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
+                                        <state key="normal" title="Funny">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="getQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="WTr-Ph-0bK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EGj-6S-EP7">
+                                        <rect key="frame" x="0.0" y="137" width="270" height="42"/>
+                                        <color key="backgroundColor" red="0.94901960780000005" green="0.18039215689999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
+                                        <state key="normal" title="Motivational">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="getQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="dCW-eg-DYM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tky-f8-6yI">
+                                        <rect key="frame" x="0.0" y="183" width="270" height="41"/>
+                                        <color key="backgroundColor" red="0.145088992" green="0.85098039219999999" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
+                                        <state key="normal" title="Life">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                            <rect key="frame" x="20" y="502" width="166" height="32"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="getQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="7yK-QU-SQP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y7R-bp-Ahs">
+                                        <rect key="frame" x="0.0" y="228" width="270" height="42"/>
+                                        <color key="backgroundColor" red="0.18823529410000001" green="0.63137254899999995" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
+                                        <state key="normal" title="Anger">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                            <rect key="frame" x="20" y="582" width="199" height="35"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="getQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="dLo-yT-dAI"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.94954599289999997" green="0.84993708050000005" blue="0.17150067029999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="dyv-uc-1Fq" firstAttribute="top" secondItem="seO-5P-x0b" secondAttribute="bottom" id="0Tv-V1-SAd"/>
+                            <constraint firstItem="dyv-uc-1Fq" firstAttribute="top" secondItem="seO-5P-x0b" secondAttribute="bottom" constant="4" id="0Tv-V1-SAd"/>
                             <constraint firstItem="aQJ-gW-v55" firstAttribute="height" secondItem="Yjn-Kh-tBX" secondAttribute="height" multiplier="0.45" id="2T4-mI-Ptm"/>
+                            <constraint firstItem="tiJ-wM-iEj" firstAttribute="leading" secondItem="dXb-D9-kkf" secondAttribute="trailing" constant="4" id="2bm-Cq-RZh"/>
+                            <constraint firstItem="dXb-D9-kkf" firstAttribute="width" secondItem="Yjn-Kh-tBX" secondAttribute="width" multiplier="0.23" id="2cP-Rh-LtG"/>
                             <constraint firstAttribute="trailingMargin" secondItem="seO-5P-x0b" secondAttribute="trailing" id="2lg-ik-Ars"/>
-                            <constraint firstItem="dyv-uc-1Fq" firstAttribute="top" secondItem="tiJ-wM-iEj" secondAttribute="bottom" id="2sU-9U-wgn"/>
+                            <constraint firstItem="dyv-uc-1Fq" firstAttribute="top" secondItem="tiJ-wM-iEj" secondAttribute="bottom" constant="4" id="2sU-9U-wgn"/>
+                            <constraint firstItem="dyv-uc-1Fq" firstAttribute="top" secondItem="aQJ-gW-v55" secondAttribute="bottom" constant="4" id="4C1-gS-rOF"/>
                             <constraint firstItem="dXb-D9-kkf" firstAttribute="leading" secondItem="Yjn-Kh-tBX" secondAttribute="leadingMargin" id="4lG-aJ-ebZ"/>
-                            <constraint firstItem="dyv-uc-1Fq" firstAttribute="top" secondItem="dXb-D9-kkf" secondAttribute="bottom" id="5WJ-eN-L6c"/>
+                            <constraint firstItem="dyv-uc-1Fq" firstAttribute="top" secondItem="dXb-D9-kkf" secondAttribute="bottom" constant="4" id="5WJ-eN-L6c"/>
                             <constraint firstItem="aQJ-gW-v55" firstAttribute="width" secondItem="Yjn-Kh-tBX" secondAttribute="width" multiplier="0.23" id="5pb-Jh-pSR"/>
-                            <constraint firstItem="dyv-uc-1Fq" firstAttribute="top" secondItem="aQJ-gW-v55" secondAttribute="bottom" id="B5f-ou-F1L"/>
+                            <constraint firstItem="dyv-uc-1Fq" firstAttribute="top" secondItem="aQJ-gW-v55" secondAttribute="bottom" constant="4" id="B5f-ou-F1L"/>
+                            <constraint firstItem="tiJ-wM-iEj" firstAttribute="top" secondItem="EG6-T9-w2b" secondAttribute="bottom" constant="4" id="C4N-zP-LqC"/>
                             <constraint firstItem="seO-5P-x0b" firstAttribute="height" secondItem="Yjn-Kh-tBX" secondAttribute="height" multiplier="0.45" id="Clw-t8-bMu"/>
-                            <constraint firstItem="tiJ-wM-iEj" firstAttribute="top" secondItem="EG6-T9-w2b" secondAttribute="bottom" id="FUN-68-8NU"/>
+                            <constraint firstItem="tiJ-wM-iEj" firstAttribute="top" secondItem="EG6-T9-w2b" secondAttribute="bottom" constant="4" id="FUN-68-8NU"/>
                             <constraint firstItem="tiJ-wM-iEj" firstAttribute="height" secondItem="Yjn-Kh-tBX" secondAttribute="height" multiplier="0.45" id="HUh-hq-g3q"/>
                             <constraint firstItem="seO-5P-x0b" firstAttribute="width" secondItem="Yjn-Kh-tBX" secondAttribute="width" multiplier="0.45" id="IpZ-vs-jrZ"/>
+                            <constraint firstItem="seO-5P-x0b" firstAttribute="leading" secondItem="aQJ-gW-v55" secondAttribute="trailing" constant="4" id="M1X-pF-iyp"/>
                             <constraint firstItem="tiJ-wM-iEj" firstAttribute="leading" secondItem="dXb-D9-kkf" secondAttribute="trailing" constant="4" id="MFB-zb-0pR"/>
-                            <constraint firstItem="seO-5P-x0b" firstAttribute="top" secondItem="EG6-T9-w2b" secondAttribute="bottom" id="O6G-ni-ES7"/>
+                            <constraint firstItem="seO-5P-x0b" firstAttribute="top" secondItem="EG6-T9-w2b" secondAttribute="bottom" constant="4" id="O6G-ni-ES7"/>
+                            <constraint firstItem="seO-5P-x0b" firstAttribute="width" secondItem="Yjn-Kh-tBX" secondAttribute="width" multiplier="0.23" id="Ong-Zp-zuN"/>
                             <constraint firstAttribute="trailingMargin" secondItem="tiJ-wM-iEj" secondAttribute="trailing" id="RGw-cq-xs3"/>
+                            <constraint firstItem="dXb-D9-kkf" firstAttribute="top" secondItem="EG6-T9-w2b" secondAttribute="bottom" constant="4" id="UBt-cX-V9R"/>
                             <constraint firstItem="seO-5P-x0b" firstAttribute="width" secondItem="Yjn-Kh-tBX" secondAttribute="width" multiplier="0.23" id="US9-WN-Gzs"/>
                             <constraint firstItem="tiJ-wM-iEj" firstAttribute="width" secondItem="Yjn-Kh-tBX" secondAttribute="width" multiplier="0.23" id="VhA-YF-duz"/>
                             <constraint firstItem="aQJ-gW-v55" firstAttribute="leading" secondItem="Yjn-Kh-tBX" secondAttribute="leadingMargin" id="bBq-wf-H86"/>
-                            <constraint firstItem="dXb-D9-kkf" firstAttribute="top" secondItem="EG6-T9-w2b" secondAttribute="bottom" id="bac-kZ-kjP"/>
+                            <constraint firstItem="dXb-D9-kkf" firstAttribute="top" secondItem="EG6-T9-w2b" secondAttribute="bottom" constant="4" id="bac-kZ-kjP"/>
+                            <constraint firstItem="dyv-uc-1Fq" firstAttribute="top" secondItem="seO-5P-x0b" secondAttribute="bottom" constant="4" id="bjL-fv-HtM"/>
                             <constraint firstItem="aQJ-gW-v55" firstAttribute="width" secondItem="Yjn-Kh-tBX" secondAttribute="width" multiplier="0.45" id="bwS-M9-WDL"/>
+                            <constraint firstItem="aQJ-gW-v55" firstAttribute="width" secondItem="Yjn-Kh-tBX" secondAttribute="width" multiplier="0.23" id="jEG-5S-7m5"/>
                             <constraint firstItem="dXb-D9-kkf" firstAttribute="height" secondItem="Yjn-Kh-tBX" secondAttribute="height" multiplier="0.45" id="kC4-Ip-sHT"/>
                             <constraint firstItem="dXb-D9-kkf" firstAttribute="width" secondItem="Yjn-Kh-tBX" secondAttribute="width" multiplier="0.45" id="klg-Ra-kIQ"/>
+                            <constraint firstItem="tiJ-wM-iEj" firstAttribute="width" secondItem="Yjn-Kh-tBX" secondAttribute="width" multiplier="0.23" id="naQ-ym-ilm"/>
                             <constraint firstItem="dXb-D9-kkf" firstAttribute="width" secondItem="Yjn-Kh-tBX" secondAttribute="width" multiplier="0.23" id="p4G-Ds-APx"/>
                             <constraint firstItem="seO-5P-x0b" firstAttribute="leading" secondItem="aQJ-gW-v55" secondAttribute="trailing" constant="4" id="qKN-Wq-FZX"/>
                             <constraint firstItem="tiJ-wM-iEj" firstAttribute="width" secondItem="Yjn-Kh-tBX" secondAttribute="width" multiplier="0.45" id="rkG-Cg-78o"/>
-                            <constraint firstItem="aQJ-gW-v55" firstAttribute="top" secondItem="EG6-T9-w2b" secondAttribute="bottom" id="rs3-mp-Hfg"/>
+                            <constraint firstItem="aQJ-gW-v55" firstAttribute="top" secondItem="EG6-T9-w2b" secondAttribute="bottom" constant="4" id="rs3-mp-Hfg"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="5pb-Jh-pSR"/>
+                                <exclude reference="jEG-5S-7m5"/>
+                                <exclude reference="M1X-pF-iyp"/>
+                                <exclude reference="Ong-Zp-zuN"/>
                                 <exclude reference="US9-WN-Gzs"/>
                                 <exclude reference="qKN-Wq-FZX"/>
+                                <exclude reference="0Tv-V1-SAd"/>
+                                <exclude reference="4C1-gS-rOF"/>
+                                <exclude reference="B5f-ou-F1L"/>
+                                <exclude reference="bjL-fv-HtM"/>
+                                <exclude reference="2cP-Rh-LtG"/>
+                                <exclude reference="UBt-cX-V9R"/>
                                 <exclude reference="bac-kZ-kjP"/>
                                 <exclude reference="p4G-Ds-APx"/>
+                                <exclude reference="2bm-Cq-RZh"/>
+                                <exclude reference="C4N-zP-LqC"/>
                                 <exclude reference="FUN-68-8NU"/>
                                 <exclude reference="MFB-zb-0pR"/>
                                 <exclude reference="VhA-YF-duz"/>
-                                <exclude reference="0Tv-V1-SAd"/>
-                                <exclude reference="B5f-ou-F1L"/>
+                                <exclude reference="naQ-ym-ilm"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=compact">
@@ -525,6 +545,8 @@
                                 <exclude reference="IpZ-vs-jrZ"/>
                                 <include reference="US9-WN-Gzs"/>
                                 <include reference="qKN-Wq-FZX"/>
+                                <include reference="0Tv-V1-SAd"/>
+                                <include reference="B5f-ou-F1L"/>
                                 <exclude reference="4lG-aJ-ebZ"/>
                                 <include reference="bac-kZ-kjP"/>
                                 <exclude reference="kC4-Ip-sHT"/>
@@ -535,8 +557,30 @@
                                 <include reference="MFB-zb-0pR"/>
                                 <include reference="VhA-YF-duz"/>
                                 <exclude reference="rkG-Cg-78o"/>
-                                <include reference="0Tv-V1-SAd"/>
-                                <include reference="B5f-ou-F1L"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="constraints">
+                                <exclude reference="2T4-mI-Ptm"/>
+                                <exclude reference="bwS-M9-WDL"/>
+                                <include reference="jEG-5S-7m5"/>
+                                <exclude reference="2lg-ik-Ars"/>
+                                <exclude reference="Clw-t8-bMu"/>
+                                <exclude reference="IpZ-vs-jrZ"/>
+                                <include reference="M1X-pF-iyp"/>
+                                <include reference="Ong-Zp-zuN"/>
+                                <include reference="4C1-gS-rOF"/>
+                                <include reference="bjL-fv-HtM"/>
+                                <include reference="2cP-Rh-LtG"/>
+                                <exclude reference="4lG-aJ-ebZ"/>
+                                <include reference="UBt-cX-V9R"/>
+                                <exclude reference="kC4-Ip-sHT"/>
+                                <exclude reference="klg-Ra-kIQ"/>
+                                <include reference="2bm-Cq-RZh"/>
+                                <include reference="C4N-zP-LqC"/>
+                                <exclude reference="HUh-hq-g3q"/>
+                                <include reference="naQ-ym-ilm"/>
+                                <exclude reference="rkG-Cg-78o"/>
                             </mask>
                         </variation>
                     </view>
