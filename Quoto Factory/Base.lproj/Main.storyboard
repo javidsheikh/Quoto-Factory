@@ -171,7 +171,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="aQJ-gW-v55" userLabel="StackView1">
                                 <rect key="frame" x="20" y="68" width="270" height="270"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RDc-9X-8GA">
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RDc-9X-8GA">
                                         <rect key="frame" x="0.0" y="0.0" width="270" height="42"/>
                                         <color key="backgroundColor" red="0.94901960784313721" green="0.1803921568627451" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
@@ -182,7 +182,7 @@
                                             <action selector="getQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="Huj-Ru-MBV"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dGp-WH-Q4a">
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dGp-WH-Q4a">
                                         <rect key="frame" x="0.0" y="46" width="270" height="41"/>
                                         <color key="backgroundColor" red="0.18823529410000001" green="0.63137254899999995" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
@@ -193,7 +193,7 @@
                                             <action selector="getQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="fGA-nP-uw5"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z2z-z5-wOu">
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z2z-z5-wOu">
                                         <rect key="frame" x="0.0" y="91" width="270" height="42"/>
                                         <color key="backgroundColor" red="1" green="0.4823529411764706" blue="0.015686274509803921" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
@@ -204,7 +204,7 @@
                                             <action selector="getQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="P8l-hQ-4bx"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zex-Q0-IDr">
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zex-Q0-IDr">
                                         <rect key="frame" x="0.0" y="137" width="270" height="42"/>
                                         <color key="backgroundColor" red="0.7843137255" green="0.18039215689999999" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
@@ -216,7 +216,7 @@
                                             <action selector="getQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="qgW-4C-ieJ"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WJK-EK-FiI">
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WJK-EK-FiI">
                                         <rect key="frame" x="0.0" y="183" width="270" height="41"/>
                                         <color key="backgroundColor" red="0.36862745099999999" green="0.84313725490000002" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
@@ -227,18 +227,15 @@
                                             <action selector="getQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="ny3-6v-8Np"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oEb-Aj-A6S">
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EGj-6S-EP7">
                                         <rect key="frame" x="0.0" y="228" width="270" height="42"/>
                                         <color key="backgroundColor" red="0.94901960780000005" green="0.18039215689999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
-                                        <state key="normal" title="Sports">
+                                        <state key="normal" title="Motivational">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
-                                        <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                            <rect key="frame" x="20" y="542" width="159" height="32"/>
-                                        </variation>
                                         <connections>
-                                            <action selector="getQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="Az4-p0-NSj"/>
+                                            <action selector="getQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="dCW-eg-DYM"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -397,7 +394,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="dXb-D9-kkf" userLabel="StackView3">
                                 <rect key="frame" x="20" y="326" width="270" height="270"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sxl-Nb-e99">
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sxl-Nb-e99">
                                         <rect key="frame" x="0.0" y="0.0" width="270" height="42"/>
                                         <color key="backgroundColor" red="0.18823529410000001" green="0.63137254899999995" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
@@ -408,7 +405,7 @@
                                             <action selector="getQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="abH-u5-sID"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yXq-dQ-TZA">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yXq-dQ-TZA">
                                         <rect key="frame" x="0.0" y="46" width="270" height="41"/>
                                         <color key="backgroundColor" red="1" green="0.48145839499999998" blue="0.015686274510000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
@@ -419,7 +416,7 @@
                                             <action selector="getQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="sAP-PO-Kzp"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z0Q-04-6ng">
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z0Q-04-6ng">
                                         <rect key="frame" x="0.0" y="91" width="270" height="42"/>
                                         <color key="backgroundColor" red="0.7843137255" green="0.18039215689999999" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
@@ -430,19 +427,8 @@
                                             <action selector="getQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="WTr-Ph-0bK"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EGj-6S-EP7">
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tky-f8-6yI">
                                         <rect key="frame" x="0.0" y="137" width="270" height="42"/>
-                                        <color key="backgroundColor" red="0.94901960780000005" green="0.18039215689999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
-                                        <state key="normal" title="Motivational">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="getQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="dCW-eg-DYM"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tky-f8-6yI">
-                                        <rect key="frame" x="0.0" y="183" width="270" height="41"/>
                                         <color key="backgroundColor" red="0.145088992" green="0.85098039219999999" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
                                         <state key="normal" title="Life">
@@ -455,7 +441,21 @@
                                             <action selector="getQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="7yK-QU-SQP"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y7R-bp-Ahs">
+                                    <button opaque="NO" tag="7" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oEb-Aj-A6S">
+                                        <rect key="frame" x="0.0" y="183" width="270" height="41"/>
+                                        <color key="backgroundColor" red="0.94901960780000005" green="0.18039215689999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
+                                        <state key="normal" title="Sports">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                            <rect key="frame" x="20" y="542" width="159" height="32"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="getQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="Az4-p0-NSj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y7R-bp-Ahs">
                                         <rect key="frame" x="0.0" y="228" width="270" height="42"/>
                                         <color key="backgroundColor" red="0.18823529410000001" green="0.63137254899999995" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
@@ -632,16 +632,12 @@
                         <outletCollection property="buttonLeft" destination="Zex-Q0-IDr" collectionClass="NSMutableArray" id="aTX-av-jKF"/>
                         <outletCollection property="genericButton" destination="WJK-EK-FiI" collectionClass="NSMutableArray" id="Qu7-jb-ZBl"/>
                         <outletCollection property="buttonLeft" destination="WJK-EK-FiI" collectionClass="NSMutableArray" id="Y1V-J1-75B"/>
-                        <outletCollection property="buttonLeft" destination="oEb-Aj-A6S" collectionClass="NSMutableArray" id="SVs-n4-BBE"/>
-                        <outletCollection property="genericButton" destination="oEb-Aj-A6S" collectionClass="NSMutableArray" id="Hq6-Qn-gnJ"/>
                         <outletCollection property="genericButton" destination="Sxl-Nb-e99" collectionClass="NSMutableArray" id="DLR-gZ-i0u"/>
                         <outletCollection property="buttonLeft" destination="Sxl-Nb-e99" collectionClass="NSMutableArray" id="qgw-av-G1m"/>
                         <outletCollection property="buttonLeft" destination="yXq-dQ-TZA" collectionClass="NSMutableArray" id="F7R-DN-Mqb"/>
                         <outletCollection property="genericButton" destination="yXq-dQ-TZA" collectionClass="NSMutableArray" id="RmL-ra-zRf"/>
                         <outletCollection property="genericButton" destination="z0Q-04-6ng" collectionClass="NSMutableArray" id="NVQ-bP-MWk"/>
                         <outletCollection property="buttonLeft" destination="z0Q-04-6ng" collectionClass="NSMutableArray" id="nal-XQ-Fsd"/>
-                        <outletCollection property="buttonLeft" destination="EGj-6S-EP7" collectionClass="NSMutableArray" id="ki0-Tx-qlp"/>
-                        <outletCollection property="genericButton" destination="EGj-6S-EP7" collectionClass="NSMutableArray" id="O6o-PD-J4y"/>
                         <outletCollection property="genericButton" destination="tky-f8-6yI" collectionClass="NSMutableArray" id="Slb-1U-Zu6"/>
                         <outletCollection property="buttonLeft" destination="tky-f8-6yI" collectionClass="NSMutableArray" id="fYF-2T-9bX"/>
                         <outletCollection property="genericButton" destination="Y7R-bp-Ahs" collectionClass="NSMutableArray" id="jFz-7N-CVh"/>
@@ -658,6 +654,10 @@
                         <outletCollection property="genericButton" destination="uMI-lH-Dm7" collectionClass="NSMutableArray" id="rQJ-0f-2jv"/>
                         <outletCollection property="genericButton" destination="5Ey-Ga-8sl" collectionClass="NSMutableArray" id="Eds-Q3-POd"/>
                         <outletCollection property="buttonRight" destination="5Ey-Ga-8sl" collectionClass="NSMutableArray" id="YlZ-HJ-hT7"/>
+                        <outletCollection property="buttonLeft" destination="oEb-Aj-A6S" collectionClass="NSMutableArray" id="SVs-n4-BBE"/>
+                        <outletCollection property="genericButton" destination="oEb-Aj-A6S" collectionClass="NSMutableArray" id="Hq6-Qn-gnJ"/>
+                        <outletCollection property="buttonLeft" destination="EGj-6S-EP7" collectionClass="NSMutableArray" id="ki0-Tx-qlp"/>
+                        <outletCollection property="genericButton" destination="EGj-6S-EP7" collectionClass="NSMutableArray" id="O6o-PD-J4y"/>
                         <segue destination="sDC-Lz-L92" kind="show" identifier="segueToQuoteDetailVC" id="ppW-YX-Wxj"/>
                     </connections>
                 </viewController>
