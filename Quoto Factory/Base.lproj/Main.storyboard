@@ -677,23 +677,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WMM-OH-n1c">
-                                <rect key="frame" x="0.0" y="113" width="375" height="344"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WMM-OH-n1c" userLabel="QuoteView">
+                                <rect key="frame" x="20" y="89" width="560" height="300"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V1B-LG-Ngk">
-                                        <rect key="frame" x="38" y="95" width="299" height="187"/>
+                                        <rect key="frame" x="40" y="84" width="299" height="187"/>
                                         <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QyO-j9-dbg">
-                                        <rect key="frame" x="20" y="37" width="335" height="45"/>
+                                        <rect key="frame" x="22" y="26" width="335" height="45"/>
                                         <fontDescription key="fontDescription" name="Futura-CondensedExtraBold" family="Futura" pointSize="26"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hJ-SV-M0N">
-                                        <rect key="frame" x="38" y="290" width="299" height="41"/>
+                                        <rect key="frame" x="40" y="279" width="299" height="41"/>
                                         <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -701,30 +701,60 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.97128230684272676" green="1" blue="0.71899852385350704" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PVJ-Fp-hIv">
-                                <rect key="frame" x="40" y="574" width="296" height="40"/>
-                                <color key="backgroundColor" red="0.18823529410000001" green="0.63137254899999995" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
-                                <state key="normal" title="Get Another Quote From This Category">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="getAnotherQuote:" destination="sDC-Lz-L92" eventType="touchUpInside" id="8Ye-9t-xZc"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s02-Tl-mOz">
-                                <rect key="frame" x="114" y="506" width="148" height="40"/>
-                                <color key="backgroundColor" red="0.94901960780000005" green="0.18039215689999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
-                                <state key="normal" title="Use This Quote">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="selectQuote:" destination="sDC-Lz-L92" eventType="touchUpInside" id="o3n-nU-Gqn"/>
-                                </connections>
-                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bLb-fw-RUB" userLabel="ButtonView">
+                                <rect key="frame" x="20" y="430" width="560" height="150"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s02-Tl-mOz">
+                                        <rect key="frame" x="206" y="22" width="148" height="40"/>
+                                        <color key="backgroundColor" red="0.94901960780000005" green="0.18039215689999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Pba-pe-68U"/>
+                                            <constraint firstAttribute="width" constant="148" id="c5e-YM-scy"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                                        <state key="normal" title="Use This Quote">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="selectQuote:" destination="sDC-Lz-L92" eventType="touchUpInside" id="o3n-nU-Gqn"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PVJ-Fp-hIv">
+                                        <rect key="frame" x="132" y="87" width="296" height="40"/>
+                                        <color key="backgroundColor" red="0.18823529410000001" green="0.63137254899999995" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="AZw-xf-TJw"/>
+                                            <constraint firstAttribute="width" constant="296" id="Hzu-oA-BI2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                                        <state key="normal" title="Get Another Quote From This Category">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="getAnotherQuote:" destination="sDC-Lz-L92" eventType="touchUpInside" id="8Ye-9t-xZc"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.94901960784313721" green="0.85098039215686272" blue="0.17254901960784313" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="s02-Tl-mOz" firstAttribute="top" secondItem="bLb-fw-RUB" secondAttribute="top" constant="22" id="h1e-p3-616"/>
+                                    <constraint firstItem="PVJ-Fp-hIv" firstAttribute="centerX" secondItem="bLb-fw-RUB" secondAttribute="centerX" id="jaF-v9-an2"/>
+                                    <constraint firstItem="PVJ-Fp-hIv" firstAttribute="top" secondItem="s02-Tl-mOz" secondAttribute="bottom" constant="25" id="sse-BM-Woh"/>
+                                    <constraint firstItem="s02-Tl-mOz" firstAttribute="centerX" secondItem="bLb-fw-RUB" secondAttribute="centerX" id="teX-lT-Hb7"/>
+                                </constraints>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.94954599288791941" green="0.84993708053691275" blue="0.17150067028120805" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.94901960784313721" green="0.85098039215686272" blue="0.17254901960784313" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="WMM-OH-n1c" firstAttribute="top" secondItem="6u3-YA-R42" secondAttribute="bottom" constant="25" id="0dJ-t9-8Js"/>
+                            <constraint firstItem="bLb-fw-RUB" firstAttribute="leading" secondItem="SVY-QX-UBH" secondAttribute="leadingMargin" id="GSn-hT-GZc"/>
+                            <constraint firstItem="WMM-OH-n1c" firstAttribute="trailing" secondItem="SVY-QX-UBH" secondAttribute="trailingMargin" id="QZI-RF-DNp"/>
+                            <constraint firstItem="bLb-fw-RUB" firstAttribute="trailing" secondItem="SVY-QX-UBH" secondAttribute="trailingMargin" id="RrJ-Qj-UYF"/>
+                            <constraint firstItem="tad-gi-kiI" firstAttribute="top" secondItem="bLb-fw-RUB" secondAttribute="bottom" constant="20" id="U92-8r-mIz"/>
+                            <constraint firstItem="bLb-fw-RUB" firstAttribute="height" secondItem="SVY-QX-UBH" secondAttribute="height" multiplier="0.25" id="V3Z-ih-YYh"/>
+                            <constraint firstItem="WMM-OH-n1c" firstAttribute="leading" secondItem="SVY-QX-UBH" secondAttribute="leadingMargin" id="d8i-uJ-mnZ"/>
+                            <constraint firstItem="WMM-OH-n1c" firstAttribute="height" secondItem="SVY-QX-UBH" secondAttribute="height" multiplier="0.5" id="uJO-rA-Z5A"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="authorLabel" destination="0hJ-SV-M0N" id="fOq-SV-2sW"/>
