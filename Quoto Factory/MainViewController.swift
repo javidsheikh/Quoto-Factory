@@ -26,8 +26,7 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     @IBOutlet weak var instructionLabelBottom: UILabel!
     
     @IBOutlet var instructionLabels: [UILabel]!
-    
-    @IBOutlet weak var imageSubView: UIView!
+
     @IBOutlet weak var chosenImageView: UIImageView!
     @IBOutlet weak var chosenQuoteLabel: UILabel!
     
@@ -92,7 +91,7 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
             self.actionButton.enabled = true
             self.cancelButton.enabled = true
         }
-        
+                
         // Hide instruction labels
         UIView.animateWithDuration(2, delay: 6, options: .CurveLinear, animations: { () -> Void in
             self.instructionLabelTop.alpha = 0
@@ -113,7 +112,6 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
             return
         }
         self.chosenImageView.image = image
-        self.view.sendSubviewToBack(imageSubView)
         if self.newQuoto == nil {
             newQuoto = NewQuoto(quotoImage: image, quotoQuote: "", quotoAuthor: "", quotoCategory: "")
         } else {
