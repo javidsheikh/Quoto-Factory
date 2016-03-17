@@ -171,7 +171,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="aQJ-gW-v55" userLabel="StackView1">
                                 <rect key="frame" x="20" y="68" width="270" height="270"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RDc-9X-8GA">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RDc-9X-8GA">
                                         <rect key="frame" x="0.0" y="0.0" width="270" height="42"/>
                                         <color key="backgroundColor" red="0.94901960784313721" green="0.1803921568627451" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
@@ -182,7 +182,7 @@
                                             <action selector="getQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="Huj-Ru-MBV"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dGp-WH-Q4a">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dGp-WH-Q4a">
                                         <rect key="frame" x="0.0" y="46" width="270" height="41"/>
                                         <color key="backgroundColor" red="0.18823529410000001" green="0.63137254899999995" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
@@ -193,7 +193,7 @@
                                             <action selector="getQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="fGA-nP-uw5"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z2z-z5-wOu">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z2z-z5-wOu">
                                         <rect key="frame" x="0.0" y="91" width="270" height="42"/>
                                         <color key="backgroundColor" red="1" green="0.4823529411764706" blue="0.015686274509803921" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
@@ -204,7 +204,7 @@
                                             <action selector="getQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="P8l-hQ-4bx"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zex-Q0-IDr">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zex-Q0-IDr">
                                         <rect key="frame" x="0.0" y="137" width="270" height="42"/>
                                         <color key="backgroundColor" red="0.7843137255" green="0.18039215689999999" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
@@ -216,7 +216,7 @@
                                             <action selector="getQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="qgW-4C-ieJ"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WJK-EK-FiI">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WJK-EK-FiI">
                                         <rect key="frame" x="0.0" y="183" width="270" height="41"/>
                                         <color key="backgroundColor" red="0.36862745099999999" green="0.84313725490000002" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
@@ -227,7 +227,7 @@
                                             <action selector="getQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="ny3-6v-8Np"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EGj-6S-EP7">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EGj-6S-EP7">
                                         <rect key="frame" x="0.0" y="228" width="270" height="42"/>
                                         <color key="backgroundColor" red="0.94901960780000005" green="0.18039215689999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
@@ -394,7 +394,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="dXb-D9-kkf" userLabel="StackView3">
                                 <rect key="frame" x="20" y="326" width="270" height="270"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sxl-Nb-e99">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sxl-Nb-e99">
                                         <rect key="frame" x="0.0" y="0.0" width="270" height="42"/>
                                         <color key="backgroundColor" red="0.18823529410000001" green="0.63137254899999995" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
@@ -405,7 +405,7 @@
                                             <action selector="getQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="abH-u5-sID"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yXq-dQ-TZA">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yXq-dQ-TZA">
                                         <rect key="frame" x="0.0" y="46" width="270" height="41"/>
                                         <color key="backgroundColor" red="1" green="0.48145839499999998" blue="0.015686274510000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
@@ -416,7 +416,7 @@
                                             <action selector="getQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="sAP-PO-Kzp"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="3" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z0Q-04-6ng">
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z0Q-04-6ng">
                                         <rect key="frame" x="0.0" y="91" width="270" height="42"/>
                                         <color key="backgroundColor" red="0.7843137255" green="0.18039215689999999" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
@@ -427,7 +427,7 @@
                                             <action selector="getQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="WTr-Ph-0bK"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="5" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tky-f8-6yI">
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tky-f8-6yI">
                                         <rect key="frame" x="0.0" y="137" width="270" height="42"/>
                                         <color key="backgroundColor" red="0.145088992" green="0.85098039219999999" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
@@ -441,7 +441,7 @@
                                             <action selector="getQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="7yK-QU-SQP"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="7" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oEb-Aj-A6S">
+                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oEb-Aj-A6S">
                                         <rect key="frame" x="0.0" y="183" width="270" height="41"/>
                                         <color key="backgroundColor" red="0.94901960780000005" green="0.18039215689999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
@@ -455,7 +455,7 @@
                                             <action selector="getQuote:" destination="diu-E6-Dbc" eventType="touchUpInside" id="Az4-p0-NSj"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y7R-bp-Ahs">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y7R-bp-Ahs">
                                         <rect key="frame" x="0.0" y="228" width="270" height="42"/>
                                         <color key="backgroundColor" red="0.18823529410000001" green="0.63137254899999995" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
@@ -715,21 +715,27 @@
                                         <state key="normal" title="Use This Quote">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <variation key="heightClass=compact-widthClass=compact">
+                                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="13"/>
+                                        </variation>
                                         <connections>
                                             <action selector="selectQuote:" destination="sDC-Lz-L92" eventType="touchUpInside" id="o3n-nU-Gqn"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PVJ-Fp-hIv">
-                                        <rect key="frame" x="132" y="87" width="296" height="40"/>
+                                        <rect key="frame" x="190" y="87" width="180" height="40"/>
                                         <color key="backgroundColor" red="0.18823529410000001" green="0.63137254899999995" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="AZw-xf-TJw"/>
-                                            <constraint firstAttribute="width" constant="296" id="Hzu-oA-BI2"/>
+                                            <constraint firstAttribute="width" constant="180" id="Hzu-oA-BI2"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
-                                        <state key="normal" title="Get Another Quote From This Category">
+                                        <state key="normal" title="Get Another Quote">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <variation key="heightClass=compact-widthClass=compact">
+                                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="13"/>
+                                        </variation>
                                         <connections>
                                             <action selector="getAnotherQuote:" destination="sDC-Lz-L92" eventType="touchUpInside" id="8Ye-9t-xZc"/>
                                         </connections>
@@ -739,22 +745,58 @@
                                 <constraints>
                                     <constraint firstItem="s02-Tl-mOz" firstAttribute="top" secondItem="bLb-fw-RUB" secondAttribute="top" constant="22" id="h1e-p3-616"/>
                                     <constraint firstItem="PVJ-Fp-hIv" firstAttribute="centerX" secondItem="bLb-fw-RUB" secondAttribute="centerX" id="jaF-v9-an2"/>
+                                    <constraint firstItem="s02-Tl-mOz" firstAttribute="top" secondItem="bLb-fw-RUB" secondAttribute="top" constant="70" id="jwz-Jn-iVN"/>
                                     <constraint firstItem="PVJ-Fp-hIv" firstAttribute="top" secondItem="s02-Tl-mOz" secondAttribute="bottom" constant="25" id="sse-BM-Woh"/>
                                     <constraint firstItem="s02-Tl-mOz" firstAttribute="centerX" secondItem="bLb-fw-RUB" secondAttribute="centerX" id="teX-lT-Hb7"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="jwz-Jn-iVN"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <mask key="constraints">
+                                        <exclude reference="h1e-p3-616"/>
+                                        <include reference="jwz-Jn-iVN"/>
+                                    </mask>
+                                </variation>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.94901960784313721" green="0.85098039215686272" blue="0.17254901960784313" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="WMM-OH-n1c" firstAttribute="top" secondItem="6u3-YA-R42" secondAttribute="bottom" constant="25" id="0dJ-t9-8Js"/>
+                            <constraint firstItem="tad-gi-kiI" firstAttribute="top" secondItem="WMM-OH-n1c" secondAttribute="bottom" constant="25" id="BEK-eA-f0f"/>
                             <constraint firstItem="bLb-fw-RUB" firstAttribute="leading" secondItem="SVY-QX-UBH" secondAttribute="leadingMargin" id="GSn-hT-GZc"/>
                             <constraint firstItem="WMM-OH-n1c" firstAttribute="trailing" secondItem="SVY-QX-UBH" secondAttribute="trailingMargin" id="QZI-RF-DNp"/>
+                            <constraint firstItem="bLb-fw-RUB" firstAttribute="top" secondItem="6u3-YA-R42" secondAttribute="bottom" constant="25" id="Re2-rJ-J6Y"/>
                             <constraint firstItem="bLb-fw-RUB" firstAttribute="trailing" secondItem="SVY-QX-UBH" secondAttribute="trailingMargin" id="RrJ-Qj-UYF"/>
                             <constraint firstItem="tad-gi-kiI" firstAttribute="top" secondItem="bLb-fw-RUB" secondAttribute="bottom" constant="20" id="U92-8r-mIz"/>
                             <constraint firstItem="bLb-fw-RUB" firstAttribute="height" secondItem="SVY-QX-UBH" secondAttribute="height" multiplier="0.25" id="V3Z-ih-YYh"/>
+                            <constraint firstItem="bLb-fw-RUB" firstAttribute="width" secondItem="SVY-QX-UBH" secondAttribute="width" multiplier="0.3" id="XL4-du-zPT"/>
                             <constraint firstItem="WMM-OH-n1c" firstAttribute="leading" secondItem="SVY-QX-UBH" secondAttribute="leadingMargin" id="d8i-uJ-mnZ"/>
+                            <constraint firstItem="WMM-OH-n1c" firstAttribute="width" secondItem="SVY-QX-UBH" secondAttribute="width" multiplier="0.55" id="nAy-HI-r3l"/>
                             <constraint firstItem="WMM-OH-n1c" firstAttribute="height" secondItem="SVY-QX-UBH" secondAttribute="height" multiplier="0.5" id="uJO-rA-Z5A"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="nAy-HI-r3l"/>
+                                <exclude reference="Re2-rJ-J6Y"/>
+                                <exclude reference="XL4-du-zPT"/>
+                                <exclude reference="BEK-eA-f0f"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="QZI-RF-DNp"/>
+                                <include reference="nAy-HI-r3l"/>
+                                <exclude reference="uJO-rA-Z5A"/>
+                                <exclude reference="GSn-hT-GZc"/>
+                                <include reference="Re2-rJ-J6Y"/>
+                                <exclude reference="V3Z-ih-YYh"/>
+                                <include reference="XL4-du-zPT"/>
+                                <include reference="BEK-eA-f0f"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="authorLabel" destination="0hJ-SV-M0N" id="fOq-SV-2sW"/>
