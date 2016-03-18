@@ -164,9 +164,7 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         UIGraphicsBeginImageContext(self.view.frame.size)
         self.view.drawViewHierarchyInRect(self.view.frame, afterScreenUpdates: true)
         let quoto: UIImage = UIGraphicsGetImageFromCurrentImageContext()
-        
-        self.labelSubview.removeConstraints(constraints)
-        
+                
         self.navigationController?.navigationBarHidden = false
         self.toolbar.hidden = false
         
