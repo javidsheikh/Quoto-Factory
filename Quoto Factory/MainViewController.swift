@@ -14,6 +14,7 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     
     var quoteLabelPosition: CGPoint!
     var quoteLabelFontSize: CGFloat!
+    var isWhite = true
     
     var iMinSessions = 5
     var iTryAgainSessions = 3
@@ -63,6 +64,10 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         self.view.addGestureRecognizer(pinchGesture)
         
         quoteLabelFontSize = 17
+        
+        let longPress = UILongPressGestureRecognizer(target: self, action: "changeQuoteFontColor:")
+        longPress.minimumPressDuration = 1.2
+        self.view.addGestureRecognizer(longPress)
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -81,7 +86,7 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         }
         
         // Disable camera button if camera not available
-        self.cameraButton.enabled = UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera)
+        self.cameraButton.enabled = UIImagePickerController.isSourceTypeAvailable(.Camera)
         
         // Disable share button if no image is selected
         if self.chosenImageView.image == nil {
@@ -151,7 +156,7 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     // MARK: gesture recognizer functions
     func dragQuoteLabel(gesture: UIPanGestureRecognizer) {
         let translation = gesture.translationInView(self.view)
-        let label = chosenQuoteLabel
+        let label = self.chosenQuoteLabel
         label.center = CGPointMake(self.quoteLabelPosition.x + translation.x, self.quoteLabelPosition.y + translation.y)
         
         if gesture.state == .Ended {
@@ -161,10 +166,22 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     
     func resizeText(pinchGesture: UIPinchGestureRecognizer) {
         let scale = pinchGesture.scale
-        chosenQuoteLabel.font = chosenQuoteLabel.font.fontWithSize(quoteLabelFontSize * scale)
+        self.chosenQuoteLabel.font = chosenQuoteLabel.font.fontWithSize(quoteLabelFontSize * scale)
         
         if pinchGesture.state == .Ended {
             quoteLabelFontSize = quoteLabelFontSize * scale
+        }
+    }
+    
+    func changeQuoteFontColor(longPress: UILongPressGestureRecognizer) {
+        if longPress.state == .Began {
+            if self.isWhite {
+                self.chosenQuoteLabel.textColor = UIColor.blackColor()
+                self.isWhite = false
+            } else {
+                self.chosenQuoteLabel.textColor = UIColor.whiteColor()
+                self.isWhite = true
+            }
         }
     }
 
