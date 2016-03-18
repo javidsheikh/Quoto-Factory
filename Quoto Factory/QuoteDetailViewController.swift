@@ -26,9 +26,7 @@ class QuoteDetailViewController: UIViewController {
         // Do any additional setup after loading the view.
         self.navigationController?.navigationBar.barTintColor = UIColor(red: 242/255, green: 46/255, blue: 70/255, alpha: 1.0)
         self.navigationController?.navigationBar.tintColor = UIColor.whiteColor()
-        
-        self.configureBackground()
-        
+                
         self.categoryLabel.text = self.newQuoto.quotoCategory.capitalizedString
         print(self.newQuoto.quotoCategory)
         getQuote(self.newQuoto.quotoCategory)
@@ -221,16 +219,6 @@ class QuoteDetailViewController: UIViewController {
             
             return "?\(keyValuePairs.joinWithSeparator("&"))"
         }
-    }
-    
-    private func configureBackground() {
-        let backgroundGradient = CAGradientLayer()
-        let colorTop = UIColor(red: 242/255, green: 217/255, blue: 44/255, alpha: 1.0).CGColor
-        let colorBottom = UIColor(red: 242/255, green: 100/255, blue: 48/255, alpha: 1.0).CGColor
-        backgroundGradient.colors = [colorTop, colorBottom]
-        backgroundGradient.locations = [0.0, 1.0]
-        backgroundGradient.frame = view.frame
-        view.layer.insertSublayer(backgroundGradient, atIndex: 0)
     }
 
 }

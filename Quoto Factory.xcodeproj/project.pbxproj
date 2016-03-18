@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F94E7A7E1C860E7800EA91FD /* Plain-Black-Wallpaper.png in Resources */ = {isa = PBXBuildFile; fileRef = F94E7A7D1C860E7800EA91FD /* Plain-Black-Wallpaper.png */; };
 		F94E7A801C8613A500EA91FD /* 1874522.png in Resources */ = {isa = PBXBuildFile; fileRef = F94E7A7F1C8613A500EA91FD /* 1874522.png */; };
 		F99D0A331C80A7D90070E613 /* QuoteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99D0A321C80A7D90070E613 /* QuoteDetailViewController.swift */; };
 		F9AC1A8B1C7C76290098A476 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AC1A8A1C7C76290098A476 /* AppDelegate.swift */; };
@@ -21,7 +20,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F94E7A7D1C860E7800EA91FD /* Plain-Black-Wallpaper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Plain-Black-Wallpaper.png"; sourceTree = "<group>"; };
 		F94E7A7F1C8613A500EA91FD /* 1874522.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1874522.png; sourceTree = "<group>"; };
 		F99D0A321C80A7D90070E613 /* QuoteDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoteDetailViewController.swift; sourceTree = "<group>"; };
 		F9AC1A871C7C76290098A476 /* Quoto Factory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quoto Factory.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,7 +72,6 @@
 				F9AC1AA01C7CA4310098A476 /* NewQuoto.swift */,
 				F9AC1A8E1C7C76290098A476 /* Main.storyboard */,
 				F9AC1A911C7C76290098A476 /* Assets.xcassets */,
-				F94E7A7D1C860E7800EA91FD /* Plain-Black-Wallpaper.png */,
 				F94E7A7F1C8613A500EA91FD /* 1874522.png */,
 				F9AC1A931C7C76290098A476 /* LaunchScreen.storyboard */,
 				F9AC1A961C7C76290098A476 /* Info.plist */,
@@ -143,7 +140,6 @@
 				F9AC1A951C7C76290098A476 /* LaunchScreen.storyboard in Resources */,
 				F9AC1A921C7C76290098A476 /* Assets.xcassets in Resources */,
 				F9AC1A901C7C76290098A476 /* Main.storyboard in Resources */,
-				F94E7A7E1C860E7800EA91FD /* Plain-Black-Wallpaper.png in Resources */,
 				F94E7A801C8613A500EA91FD /* 1874522.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
