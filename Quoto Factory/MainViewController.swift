@@ -74,15 +74,17 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
 
         if self.newQuoto == nil {
             self.chosenQuoteLabel.hidden = true
-            self.instructionLabelTop.hidden = true
-            self.instructionLabelMiddle.hidden = true
+            self.instructionLabelTop.alpha = 0
+            self.instructionLabelMiddle.alpha = 0
         } else {
             self.chosenImageView.image = self.newQuoto.quotoImage
             
             self.chosenQuoteLabel.hidden = false
             self.chosenQuoteLabel.text = self.newQuoto.quotoQuote + self.newQuoto.quotoAuthor
             
-            self.instructionLabelBottom.hidden = true
+            self.instructionLabelTop.alpha = 1
+            self.instructionLabelMiddle.alpha = 1
+            self.instructionLabelBottom.alpha = 0
         }
         
         // Disable camera button if camera not available
