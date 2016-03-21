@@ -135,7 +135,7 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let controller = segue.destinationViewController as! QuoteViewController
         if self.newQuoto == nil {
-            self.newQuoto = NewQuoto(quotoImage: UIImage(named: "1874522.png")!, quotoQuote: "", quotoAuthor: "", quotoCategory: "")
+            self.newQuoto = NewQuoto(quotoImage: UIImage(named: "Placeholder.png")!, quotoQuote: "", quotoAuthor: "", quotoCategory: "")
         }
         controller.newQuoto = self.newQuoto
     }
@@ -231,7 +231,7 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     }
     
     @IBAction func restartQuoto(sender: UIBarButtonItem) {
-        self.chosenImageView.image = UIImage(named: "1874522.png")
+        self.chosenImageView.image = UIImage(named: "Placeholder.png")
         self.chosenQuoteLabel.text = ""
         self.newQuoto = nil
     }
