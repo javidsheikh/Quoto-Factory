@@ -202,10 +202,10 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
             self.quoteLabelPosition = CGPointMake(self.quoteLabelPosition.x + translation.x, self.quoteLabelPosition.y + translation.y)
 
             self.labelSubview.removeConstraints(self.constraints)
-            self.topConstraintConstant = translation.y
-            self.bottomConstraintConstant = translation.y
-            self.trailingConstraintConstant = translation.x
-            self.leadingConstraintConstant = translation.x
+            self.topConstraintConstant = self.topConstraintConstant + translation.y
+            self.bottomConstraintConstant = self.bottomConstraintConstant + translation.y
+            self.trailingConstraintConstant =  self.trailingConstraintConstant + translation.x
+            self.leadingConstraintConstant = self.leadingConstraintConstant + translation.x
             self.topConstraint = NSLayoutConstraint(item: chosenQuoteLabel, attribute: .Top, relatedBy: .Equal, toItem: self.labelSubview, attribute: .Top, multiplier: 1, constant: topConstraintConstant)
             self.bottomConstraint = NSLayoutConstraint(item: chosenQuoteLabel, attribute: .Bottom    , relatedBy: .Equal, toItem: self.labelSubview, attribute: .Bottom, multiplier: 1, constant: bottomConstraintConstant)
             self.trailingConstraint = NSLayoutConstraint(item: chosenQuoteLabel, attribute: .Trailing, relatedBy: .Equal, toItem: self.labelSubview, attribute: .Trailing, multiplier: 1, constant: trailingConstraintConstant)
