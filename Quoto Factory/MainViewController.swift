@@ -20,6 +20,10 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     var constraints: [NSLayoutConstraint]!
     var quoteLabelPosition: CGPoint!
     var quoteLabelFontSize: CGFloat!
+    var topConstraintConstant: CGFloat!
+    var bottomConstraintConstant: CGFloat!
+    var trailingConstraintConstant: CGFloat!
+    var leadingConstraintConstant: CGFloat!
     
     var iMinSessions = 5
     var iTryAgainSessions = 3
@@ -66,10 +70,14 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         chosenQuoteLabel.translatesAutoresizingMaskIntoConstraints = false
         self.labelSubview.addSubview(chosenQuoteLabel)
         // Constraints
-        self.topConstraint = NSLayoutConstraint(item: chosenQuoteLabel, attribute: .Top, relatedBy: .Equal, toItem: self.labelSubview, attribute: .Top, multiplier: 1, constant: 0)
-        self.bottomConstraint = NSLayoutConstraint(item: chosenQuoteLabel, attribute: .Bottom    , relatedBy: .Equal, toItem: self.labelSubview, attribute: .Bottom, multiplier: 1, constant: 0)
-        self.trailingConstraint = NSLayoutConstraint(item: chosenQuoteLabel, attribute: .Trailing, relatedBy: .Equal, toItem: self.labelSubview, attribute: .Trailing, multiplier: 1, constant: 0)
-        self.leadingConstraint = NSLayoutConstraint(item: chosenQuoteLabel, attribute: .Leading, relatedBy: .Equal, toItem: self.labelSubview, attribute: .Leading, multiplier: 1, constant: 0)
+        self.topConstraintConstant = 0
+        self.bottomConstraintConstant = 0
+        self.trailingConstraintConstant = 0
+        self.leadingConstraintConstant = 0
+        self.topConstraint = NSLayoutConstraint(item: chosenQuoteLabel, attribute: .Top, relatedBy: .Equal, toItem: self.labelSubview, attribute: .Top, multiplier: 1, constant: topConstraintConstant)
+        self.bottomConstraint = NSLayoutConstraint(item: chosenQuoteLabel, attribute: .Bottom    , relatedBy: .Equal, toItem: self.labelSubview, attribute: .Bottom, multiplier: 1, constant: bottomConstraintConstant)
+        self.trailingConstraint = NSLayoutConstraint(item: chosenQuoteLabel, attribute: .Trailing, relatedBy: .Equal, toItem: self.labelSubview, attribute: .Trailing, multiplier: 1, constant: trailingConstraintConstant)
+        self.leadingConstraint = NSLayoutConstraint(item: chosenQuoteLabel, attribute: .Leading, relatedBy: .Equal, toItem: self.labelSubview, attribute: .Leading, multiplier: 1, constant: leadingConstraintConstant)
         self.constraints = [topConstraint, bottomConstraint, trailingConstraint, leadingConstraint]
         self.labelSubview.addConstraints(constraints)
         // Text attributes
@@ -178,7 +186,18 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         label.center = CGPointMake(self.quoteLabelPosition.x + translation.x, self.quoteLabelPosition.y + translation.y)
         
         if gesture.state == .Ended {
-            quoteLabelPosition = CGPointMake(self.quoteLabelPosition.x + translation.x, self.quoteLabelPosition.y + translation.y)
+            self.quoteLabelPosition = CGPointMake(self.quoteLabelPosition.x + translation.x, self.quoteLabelPosition.y + translation.y)
+            self.labelSubview.removeConstraints(self.constraints)
+            self.topConstraintConstant = translation.y
+            self.bottomConstraintConstant = translation.y
+            self.trailingConstraintConstant = translation.x
+            self.leadingConstraintConstant = translation.x
+            self.topConstraint = NSLayoutConstraint(item: chosenQuoteLabel, attribute: .Top, relatedBy: .Equal, toItem: self.labelSubview, attribute: .Top, multiplier: 1, constant: topConstraintConstant)
+            self.bottomConstraint = NSLayoutConstraint(item: chosenQuoteLabel, attribute: .Bottom    , relatedBy: .Equal, toItem: self.labelSubview, attribute: .Bottom, multiplier: 1, constant: bottomConstraintConstant)
+            self.trailingConstraint = NSLayoutConstraint(item: chosenQuoteLabel, attribute: .Trailing, relatedBy: .Equal, toItem: self.labelSubview, attribute: .Trailing, multiplier: 1, constant: trailingConstraintConstant)
+            self.leadingConstraint = NSLayoutConstraint(item: chosenQuoteLabel, attribute: .Leading, relatedBy: .Equal, toItem: self.labelSubview, attribute: .Leading, multiplier: 1, constant: leadingConstraintConstant)
+            self.constraints = [topConstraint, bottomConstraint, trailingConstraint, leadingConstraint]
+            self.labelSubview.addConstraints(constraints)
         }
     }
     
