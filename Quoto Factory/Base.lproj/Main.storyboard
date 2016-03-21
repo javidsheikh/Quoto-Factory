@@ -23,10 +23,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G0u-Oh-KuA" userLabel="Label Subview">
-                                <rect key="frame" x="30" y="64" width="540" height="492"/>
+                                <rect key="frame" x="30" y="74" width="540" height="472"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use the buttons below to select a photo and find a quote" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nce-Sh-eCg">
-                                        <rect key="frame" x="8" y="424" width="524" height="60"/>
+                                        <rect key="frame" x="8" y="404" width="524" height="60"/>
                                         <color key="backgroundColor" red="0.7843137255" green="0.18039215689999999" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="Nua-xk-9Bi"/>
@@ -45,8 +45,8 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drag the quote to position it, pinch to resize" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdu-Ks-G4s">
-                                        <rect key="frame" x="8" y="354" width="524" height="60"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drag the quote to re-position it pinch to resize, long press to change color" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdu-Ks-G4s">
+                                        <rect key="frame" x="8" y="334" width="524" height="60"/>
                                         <color key="backgroundColor" red="0.7843137255" green="0.18039215689999999" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="38i-2E-GOP"/>
@@ -103,14 +103,14 @@
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bCo-cS-Ljr" secondAttribute="bottom" id="4dG-23-b7U"/>
                             <constraint firstItem="bCo-cS-Ljr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="Bph-fm-fa0"/>
-                            <constraint firstItem="G0u-Oh-KuA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="It9-Cd-F4S"/>
+                            <constraint firstItem="G0u-Oh-KuA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="It9-Cd-F4S"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Qto-Q3-pLs" secondAttribute="trailing" constant="-20" id="ItR-Nq-PFq"/>
                             <constraint firstItem="G0u-Oh-KuA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="JJS-iV-Qm0"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Qto-Q3-pLs" secondAttribute="bottom" id="LW0-GB-DQI"/>
                             <constraint firstItem="Qto-Q3-pLs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="XCh-TP-h5b"/>
                             <constraint firstAttribute="trailingMargin" secondItem="G0u-Oh-KuA" secondAttribute="trailing" constant="10" id="ejl-IS-pEl"/>
                             <constraint firstAttribute="trailingMargin" secondItem="bCo-cS-Ljr" secondAttribute="trailing" constant="-20" id="mIL-Tm-w5j"/>
-                            <constraint firstItem="bCo-cS-Ljr" firstAttribute="top" secondItem="G0u-Oh-KuA" secondAttribute="bottom" id="o3L-zD-2vX"/>
+                            <constraint firstItem="bCo-cS-Ljr" firstAttribute="top" secondItem="G0u-Oh-KuA" secondAttribute="bottom" constant="10" id="o3L-zD-2vX"/>
                             <constraint firstItem="Qto-Q3-pLs" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="pYt-v8-Bnu"/>
                         </constraints>
                     </view>
