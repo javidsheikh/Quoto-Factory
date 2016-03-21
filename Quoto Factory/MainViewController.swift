@@ -171,7 +171,7 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let controller = segue.destinationViewController as! QuoteViewController
         if self.newQuoto == nil {
-            self.newQuoto = NewQuoto(quotoImage: UIImage(named: "1874522.png")!, quotoQuote: "", quotoAuthor: "", quotoCategory: "")
+            self.newQuoto = NewQuoto(quotoImage: UIImage(named: "Placeholder.png")!, quotoQuote: "", quotoAuthor: "", quotoCategory: "")
         }
         controller.newQuoto = self.newQuoto
     }
@@ -202,14 +202,14 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
             self.quoteLabelPosition = CGPointMake(self.quoteLabelPosition.x + translation.x, self.quoteLabelPosition.y + translation.y)
 
             self.labelSubview.removeConstraints(self.constraints)
-            self.topConstraintConstant = self.topConstraintConstant + translation.y
-            self.bottomConstraintConstant = self.bottomConstraintConstant - translation.y
-            self.leadingConstraintConstant = self.leadingConstraintConstant + translation.x
-            self.trailingConstraintConstant = self.trailingConstraintConstant - translation.x
-            self.topConstraint = NSLayoutConstraint(item: chosenQuoteLabel, attribute: .Top, relatedBy: .Equal, toItem: self.labelSubview, attribute: .Top, multiplier: 1, constant: topConstraintConstant)
-            self.bottomConstraint = NSLayoutConstraint(item: chosenQuoteLabel, attribute: .Bottom    , relatedBy: .Equal, toItem: self.labelSubview, attribute: .Bottom, multiplier: 1, constant: bottomConstraintConstant)
-            self.trailingConstraint = NSLayoutConstraint(item: chosenQuoteLabel, attribute: .Trailing, relatedBy: .Equal, toItem: self.labelSubview, attribute: .Trailing, multiplier: 1, constant: trailingConstraintConstant)
-            self.leadingConstraint = NSLayoutConstraint(item: chosenQuoteLabel, attribute: .Leading, relatedBy: .Equal, toItem: self.labelSubview, attribute: .Leading, multiplier: 1, constant: leadingConstraintConstant)
+            self.topConstraintConstant = translation.y
+            self.bottomConstraintConstant = -translation.y
+            self.leadingConstraintConstant = translation.x
+            self.trailingConstraintConstant = -translation.x
+            self.topConstraint = NSLayoutConstraint(item: chosenQuoteLabel, attribute: .Top, relatedBy: .Equal, toItem: self.labelSubview, attribute: .TopMargin, multiplier: 1, constant: topConstraintConstant)
+            self.bottomConstraint = NSLayoutConstraint(item: chosenQuoteLabel, attribute: .Bottom    , relatedBy: .Equal, toItem: self.labelSubview, attribute: .BottomMargin, multiplier: 1, constant: bottomConstraintConstant)
+            self.trailingConstraint = NSLayoutConstraint(item: chosenQuoteLabel, attribute: .Trailing, relatedBy: .Equal, toItem: self.labelSubview, attribute: .TrailingMargin, multiplier: 1, constant: trailingConstraintConstant)
+            self.leadingConstraint = NSLayoutConstraint(item: chosenQuoteLabel, attribute: .Leading, relatedBy: .Equal, toItem: self.labelSubview, attribute: .LeadingMargin, multiplier: 1, constant: leadingConstraintConstant)
             self.constraints = [topConstraint, bottomConstraint, trailingConstraint, leadingConstraint]
             print(topConstraintConstant, bottomConstraintConstant, leadingConstraintConstant, trailingConstraintConstant)
             self.labelSubview.addConstraints(constraints)
@@ -281,7 +281,7 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     }
     
     @IBAction func restartQuoto(sender: UIBarButtonItem) {
-        self.chosenImageView.image = UIImage(named: "1874522.png")
+        self.chosenImageView.image = UIImage(named: "Placeholder.png")
         self.chosenQuoteLabel.text = ""
         self.newQuoto = nil
     }
