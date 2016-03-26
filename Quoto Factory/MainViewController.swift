@@ -34,12 +34,8 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     // MARK: IBOutlets
     @IBOutlet weak var toolbar: UIToolbar!
     
-    @IBOutlet weak var instructionLabelTop: UILabel!
     @IBOutlet weak var instructionLabelMiddle: UILabel!
-    @IBOutlet weak var instructionLabelBottom: UILabel!
     
-    @IBOutlet var instructionLabels: [UILabel]!
-
     @IBOutlet weak var chosenImageView: UIImageView!
     @IBOutlet weak var labelSubview: UIView!
     
@@ -61,10 +57,8 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         self.toolbar.barTintColor = UIColor(red: 242/255, green: 46/255, blue: 70/255, alpha: 1.0)
         self.toolbar.tintColor = UIColor.whiteColor()
         
-        for label in self.instructionLabels {
-            label.layer.masksToBounds = true
-            label.layer.cornerRadius = 12
-        }
+        self.instructionLabelMiddle.layer.masksToBounds = true
+        self.instructionLabelMiddle.layer.cornerRadius = 12
         
         // Chosen quote label
         self.chosenQuoteLabel = UILabel(frame: CGRect(x: 0, y: 0, width: self.labelSubview.bounds.width - 100, height: self.labelSubview.bounds.height - 100))
@@ -85,12 +79,16 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         self.labelSubview.addConstraints(constraints)
         
         // Text attributes
-        self.chosenQuoteLabel.font = UIFont(name: "GillSans-Bold", size: 17)
+        self.chosenQuoteLabel.font = UIFont(name: "GillSans-Bold", size: 22)
         self.chosenQuoteLabel.textColor = UIColor.whiteColor()
+        self.chosenQuoteLabel.layer.shadowColor = UIColor.blackColor().CGColor
+        self.chosenQuoteLabel.layer.shadowRadius = 1
+        self.chosenQuoteLabel.layer.shadowOffset = CGSizeMake(2, 2)
+        self.chosenQuoteLabel.layer.shadowOpacity = 1
         
         // Gesture recognizers
         let gestureQuote = UIPanGestureRecognizer(target: self, action: Selector("dragQuoteLabel:"))
-        chosenQuoteLabel.addGestureRecognizer(gestureQuote)
+        self.chosenQuoteLabel.addGestureRecognizer(gestureQuote)
         self.chosenQuoteLabel.userInteractionEnabled = true
         
         self.quoteLabelPosition = CGPointMake(self.view.bounds.width / 2, self.view.bounds.height / 2)
@@ -98,7 +96,7 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         let pinchGesture = UIPinchGestureRecognizer(target: self, action: Selector("resizeText:"))
         self.view.addGestureRecognizer(pinchGesture)
         
-        self.quoteLabelFontSize = 17
+        self.quoteLabelFontSize = 22
         
         let longPress = UILongPressGestureRecognizer(target: self, action: "changeQuoteFontColor:")
         longPress.minimumPressDuration = 1.2
@@ -110,7 +108,6 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
 
         if self.newQuoto == nil {
             self.chosenQuoteLabel.hidden = true
-            self.instructionLabelTop.alpha = 0
             self.instructionLabelMiddle.alpha = 0
         } else {
             self.chosenImageView.image = self.newQuoto.quotoImage
@@ -118,28 +115,29 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
             self.chosenQuoteLabel.hidden = false
             self.chosenQuoteLabel.text = self.newQuoto.quotoQuote + self.newQuoto.quotoAuthor
             
-            self.instructionLabelTop.alpha = 1
             self.instructionLabelMiddle.alpha = 1
-            self.instructionLabelBottom.alpha = 0
         }
         
         // Disable camera button if camera not available
         self.cameraButton.enabled = UIImagePickerController.isSourceTypeAvailable(.Camera)
         
         // Disable share button if no image is selected
-        if self.chosenImageView.image == nil {
+        if self.chosenImageView.image == UIImage(named: "Placeholder.png") {
             self.actionButton.enabled = false
-            self.cancelButton.enabled = false
         } else {
             self.actionButton.enabled = true
+        }
+        
+        if self.chosenQuoteLabel.text == nil && self.chosenImageView.image
+            == UIImage(named: "Placeholder.png") {
+            self.cancelButton.enabled = false
+        } else {
             self.cancelButton.enabled = true
         }
                 
         // Hide instruction labels
         UIView.animateWithDuration(2, delay: 6, options: .CurveLinear, animations: { () -> Void in
-            self.instructionLabelTop.alpha = 0
             self.instructionLabelMiddle.alpha = 0
-            self.instructionLabelBottom.alpha = 0
             }, completion: nil)
     }
 
@@ -194,7 +192,6 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     // MARK: gesture recognizer functions
     func dragQuoteLabel(gesture: UIPanGestureRecognizer) {
         let translation = gesture.translationInView(self.view)
-        print(translation)
         let label = self.chosenQuoteLabel
         label.center = CGPointMake(self.quoteLabelPosition.x + translation.x, self.quoteLabelPosition.y + translation.y)
         

@@ -25,48 +25,22 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G0u-Oh-KuA" userLabel="Label Subview">
                                 <rect key="frame" x="30" y="74" width="540" height="472"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use the buttons below to select a photo and find a quote" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nce-Sh-eCg">
-                                        <rect key="frame" x="8" y="404" width="524" height="60"/>
-                                        <color key="backgroundColor" red="0.7843137255" green="0.18039215689999999" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="60" id="Nua-xk-9Bi"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use the buttons above to share your quoto when it's finished or cancel to start again" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CEt-fL-8lK">
-                                        <rect key="frame" x="8" y="8" width="524" height="60"/>
-                                        <color key="backgroundColor" red="0.7843137255" green="0.18039215689999999" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="60" id="cJJ-oG-iFy"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drag the quote to re-position, pinch to resize, long press to change color" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdu-Ks-G4s">
                                         <rect key="frame" x="8" y="334" width="524" height="60"/>
                                         <color key="backgroundColor" red="0.7843137255" green="0.18039215689999999" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="38i-2E-GOP"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                        <fontDescription key="fontDescription" name="Futura-CondensedMedium" family="Futura" pointSize="22"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="CEt-fL-8lK" secondAttribute="trailing" constant="8" id="1B9-dD-dIx"/>
-                                    <constraint firstItem="Nce-Sh-eCg" firstAttribute="top" secondItem="pdu-Ks-G4s" secondAttribute="bottom" constant="10" id="3fY-fH-Wea"/>
-                                    <constraint firstItem="Nce-Sh-eCg" firstAttribute="leading" secondItem="G0u-Oh-KuA" secondAttribute="leading" constant="8" id="5hT-1q-VFz"/>
                                     <constraint firstAttribute="trailing" secondItem="pdu-Ks-G4s" secondAttribute="trailing" constant="8" id="954-S0-e2N"/>
-                                    <constraint firstAttribute="bottom" secondItem="Nce-Sh-eCg" secondAttribute="bottom" constant="8" id="BHZ-wQ-GGU"/>
-                                    <constraint firstAttribute="trailing" secondItem="Nce-Sh-eCg" secondAttribute="trailing" constant="8" id="o7i-Zb-sSe"/>
+                                    <constraint firstAttribute="bottom" secondItem="pdu-Ks-G4s" secondAttribute="bottom" constant="78" id="o0U-Jd-YfD"/>
                                     <constraint firstItem="pdu-Ks-G4s" firstAttribute="leading" secondItem="G0u-Oh-KuA" secondAttribute="leading" constant="8" id="rJg-rD-usk"/>
-                                    <constraint firstItem="CEt-fL-8lK" firstAttribute="top" secondItem="G0u-Oh-KuA" secondAttribute="top" constant="8" id="rky-Vk-XPC"/>
-                                    <constraint firstItem="CEt-fL-8lK" firstAttribute="leading" secondItem="G0u-Oh-KuA" secondAttribute="leading" constant="8" id="sOv-o8-Lpu"/>
                                 </constraints>
                             </view>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bCo-cS-Ljr">
@@ -133,14 +107,9 @@
                         <outlet property="cancelButton" destination="brY-s7-1zu" id="AVi-bh-SFM"/>
                         <outlet property="chooseQuoteButton" destination="XcF-kI-9hU" id="6dZ-fn-F9C"/>
                         <outlet property="chosenImageView" destination="Qto-Q3-pLs" id="YNR-FM-Thu"/>
-                        <outlet property="instructionLabelBottom" destination="Nce-Sh-eCg" id="W8T-6D-Is7"/>
                         <outlet property="instructionLabelMiddle" destination="pdu-Ks-G4s" id="CNw-yD-sAb"/>
-                        <outlet property="instructionLabelTop" destination="CEt-fL-8lK" id="xu8-v0-ySI"/>
                         <outlet property="labelSubview" destination="G0u-Oh-KuA" id="acR-eV-g3p"/>
                         <outlet property="toolbar" destination="bCo-cS-Ljr" id="rHO-QV-gi0"/>
-                        <outletCollection property="instructionLabels" destination="CEt-fL-8lK" collectionClass="NSMutableArray" id="KG7-te-5UZ"/>
-                        <outletCollection property="instructionLabels" destination="pdu-Ks-G4s" collectionClass="NSMutableArray" id="j5u-s4-1Dp"/>
-                        <outletCollection property="instructionLabels" destination="Nce-Sh-eCg" collectionClass="NSMutableArray" id="auK-6P-PpM"/>
                         <segue destination="diu-E6-Dbc" kind="show" identifier="segueToQuoteVC" id="BmZ-NB-KKA"/>
                     </connections>
                 </viewController>
