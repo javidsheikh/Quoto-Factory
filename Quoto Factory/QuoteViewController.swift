@@ -53,54 +53,14 @@ class QuoteViewController: UIViewController {
         for button in self.genericButton {
             button.layer.cornerRadius = 15
         }
-        
-        for button in self.buttonLeft {
-            button.center = CGPointMake(button.center.x - 500, button.center.y)
-        }
-        
-        for button in self.buttonRight {
-            button.center = CGPointMake(button.center.x + 500, button.center.y)
-        }
-    }
-    
-    override func viewWillAppear(animated: Bool) {
-        self.animateButton(0.2, button: angerButton, direction: 500)
-        self.animateButton(0.2, button: strengthButton, direction: -500)
-        self.animateButton(0.4, button: sportsButton, direction: 500)
-        self.animateButton(0.4, button: managementButton, direction: -500)
-        self.animateButton(0.6, button: lifeButton, direction: 500)
-        self.animateButton(0.6, button: loveButton, direction: -500)
-        self.animateButton(0.8, button: funnyButton, direction: 500)
-        self.animateButton(0.8, button: inspirationalButton, direction: -500)
-        self.animateButton(1.0, button: randomButton, direction: 500)
-        self.animateButton(1.0, button: artButton, direction: -500)
-        self.animateButton(1.2, button: wisdomButton, direction: 500)
-        self.animateButton(1.2, button: memoriesButton, direction: -500)
-        self.animateButton(1.4, button: motivationalButton, direction: 500)
-        self.animateButton(1.4, button: adversityButton, direction: -500)
-        self.animateButton(1.6, button: literatureButton, direction: 500)
-        self.animateButton(1.6, button: philosophyButton, direction: -500)
-        self.animateButton(1.8, button: ambitionButton, direction: 500)
-        self.animateButton(1.8, button: careerButton, direction: -500)
-        self.animateButton(2.0, button: familyButton, direction: 500)
-        self.animateButton(2.0, button: friendsButton, direction: -500)
-        self.animateButton(2.2, button: luckButton, direction: 500)
-        self.animateButton(2.2, button: successButton, direction: -500)
-        self.animateButton(2.4, button: challengeButton, direction: 500)
-        self.animateButton(2.4, button: patienceButton, direction: -500)
+
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    private func animateButton(duration: Double, button: UIButton, direction: CGFloat) {
-        UIView.animateWithDuration(duration, animations: { () -> Void in
-            button.center = CGPointMake(button.center.x + direction, button.center.y)
-            
-        })
-    }
+
     
     @IBAction func getQuote(sender: UIButton) {
         self.newQuoto.quotoCategory = sender.titleLabel!.text!
