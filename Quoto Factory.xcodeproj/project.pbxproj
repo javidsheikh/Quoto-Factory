@@ -63,17 +63,41 @@
 			isa = PBXGroup;
 			children = (
 				F9AC1A8A1C7C76290098A476 /* AppDelegate.swift */,
-				F9AC1A8C1C7C76290098A476 /* MainViewController.swift */,
-				F9AC1A9C1C7C824D0098A476 /* QuoteViewController.swift */,
-				F99D0A321C80A7D90070E613 /* QuoteDetailViewController.swift */,
-				F9AC1A9E1C7C847E0098A476 /* Constants.swift */,
-				F9AC1AA01C7CA4310098A476 /* NewQuoto.swift */,
+				F9EB1F541CB407FC00EC12C1 /* Model */,
+				F9EB1F551CB4080500EC12C1 /* Controller */,
+				F9EB1F531CB407F500EC12C1 /* Utility */,
 				F9AC1A8E1C7C76290098A476 /* Main.storyboard */,
 				F9AC1A911C7C76290098A476 /* Assets.xcassets */,
 				F9AC1A931C7C76290098A476 /* LaunchScreen.storyboard */,
 				F9AC1A961C7C76290098A476 /* Info.plist */,
 			);
 			path = "Quoto Factory";
+			sourceTree = "<group>";
+		};
+		F9EB1F531CB407F500EC12C1 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				F9AC1A9E1C7C847E0098A476 /* Constants.swift */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		F9EB1F541CB407FC00EC12C1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F9AC1AA01C7CA4310098A476 /* NewQuoto.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F9EB1F551CB4080500EC12C1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F9AC1A8C1C7C76290098A476 /* MainViewController.swift */,
+				F9AC1A9C1C7C824D0098A476 /* QuoteViewController.swift */,
+				F99D0A321C80A7D90070E613 /* QuoteDetailViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
