@@ -279,11 +279,11 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
 //            }
 //        
 //        }
-        //if iPhone
+        // if iPhone
         if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.Phone) {
             // go on..
         } else {
-            // For iPad
+            // for iPad
             if controller.respondsToSelector(Selector("popoverPresentationController")) {
                 controller.popoverPresentationController!.barButtonItem = self.actionButton;
             }
