@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Ulb-GE-fxg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Ulb-GE-fxg">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
@@ -489,10 +489,6 @@
                                 <exclude reference="bac-kZ-kjP"/>
                                 <exclude reference="e2U-bJ-Y7c"/>
                                 <exclude reference="p4G-Ds-APx"/>
-                                <exclude reference="0Tv-V1-SAd"/>
-                                <exclude reference="4C1-gS-rOF"/>
-                                <exclude reference="B5f-ou-F1L"/>
-                                <exclude reference="bjL-fv-HtM"/>
                                 <exclude reference="2bm-Cq-RZh"/>
                                 <exclude reference="C4N-zP-LqC"/>
                                 <exclude reference="FUN-68-8NU"/>
@@ -501,6 +497,10 @@
                                 <exclude reference="VhA-YF-duz"/>
                                 <exclude reference="W0y-I3-6ti"/>
                                 <exclude reference="naQ-ym-ilm"/>
+                                <exclude reference="0Tv-V1-SAd"/>
+                                <exclude reference="4C1-gS-rOF"/>
+                                <exclude reference="B5f-ou-F1L"/>
+                                <exclude reference="bjL-fv-HtM"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=compact">
@@ -518,13 +518,13 @@
                                 <exclude reference="kC4-Ip-sHT"/>
                                 <exclude reference="klg-Ra-kIQ"/>
                                 <include reference="p4G-Ds-APx"/>
-                                <include reference="0Tv-V1-SAd"/>
-                                <include reference="B5f-ou-F1L"/>
                                 <include reference="FUN-68-8NU"/>
                                 <exclude reference="HUh-hq-g3q"/>
                                 <include reference="MFB-zb-0pR"/>
                                 <include reference="VhA-YF-duz"/>
                                 <exclude reference="rkG-Cg-78o"/>
+                                <include reference="0Tv-V1-SAd"/>
+                                <include reference="B5f-ou-F1L"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=regular">
@@ -542,13 +542,13 @@
                                 <include reference="UBt-cX-V9R"/>
                                 <exclude reference="kC4-Ip-sHT"/>
                                 <exclude reference="klg-Ra-kIQ"/>
-                                <include reference="4C1-gS-rOF"/>
-                                <include reference="bjL-fv-HtM"/>
                                 <include reference="2bm-Cq-RZh"/>
                                 <include reference="C4N-zP-LqC"/>
                                 <exclude reference="HUh-hq-g3q"/>
                                 <include reference="naQ-ym-ilm"/>
                                 <exclude reference="rkG-Cg-78o"/>
+                                <include reference="4C1-gS-rOF"/>
+                                <include reference="bjL-fv-HtM"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=regular">
