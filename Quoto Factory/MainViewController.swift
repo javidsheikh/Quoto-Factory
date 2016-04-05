@@ -10,6 +10,7 @@ import UIKit
 
 class MainViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
+    // MARK: variables
     var newQuoto: NewQuoto!
     
     var chosenQuoteLabel: UILabel!
@@ -28,8 +29,9 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     var trailingConstraintConstant: CGFloat!
     var leadingConstraintConstant: CGFloat!
     
-    var iMinSessions = 5
-    var iTryAgainSessions = 3
+    // Rate me variables
+//    var minSessions = 5
+//    var tryAgainSessions = 3
     
     // MARK: IBOutlets
     @IBOutlet weak var toolbar: UIToolbar!
@@ -45,11 +47,12 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     @IBOutlet weak var albumButton: UIToolbar!
     
     @IBOutlet weak var chooseQuoteButton: UIButton!
-
+    
+    // MARK: Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
+        // UI setup
         self.navigationController?.navigationBar.barTintColor = UIColor(red: 242/255, green: 46/255, blue: 70/255, alpha: 1.0)
         self.navigationController?.navigationBar.tintColor = UIColor.whiteColor()
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor(), NSFontAttributeName: UIFont(name: "Futura-CondensedExtraBold", size: 24)!]
@@ -87,25 +90,26 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         self.chosenQuoteLabel.layer.shadowOpacity = 1
         
         // Gesture recognizers
-        let gestureQuote = UIPanGestureRecognizer(target: self, action: Selector("dragQuoteLabel:"))
+        let gestureQuote = UIPanGestureRecognizer(target: self, action: #selector(MainViewController.dragQuoteLabel(_:)))
         self.chosenQuoteLabel.addGestureRecognizer(gestureQuote)
         self.chosenQuoteLabel.userInteractionEnabled = true
         
         self.quoteLabelPosition = CGPointMake(self.view.bounds.width / 2, self.view.bounds.height / 2)
         
-        let pinchGesture = UIPinchGestureRecognizer(target: self, action: Selector("resizeText:"))
+        let pinchGesture = UIPinchGestureRecognizer(target: self, action: #selector(MainViewController.resizeText(_:)))
         self.view.addGestureRecognizer(pinchGesture)
         
         self.quoteLabelFontSize = 22
         
-        let longPress = UILongPressGestureRecognizer(target: self, action: "changeQuoteFontColor:")
+        let longPress = UILongPressGestureRecognizer(target: self, action: #selector(MainViewController.changeQuoteFontColor(_:)))
         longPress.minimumPressDuration = 1.2
         self.view.addGestureRecognizer(longPress)
 
     }
     
     override func viewWillAppear(animated: Bool) {
-
+        
+        // Set image and quote if chosen
         if self.newQuoto == nil {
             self.chosenQuoteLabel.hidden = true
             self.instructionLabelMiddle.alpha = 0
@@ -178,6 +182,7 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     private func generateQuoto() -> UIImage {
         self.navigationController?.navigationBarHidden = true
         self.toolbar.hidden = true
+        self.instructionLabelMiddle.hidden = true
         
         UIGraphicsBeginImageContext(self.view.frame.size)
         self.view.drawViewHierarchyInRect(self.view.frame, afterScreenUpdates: true)
@@ -185,6 +190,7 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
                 
         self.navigationController?.navigationBarHidden = false
         self.toolbar.hidden = false
+        self.instructionLabelMiddle.hidden = false
         
         return quoto
     }
@@ -233,45 +239,54 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         }
     }
 
-    // MARK: rate app functions
-    func rateMe() {
-        let neverRate = NSUserDefaults.standardUserDefaults().boolForKey("neverRate")
-        var numLaunches = NSUserDefaults.standardUserDefaults().integerForKey("numLaunches") + 1
-        if (!neverRate && (numLaunches == iMinSessions || numLaunches >= (iMinSessions + iTryAgainSessions + 1))) {
-            showRateMe()
-            numLaunches = iMinSessions + 1
-        }
-        NSUserDefaults.standardUserDefaults().setInteger(numLaunches, forKey: "numLaunches")
-    }
-    
-    func showRateMe() {
-        let alert = UIAlertController(title: "Rate Us", message: "Thanks for using Quoto Factory", preferredStyle: UIAlertControllerStyle.Alert)
-        alert.addAction(UIAlertAction(title: "Rate Quoto Factory", style: UIAlertActionStyle.Default, handler: { alertAction in
-//            UIApplication.sharedApplication().openURL(NSURL(string : "itms-apps://ax.itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=<iTUNES CONNECT APP ID>")!)
-            NSUserDefaults.standardUserDefaults().setBool(true, forKey: "neverRate")
-            // TODO: Amend URL
-            UIApplication.sharedApplication().openURL(NSURL(string: "https://theysaidso.com/")!)
-            alert.dismissViewControllerAnimated(true, completion: nil)
-        }))
-        alert.addAction(UIAlertAction(title: "No Thanks", style: UIAlertActionStyle.Default, handler: { alertAction in
-            NSUserDefaults.standardUserDefaults().setBool(true, forKey: "neverRate")
-            alert.dismissViewControllerAnimated(true, completion: nil)
-        }))
-        alert.addAction(UIAlertAction(title: "Maybe Later", style: UIAlertActionStyle.Default, handler: { alertAction in
-            alert.dismissViewControllerAnimated(true, completion: nil)
-        }))
-        self.presentViewController(alert, animated: true, completion: nil)
-    }
+    // MARK: rate app functions - to be uncommented once app ID is received.
+//    func rateMe() {
+//        let neverRate = NSUserDefaults.standardUserDefaults().boolForKey("neverRate")
+//        var numLaunches = NSUserDefaults.standardUserDefaults().integerForKey("numLaunches") + 1
+//        if (!neverRate && (numLaunches == minSessions || numLaunches >= (minSessions + tryAgainSessions + 1))) {
+//            showRateMe()
+//            numLaunches = minSessions + 1
+//        }
+//        NSUserDefaults.standardUserDefaults().setInteger(numLaunches, forKey: "numLaunches")
+//    }
+//    
+//    func showRateMe() {
+//        let alert = UIAlertController(title: "Rate Us", message: "Thanks for using Quoto Factory", preferredStyle: UIAlertControllerStyle.Alert)
+//        alert.addAction(UIAlertAction(title: "Rate Quoto Factory", style: UIAlertActionStyle.Default, handler: { alertAction in
+////            UIApplication.sharedApplication().openURL(NSURL(string : "itms-apps://ax.itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=<iTUNES CONNECT APP ID>")!)
+//            NSUserDefaults.standardUserDefaults().setBool(true, forKey: "neverRate")
+//            // TODO: Amend URL
+//            UIApplication.sharedApplication().openURL(NSURL(string: "")!)
+//            alert.dismissViewControllerAnimated(true, completion: nil)
+//        }))
+//        alert.addAction(UIAlertAction(title: "No Thanks", style: UIAlertActionStyle.Default, handler: { alertAction in
+//            NSUserDefaults.standardUserDefaults().setBool(true, forKey: "neverRate")
+//            alert.dismissViewControllerAnimated(true, completion: nil)
+//        }))
+//        alert.addAction(UIAlertAction(title: "Maybe Later", style: UIAlertActionStyle.Default, handler: { alertAction in
+//            alert.dismissViewControllerAnimated(true, completion: nil)
+//        }))
+//        self.presentViewController(alert, animated: true, completion: nil)
+//    }
     
     // MARK: IBActions
     @IBAction func actionQuoto(sender: UIBarButtonItem) {
         let image = self.generateQuoto()
         let controller = UIActivityViewController(activityItems: [image], applicationActivities: nil)
-        controller.completionWithItemsHandler = { activity, completed, items, error -> Void in
-            if completed {
-                self.rateMe()
+//        controller.completionWithItemsHandler = { activity, completed, items, error -> Void in
+//            if completed {
+//                self.rateMe()
+//            }
+//        
+//        }
+        //if iPhone
+        if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.Phone) {
+            // go on..
+        } else {
+            // For iPad
+            if controller.respondsToSelector(Selector("popoverPresentationController")) {
+                controller.popoverPresentationController!.barButtonItem = self.actionButton;
             }
-            
         }
         self.presentViewController(controller, animated: true, completion: nil)
     }

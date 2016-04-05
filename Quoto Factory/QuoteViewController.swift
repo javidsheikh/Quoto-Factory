@@ -10,8 +10,10 @@ import UIKit
 
 class QuoteViewController: UIViewController {
     
+    // MARK: variables
     var newQuoto: NewQuoto!
-        
+    
+    // MARK: IBOutlets
     @IBOutlet weak var challengeButton: UIButton!
     @IBOutlet weak var patienceButton: UIButton!
     @IBOutlet weak var luckButton: UIButton!
@@ -42,14 +44,11 @@ class QuoteViewController: UIViewController {
     @IBOutlet var buttonLeft: [UIButton]!
     @IBOutlet var buttonRight: [UIButton]!
     
+    // MARK: Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
-        self.navigationController?.navigationBar.barTintColor = UIColor(red: 242/255, green: 46/255, blue: 70/255, alpha: 1.0)
-        self.navigationController?.navigationBar.tintColor = UIColor.whiteColor()
-        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor(), NSFontAttributeName: UIFont(name: "Futura-CondensedExtraBold", size: 24)!]
-        
+        // UI setup
         for button in self.genericButton {
             button.layer.cornerRadius = 15
         }
@@ -61,14 +60,14 @@ class QuoteViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    
+    // MARK: IBActions
     @IBAction func getQuote(sender: UIButton) {
         self.newQuoto.quotoCategory = sender.titleLabel!.text!
         self.performSegueWithIdentifier("segueToQuoteDetailVC", sender: self)
     }
 
 
-    // MARK: - Navigation
+    // MARK: Navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "segueToQuoteDetailVC" {
         let controller = segue.destinationViewController as! QuoteDetailViewController

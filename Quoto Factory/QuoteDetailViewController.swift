@@ -10,35 +10,28 @@ import UIKit
 
 class QuoteDetailViewController: UIViewController {
     
+    // MARK: Variables
     var newQuoto: NewQuoto!
     
     var activityIndicator = UIActivityIndicatorView()
-
+    
+    // MARK: IBOutlets
     @IBOutlet weak var categoryLabel: UILabel!
     @IBOutlet weak var quoteLabel: UILabel!
     @IBOutlet weak var authorLabel: UILabel!
     
     @IBOutlet var genericButton: [UIButton]!
     
+    // MARK: Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
-        self.navigationController?.navigationBar.barTintColor = UIColor(red: 242/255, green: 46/255, blue: 70/255, alpha: 1.0)
-        self.navigationController?.navigationBar.tintColor = UIColor.whiteColor()
-                
         self.categoryLabel.text = self.newQuoto.quotoCategory.capitalizedString
-        print(self.newQuoto.quotoCategory)
-        getQuote(self.newQuoto.quotoCategory)
+        self.getQuote(self.newQuoto.quotoCategory)
         
         for button in self.genericButton {
             button.layer.cornerRadius = 15
         }
-    }
-    
-    override func viewWillAppear(animated: Bool) {
-//        self.quoteLabel.text = self.newQuoto.quotoQuote
-//        self.authorLabel.text = self.newQuoto.quotoAuthor
     }
 
     override func didReceiveMemoryWarning() {
@@ -46,6 +39,7 @@ class QuoteDetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    // MARK: disable UI while http request is being made
     private func enableUI(enabled: Bool) {
         
         if !enabled {
@@ -63,6 +57,7 @@ class QuoteDetailViewController: UIViewController {
         }
     }
     
+    // MARK - getQuote function
     private func getQuote(category: String) {
         
         self.enableUI(false)
@@ -91,9 +86,7 @@ class QuoteDetailViewController: UIViewController {
     
         let url = NSURL(string: urlString)!
         
-        // ************* CHECK **************
         let request = NSMutableURLRequest(URL: url, cachePolicy: NSURLRequestCachePolicy.UseProtocolCachePolicy, timeoutInterval: 10)
-        // **********************************
         
         let task = session.dataTaskWithRequest(request) { (data, response, error) -> Void in
             
@@ -140,12 +133,14 @@ class QuoteDetailViewController: UIViewController {
                 displayError("Cannot find key \(Constants.TheySaidSoResponseKeys.Contents) in \(parsedResult)")
                 return
             }
-        
+            
+            /* GUARD: Is "quote" in contentsDictionary? */
             guard let quote = contentsDictionary[Constants.TheySaidSoResponseKeys.Quote] as? String else {
                 displayError("Unable to find key \(Constants.TheySaidSoResponseKeys.Quote) in contentsDictionary")
                 return
             }
             
+            /* GUARD: Is "author" in contentsDictionary? */
             guard let author = contentsDictionary[Constants.TheySaidSoResponseKeys.Author] as? String else {
                 displayError("Unable to find key \(Constants.TheySaidSoResponseKeys.Author) in contentsDictionary")
                 dispatch_async(dispatch_get_main_queue(), { () -> Void in
@@ -157,9 +152,7 @@ class QuoteDetailViewController: UIViewController {
                 return
             }
             
-            print(quote)
-            print(author)
-                    
+            // Update UI
             dispatch_async(dispatch_get_main_queue(), { () -> Void in
                         
                 self.enableUI(true)
@@ -172,31 +165,19 @@ class QuoteDetailViewController: UIViewController {
         
     
     }
-
+    
+    // MARK: IBActions
     @IBAction func selectQuote(sender: UIButton) {
         self.newQuoto.quotoQuote = self.quoteLabel.text!
         self.newQuoto.quotoAuthor = " - \(self.authorLabel.text!)"
         self.navigationController?.popToRootViewControllerAnimated(true)
-//        self.performSegueWithIdentifier("segueToMainVC", sender: self)
     }
 
     @IBAction func getAnotherQuote(sender: UIButton) {
         getQuote(self.newQuoto.quotoCategory)
     }
     
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-//        if segue.identifier == "segueToMainVC" {
-//            let controller = segue.destinationViewController as! MainViewController
-//            controller.newQuoto = self.newQuoto
-//        }
-//        if segue.identifier == "segueBackToQuoteVC" {
-//            let controller = segue.destinationViewController as! QuoteViewController
-//            controller.newQuoto = self.newQuoto
-//        }
-//    }
+    // MARK: helper function
     private func escapedParameters(parameters: [String:AnyObject]) -> String {
         
         if parameters.isEmpty {
