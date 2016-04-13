@@ -253,7 +253,7 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     func showRateMe() {
         let alert = UIAlertController(title: "Rate Us", message: "Thanks for using Quoto Factory", preferredStyle: UIAlertControllerStyle.Alert)
         alert.addAction(UIAlertAction(title: "Rate Quoto Factory", style: UIAlertActionStyle.Default, handler: { alertAction in
-            UIApplication.sharedApplication().openURL(NSURL(string : "https://itunes.apple.com/uk/app/quoto-factory/id1100309467?ls=1&mt=8")!)
+            UIApplication.sharedApplication().openURL(NSURL(string : "itms-apps://itunes.apple.com/app/id1100309467")!)
             NSUserDefaults.standardUserDefaults().setBool(true, forKey: "neverRate")
             alert.dismissViewControllerAnimated(true, completion: nil)
         }))
