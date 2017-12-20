@@ -61,16 +61,16 @@ class QuoteViewController: UIViewController {
     }
 
     // MARK: IBActions
-    @IBAction func getQuote(sender: UIButton) {
+    @IBAction func getQuote(_ sender: UIButton) {
         self.newQuoto.quotoCategory = sender.titleLabel!.text!
-        self.performSegueWithIdentifier("segueToQuoteDetailVC", sender: self)
+        self.performSegue(withIdentifier: "segueToQuoteDetailVC", sender: self)
     }
 
 
     // MARK: Navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "segueToQuoteDetailVC" {
-        let controller = segue.destinationViewController as! QuoteDetailViewController
+        let controller = segue.destination as! QuoteDetailViewController
             controller.newQuoto = self.newQuoto
         }
     }

@@ -26,7 +26,7 @@ class QuoteDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.categoryLabel.text = self.newQuoto.quotoCategory.capitalizedString
+        self.categoryLabel.text = self.newQuoto.quotoCategory.capitalized
         self.getQuote(self.newQuoto.quotoCategory)
         
         for button in self.genericButton {
@@ -40,25 +40,25 @@ class QuoteDetailViewController: UIViewController {
     }
     
     // MARK: disable UI while http request is being made
-    private func enableUI(enabled: Bool) {
+    fileprivate func enableUI(_ enabled: Bool) {
         
         if !enabled {
             activityIndicator = UIActivityIndicatorView(frame: self.view.frame)
             activityIndicator.backgroundColor = UIColor(white: 1.0, alpha: 0.5)
             activityIndicator.center = self.view.center
             activityIndicator.hidesWhenStopped = true
-            activityIndicator.activityIndicatorViewStyle = .Gray
+            activityIndicator.activityIndicatorViewStyle = .gray
             self.view.addSubview(activityIndicator)
             activityIndicator.startAnimating()
-            UIApplication.sharedApplication().beginIgnoringInteractionEvents()
+            UIApplication.shared.beginIgnoringInteractionEvents()
         } else {
             activityIndicator.stopAnimating()
-            UIApplication.sharedApplication().endIgnoringInteractionEvents()
+            UIApplication.shared.endIgnoringInteractionEvents()
         }
     }
     
     // MARK - getQuote function
-    private func getQuote(category: String) {
+    fileprivate func getQuote(_ category: String) {
         
         self.enableUI(false)
         
@@ -75,59 +75,59 @@ class QuoteDetailViewController: UIViewController {
         ]
         
         if category == "Random" {
-            urlString = Constants.TheySaidSo.APIBaseURL + self.escapedParameters(randomParameters)
+            urlString = Constants.TheySaidSo.APIBaseURL + self.escapedParameters(randomParameters as [String : AnyObject])
         } else {
-            urlString = Constants.TheySaidSo.APIBaseURL + self.escapedParameters(categoryParameters)
+            urlString = Constants.TheySaidSo.APIBaseURL + self.escapedParameters(categoryParameters as [String : AnyObject])
         }
         
         print(urlString)
         
-        let session = NSURLSession.sharedSession()
+        let session = URLSession.shared
     
-        let url = NSURL(string: urlString)!
+        let url = URL(string: urlString)!
         
-        let request = NSMutableURLRequest(URL: url, cachePolicy: NSURLRequestCachePolicy.UseProtocolCachePolicy, timeoutInterval: 10)
+        let request = NSMutableURLRequest(url: url, cachePolicy: NSURLRequest.CachePolicy.useProtocolCachePolicy, timeoutInterval: 10)
         
-        let task = session.dataTaskWithRequest(request) { (data, response, error) -> Void in
+        let task = session.dataTask(with: url) { (data, response, error) in
             
             // if an error occurs, print it and re-enable the UI
-            func displayError(error: String) {
+            func displayError(_ error: String) {
                 print(error)
                 print("URL at time of error: \(url)")
-                dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                DispatchQueue.main.async(execute: { () -> Void in
                     self.quoteLabel.text = "There was an error. Please check your network connection and try again."
                     self.authorLabel.text = ""
                     self.enableUI(true)
                 })
             }
-        
+            
             /* GUARD: Was there an error? */
             guard (error == nil) else {
-                displayError("There was an error with your request: \(error)")
+                displayError("There was an error with your request: \(String(describing: error))")
                 return
             }
-        
+            
             /* GUARD: Did we get a successful 2XX response? */
-            guard let statusCode = (response as? NSHTTPURLResponse)?.statusCode where statusCode >= 200 && statusCode <= 299 else {
+            guard let statusCode = (response as? HTTPURLResponse)?.statusCode , statusCode >= 200 && statusCode <= 299 else {
                 displayError("Your request returned a status code other than 2xx!")
                 return
             }
-        
+            
             /* GUARD: Was there any data returned? */
             guard let data = data else {
                 displayError("No data was returned by the request!")
                 return
             }
-        
+            
             // parse the data
             let parsedResult: AnyObject!
             do {
-                parsedResult = try NSJSONSerialization.JSONObjectWithData(data, options: .AllowFragments)
+                parsedResult = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as AnyObject
             } catch {
                 displayError("Could not parse the data as JSON: '\(data)'")
                 return
             }
-        
+            
             /* GUARD: Are the "photos" and "photo" keys in our result? */
             guard let contentsDictionary = parsedResult[Constants.TheySaidSoResponseKeys.Contents] as? [String:AnyObject] else {
                 displayError("Cannot find key \(Constants.TheySaidSoResponseKeys.Contents) in \(parsedResult)")
@@ -143,7 +143,7 @@ class QuoteDetailViewController: UIViewController {
             /* GUARD: Is "author" in contentsDictionary? */
             guard let author = contentsDictionary[Constants.TheySaidSoResponseKeys.Author] as? String else {
                 displayError("Unable to find key \(Constants.TheySaidSoResponseKeys.Author) in contentsDictionary")
-                dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                DispatchQueue.main.async(execute: { () -> Void in
                     print(quote)
                     self.enableUI(true)
                     self.quoteLabel.text = quote
@@ -153,32 +153,29 @@ class QuoteDetailViewController: UIViewController {
             }
             
             // Update UI
-            dispatch_async(dispatch_get_main_queue(), { () -> Void in
-                        
+            DispatchQueue.main.async(execute: { () -> Void in
+                
                 self.enableUI(true)
                 self.quoteLabel.text = quote
                 self.authorLabel.text = author
             })
-                
         }
         task.resume()
-        
-    
     }
     
     // MARK: IBActions
-    @IBAction func selectQuote(sender: UIButton) {
+    @IBAction func selectQuote(_ sender: UIButton) {
         self.newQuoto.quotoQuote = self.quoteLabel.text!
         self.newQuoto.quotoAuthor = " - \(self.authorLabel.text!)"
-        self.navigationController?.popToRootViewControllerAnimated(true)
+        self.navigationController?.popToRootViewController(animated: true)
     }
 
-    @IBAction func getAnotherQuote(sender: UIButton) {
+    @IBAction func getAnotherQuote(_ sender: UIButton) {
         getQuote(self.newQuoto.quotoCategory)
     }
     
     // MARK: helper function
-    private func escapedParameters(parameters: [String:AnyObject]) -> String {
+    fileprivate func escapedParameters(_ parameters: [String:AnyObject]) -> String {
         
         if parameters.isEmpty {
             return ""
@@ -191,14 +188,14 @@ class QuoteDetailViewController: UIViewController {
                 let stringValue = "\(value)"
                 
                 // escape it
-                let escapedValue = stringValue.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet())
+                let escapedValue = stringValue.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)
                 
                 // append it
                 keyValuePairs.append(key + "=" + "\(escapedValue!)")
                 
             }
             
-            return "?\(keyValuePairs.joinWithSeparator("&"))"
+            return "?\(keyValuePairs.joined(separator: "&"))"
         }
     }
 
