@@ -85,9 +85,7 @@ class QuoteDetailViewController: UIViewController {
         let session = URLSession.shared
     
         let url = URL(string: urlString)!
-        
-        let request = NSMutableURLRequest(url: url, cachePolicy: NSURLRequest.CachePolicy.useProtocolCachePolicy, timeoutInterval: 10)
-        
+                
         let task = session.dataTask(with: url) { (data, response, error) in
             
             // if an error occurs, print it and re-enable the UI

@@ -55,7 +55,7 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         // UI setup
         self.navigationController?.navigationBar.barTintColor = UIColor(red: 242/255, green: 46/255, blue: 70/255, alpha: 1.0)
         self.navigationController?.navigationBar.tintColor = UIColor.white
-        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white, NSFontAttributeName: UIFont(name: "Futura-CondensedExtraBold", size: 24)!]
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white, NSAttributedStringKey.font: UIFont(name: "Futura-CondensedExtraBold", size: 24)!]
         
         self.toolbar.barTintColor = UIColor(red: 242/255, green: 46/255, blue: 70/255, alpha: 1.0)
         self.toolbar.tintColor = UIColor.white
@@ -196,7 +196,7 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     }
     
     // MARK: gesture recognizer functions
-    func dragQuoteLabel(_ gesture: UIPanGestureRecognizer) {
+    @objc func dragQuoteLabel(_ gesture: UIPanGestureRecognizer) {
         let translation = gesture.translation(in: self.view)
         let label = self.chosenQuoteLabel
         label?.center = CGPoint(x: self.quoteLabelPosition.x + translation.x, y: self.quoteLabelPosition.y + translation.y)
@@ -218,7 +218,7 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         }
     }
     
-    func resizeText(_ pinchGesture: UIPinchGestureRecognizer) {
+    @objc func resizeText(_ pinchGesture: UIPinchGestureRecognizer) {
         let scale = pinchGesture.scale
         self.chosenQuoteLabel.font = chosenQuoteLabel.font.withSize(quoteLabelFontSize * scale)
         
@@ -227,7 +227,7 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         }
     }
     
-    func changeQuoteFontColor(_ longPress: UILongPressGestureRecognizer) {
+    @objc func changeQuoteFontColor(_ longPress: UILongPressGestureRecognizer) {
         if longPress.state == .began {
             if self.isWhite {
                 self.chosenQuoteLabel.textColor = UIColor.black
